@@ -44,6 +44,9 @@ set ruler
 " show line numbers
 set number
 
+" show line numbers
+set relativenumber
+
 " Height of the command bar
 set cmdheight=1
 
@@ -102,9 +105,20 @@ if $COLORTERM == 'kitty'
 endif
 
 try
-"    colorscheme desert
+"    colorscheme retrobox
 catch
 endtry
+
+"set background=dark
+
+
+" Set extra options when running in GUI mode
+if has("gui_running")
+    set guioptions-=T
+    set guioptions-=e
+    set t_Co=256
+    set guitablabel=%M\ %t
+endif
 
 " => Files, backups and undo
 
