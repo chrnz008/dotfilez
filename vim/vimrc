@@ -25,7 +25,7 @@ command! W execute 'w !sudo tee % > /dev/null' <bar> edit!
 set so=7
 
 "integration with system clipboard register
-set clipboard=unnamedplus
+"set clipboard=unnamedplus
 
 "disables the start page
 set shortmess+=I
@@ -91,9 +91,9 @@ set t_vb=
 set tm=500
 
 " Add a bit extra margin to the left
-"set foldcolumn=1
-"set signcolumn=yes
-"highlight SignColumn ctermbg=NONE guibg=NONE
+set foldcolumn=1
+" set signcolumn=yes
+" highlight SignColumn ctermbg=NONE guibg=NONE
 
 " => Colors and Fonts
 
@@ -166,20 +166,25 @@ function! HasPaste()
 endfunction
 
 "vim plug
-call plug#begin('~/.vim/plugged')
+ call plug#begin('~/.vim/plugged')
 
-"Plug 'morhetz/gruvbox'
+" Plug 'morhetz/gruvbox'
 Plug 'jiangmiao/auto-pairs'
+" Plug 'sheerun/vim-polyglot'
 "Plug 'preservim/nerdtree'
 "Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 "Plug 'junegunn/fzf.vim'
-"Plug 'vim-airline/vim-airline'
+"Plug 'itchyny/lightline.vim'
 "Plug 'dense-analysis/ale'
+Plug 'christoomey/vim-tmux-navigator'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
 
 call plug#end()
 
+"cp
+autocmd BufNewFile *.cpp 0r ~/prgmng/tmplt/template.cpp
+set makeprg=g++\ -std=c++17\ -Wall\ -O2\ %\ -o\ %<
 
 "extra config added for windows but some may work for linux too
 " ->keymaps

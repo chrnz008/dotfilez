@@ -218,4 +218,8 @@ bindsym XF86MonBrightnessDown exec brightnessctl s 5%-
 #night light
 exec --no-startup-id redshift -O 3500K
 
+#config for second monitor
+#this is for using two monitors
+#exec_always --no-startup-id xrandr --output HDMI-2 --auto --left-of eDP-1
+
 

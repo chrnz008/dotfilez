@@ -1,0 +1,283 @@
+[clocks/state/window]
+maximized=false
+panel-id='world'
+size=(870, 690)
+
+[control-center]
+last-panel='background'
+window-state=(980, 640, false)
+
+[desktop/a11y/interface]
+show-status-shapes=false
+
+[desktop/app-folders]
+folder-children=['System', 'Utilities', 'YaST', 'Pardus', '4fdb7afb-f75e-418d-ab8d-11475f793053', 'e79889bb-2883-482e-b64e-882a5279c25c', 'f7755fd6-1cfd-4411-aac6-d87e3d619e19', '5f77a81a-6355-4fe0-80f7-56968a352dc7']
+
+[desktop/app-folders/folders/4fdb7afb-f75e-418d-ab8d-11475f793053]
+apps=['bvnc.desktop', 'avahi-discover.desktop', 'bssh.desktop']
+name='Unnamed Folder'
+
+[desktop/app-folders/folders/5f77a81a-6355-4fe0-80f7-56968a352dc7]
+apps=['ca.desrt.dconf-editor.desktop', 'htop.desktop', 'org.gnome.Calendar.desktop', 'org.gnome.TextEditor.desktop']
+name='things'
+translate=false
+
+[desktop/app-folders/folders/Pardus]
+categories=['X-Pardus-Apps']
+name='X-Pardus-Apps.directory'
+translate=true
+
+[desktop/app-folders/folders/System]
+apps=['nm-connection-editor.desktop', 'org.gnome.baobab.desktop', 'org.gnome.DiskUtility.desktop', 'org.gnome.Logs.desktop', 'org.gnome.tweaks.desktop', 'org.gnome.SystemMonitor.desktop', 'org.gnome.Software.desktop']
+name='X-GNOME-Shell-System.directory'
+translate=true
+
+[desktop/app-folders/folders/Utilities]
+apps=['org.gnome.Evince.desktop', 'org.gnome.font-viewer.desktop', 'org.gnome.Loupe.desktop', 'org.gnome.Extensions.desktop', 'cmake-gui.desktop', 'blueman-manager.desktop', 'org.gnome.Characters.desktop']
+name='X-GNOME-Shell-Utilities.directory'
+translate=true
+
+[desktop/app-folders/folders/YaST]
+categories=['X-SuSE-YaST']
+name='suse-yast.directory'
+translate=true
+
+[desktop/app-folders/folders/e79889bb-2883-482e-b64e-882a5279c25c]
+apps=['picom.desktop', 'redshift-gtk.desktop', 'org.pulseaudio.pavucontrol.desktop']
+name='Accessories'
+
+[desktop/app-folders/folders/f7755fd6-1cfd-4411-aac6-d87e3d619e19]
+apps=['org.gnome.Snapshot.desktop', 'org.gnome.Totem.desktop', 'qv4l2.desktop', 'vlc.desktop', 'qvidcap.desktop', 'org.gnome.Music.desktop']
+name='Sound & Video'
+
+[desktop/background]
+color-shading-type='solid'
+picture-options='zoom'
+picture-uri='file:///home/chrnz/.local/share/backgrounds/2025-06-26-21-49-53-wallhaven-k898gq_3840x2160.png'
+picture-uri-dark='file:///home/chrnz/.local/share/backgrounds/2025-06-26-21-49-53-wallhaven-k898gq_3840x2160.png'
+primary-color='#000000000000'
+secondary-color='#000000000000'
+
+[desktop/input-sources]
+sources=[('xkb', 'us')]
+xkb-options=['terminate:ctrl_alt_bksp', 'caps:escape_shifted_capslock']
+
+[desktop/interface]
+accent-color='orange'
+color-scheme='prefer-dark'
+enable-animations=true
+font-name='Adwaita Sans 11'
+icon-theme='cupertino-sonoma'
+monospace-font-name='JetBrainsMono Nerd Font 11'
+show-battery-percentage=true
+toolkit-accessibility=false
+
+[desktop/notifications]
+application-children=['org-gnome-evolution-alarm-notify', 'gnome-power-panel']
+show-in-lock-screen=false
+
+[desktop/notifications/application/gnome-power-panel]
+application-id='gnome-power-panel.desktop'
+
+[desktop/notifications/application/org-gnome-evolution-alarm-notify]
+application-id='org.gnome.Evolution-alarm-notify.desktop'
+
+[desktop/peripherals/touchpad]
+two-finger-scrolling-enabled=true
+
+[desktop/screensaver]
+color-shading-type='solid'
+picture-options='zoom'
+picture-uri='file:///home/chrnz/.local/share/backgrounds/2025-06-26-21-49-53-wallhaven-k898gq_3840x2160.png'
+primary-color='#000000000000'
+secondary-color='#000000000000'
+
+[desktop/search-providers]
+sort-order=['org.gnome.Settings.desktop', 'org.gnome.Contacts.desktop', 'org.gnome.Nautilus.desktop']
+
+[desktop/wm/keybindings]
+move-to-workspace-1=['<Super>1']
+move-to-workspace-2=['<Super>2']
+move-to-workspace-3=['<Super>3']
+move-to-workspace-4=['<Super>4']
+
+[desktop/wm/preferences]
+button-layout='close,minimize,maximize:appmenu'
+
+[evolution-data-server]
+migrated=true
+
+[evolution-data-server/calendar]
+reminders-past=['789e4d1e2b8e09136c106ad294e7718a733b09d7\nf4bba6997fd49262b13cde8d1b0f55e8a82f5273\t20250701T043000Z\n1751342400\n1751344200\n1751365800\nBEGIN:VEVENT\r\nDTSTART;TZID=Asia/Kolkata:20250701T100000\r\nDTEND;TZID=Asia/Kolkata:20250701T160000\r\nRRULE:FREQ=DAILY\r\nDTSTAMP:20250615T114127Z\r\nUID:8d58dbf7ca81781fb338123b8cf64dda0ef29501\r\nCREATED:20250416T023044Z\r\nDESCRIPTION:gotta go for clg brochaco\r\nLAST-MODIFIED:20250615T114127Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for LOCATION \r\n property. Removing entire property:\r\nSEQUENCE:6\r\nSTATUS:CONFIRMED\r\nSUMMARY:clg\r\nTRANSP:OPAQUE\r\nX-MOZ-GENERATION:4\r\nX-MOZ-GOOGLE-HTML-DESCRIPTION:true\r\nX-MOZ-LASTACK:20250615T073959Z\r\nX-MOZ-SNOOZE-TIME-1746937800000000:20250611T030859Z\r\nX-MOZ-SNOOZE-TIME-1749616200000000:20250615T074459Z\r\nX-EVOLUTION-CALDAV-ETAG:63885670887\r\nRECURRENCE-ID:20250701T043000Z\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:This is an event reminder\r\nTRIGGER:-PT30M\r\nX-EVOLUTION-ALARM-UID:f4bba6997fd49262b13cde8d1b0f55e8a82f5273\r\nEND:VALARM\r\nEND:VEVENT\r\n']
+
+[mutter]
+dynamic-workspaces=true
+workspaces-only-on-primary=false
+
+[nautilus/preferences]
+default-folder-viewer='icon-view'
+migrated-gtk-settings=true
+search-filter-time-type='last_modified'
+
+[nautilus/window-state]
+initial-size=(890, 550)
+maximized=true
+
+[settings-daemon/plugins/color]
+night-light-enabled=true
+night-light-schedule-automatic=false
+night-light-schedule-from=0.0
+night-light-schedule-to=0.0
+
+[settings-daemon/plugins/media-keys]
+custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/']
+
+[settings-daemon/plugins/media-keys/custom-keybindings/custom0]
+binding='<Control><Alt>t'
+command='kitty --start-as=fullscreen\n'
+name='kitty'
+
+[shell]
+app-picker-layout=[{'org.gnome.Console.desktop': <{'position': <0>}>, '4fdb7afb-f75e-418d-ab8d-11475f793053': <{'position': <1>}>, 'org.gnome.clocks.desktop': <{'position': <2>}>, 'org.gnome.Settings.desktop': <{'position': <3>}>, '5f77a81a-6355-4fe0-80f7-56968a352dc7': <{'position': <4>}>, 'f7755fd6-1cfd-4411-aac6-d87e3d619e19': <{'position': <5>}>, 'Utilities': <{'position': <6>}>, 'System': <{'position': <7>}>, 'emacsclient.desktop': <{'position': <8>}>, 'com.mattjakeman.ExtensionManager.desktop': <{'position': <9>}>, 'e79889bb-2883-482e-b64e-882a5279c25c': <{'position': <10>}>, 'dev.zed.Zed.desktop': <{'position': <11>}>, 'vim.desktop': <{'position': <12>}>, 'RQuickShare.desktop': <{'position': <13>}>}]
+disabled-extensions=['status-icons@gnome-shell-extensions.gcampax.github.com', 'screenshot-window-sizer@gnome-shell-extensions.gcampax.github.com', 'places-menu@gnome-shell-extensions.gcampax.github.com', 'native-window-placement@gnome-shell-extensions.gcampax.github.com', 'dash2dock-lite@icedman.github.com', 'blur-my-shell@aunetx', 'auto-move-windows@gnome-shell-extensions.gcampax.github.com', 'light-style@gnome-shell-extensions.gcampax.github.com', 'workspace-indicator@gnome-shell-extensions.gcampax.github.com', 'window-list@gnome-shell-extensions.gcampax.github.com', 'apps-menu@gnome-shell-extensions.gcampax.github.com']
+enabled-extensions=['user-theme@gnome-shell-extensions.gcampax.github.com', 'windowsNavigator@gnome-shell-extensions.gcampax.github.com', 'system-monitor@gnome-shell-extensions.gcampax.github.com', 'clipboard-indicator@tudmotu.com', 'logomenu@aryan_k', 'Rounded_Corners@lennart-k', 'compiz-alike-magic-lamp-effect@hermes83.github.com', 'dash-to-dock@micxgx.gmail.com', 'just-perfection-desktop@just-perfection']
+favorite-apps=['firefox.desktop', 'kitty.desktop', 'nvim.desktop', 'emacs.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Console.desktop', 'discord.desktop']
+
+[shell/extensions/Logo-menu]
+menu-button-icon-image=6
+symbolic-icon=true
+use-custom-icon=false
+
+[shell/extensions/blur-my-shell]
+settings-version=2
+
+[shell/extensions/blur-my-shell/appfolder]
+brightness=0.59999999999999998
+sigma=30
+
+[shell/extensions/blur-my-shell/dash-to-dock]
+blur=true
+brightness=0.59999999999999998
+sigma=30
+static-blur=true
+style-dash-to-dock=0
+
+[shell/extensions/blur-my-shell/panel]
+brightness=0.59999999999999998
+sigma=30
+
+[shell/extensions/blur-my-shell/window-list]
+brightness=0.59999999999999998
+sigma=30
+
+[shell/extensions/dash-to-dock]
+always-center-icons=false
+apply-custom-theme=true
+autohide-in-fullscreen=true
+background-opacity=0.80000000000000004
+custom-theme-shrink=true
+dash-max-icon-size=48
+dock-position='LEFT'
+extend-height=true
+height-fraction=0.90000000000000002
+hide-tooltip=true
+hot-keys=false
+intellihide-mode='MAXIMIZED_WINDOWS'
+multi-monitor=true
+preferred-monitor=-2
+preferred-monitor-by-connector='HDMI-2'
+preview-size-scale=0.0
+require-pressure-to-show=false
+running-indicator-style='DOT'
+show-show-apps-button=false
+
+[shell/extensions/dash2dock-lite]
+animation-bounce=0.75
+animation-magnify=0.29999999999999999
+animation-rise=0.25
+animation-spread=0.75
+apps-icon=false
+apps-icon-front=false
+autohide-dash=true
+autohide-dodge=true
+autohide-speed=0.5
+border-radius=3.2251308900523559
+clock-icon=false
+customize-label=false
+customize-topbar=false
+dock-padding=0.26200873362445415
+downloads-icon=true
+edge-distance=0.51162790697674421
+favorites-only=false
+hide-labels=true
+icon-spacing=0.5
+items-pullout-angle=0.5
+msg-to-ext=''
+panel-mode=false
+preferred-monitor=0
+pressure-sense=false
+pressure-sense-sensitivity=0.40000000000000002
+running-indicator-size=0
+running-indicator-style=2
+scroll-sensitivity=0.40000000000000002
+shrink-icons=false
+trash-icon=true
+
+[shell/extensions/just-perfection]
+accent-color-icon=false
+accessibility-menu=true
+background-menu=true
+controls-manager-spacing-size=0
+dash=true
+dash-icon-size=0
+double-super-to-appgrid=true
+max-displayed-search-results=0
+osd=true
+panel=true
+panel-in-overview=true
+power-icon=true
+ripple-box=true
+search=true
+show-apps-button=false
+startup-status=1
+support-notifier-showed-version=34
+support-notifier-type=0
+theme=false
+window-demands-attention-focus=false
+window-picker-icon=true
+window-preview-caption=true
+window-preview-close-button=true
+workspace=true
+workspace-background-corner-size=0
+workspace-popup=true
+workspaces-in-app-grid=true
+
+[shell/extensions/ncom/github/hermes83/compiz-alike-magic-lamp-effect]
+duration=100.0
+x-tiles=10.0
+y-tiles=10.0
+
+[shell/extensions/system-monitor]
+show-cpu=false
+show-download=false
+show-swap=false
+show-upload=false
+
+[shell/extensions/user-theme]
+name='Graphite-Dark'
+
+[shell/keybindings]
+switch-to-application-1=@as []
+switch-to-application-2=@as []
+switch-to-application-3=@as []
+switch-to-application-4=@as []
+
+[shell/world-clocks]
+locations=@av []
+
+[software]
+check-timestamp=int64 1751337536
+first-run=false
+
+[tweaks]
+show-extensions-notice=false
