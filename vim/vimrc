@@ -190,5 +190,3 @@ set makeprg=g++\ -std=c++17\ -Wall\ -O2\ %\ -o\ %<
 " ->keymaps
 " different keymaps for easy peasy coding
 
-
-
