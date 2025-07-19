@@ -190,3 +190,7 @@ set makeprg=g++\ -std=c++17\ -Wall\ -O2\ %\ -o\ %<
 " ->keymaps
 " different keymaps for easy peasy coding
 
+"hlsearch creates an annoyance so instead of noh press ese esc
+nnoremap <Esc><Esc> :noh<Return><Esc>
+
+
