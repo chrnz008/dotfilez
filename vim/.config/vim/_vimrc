@@ -25,7 +25,7 @@ command! W execute 'w !sudo tee % > /dev/null' <bar> edit!
 set so=7
 
 "this makes windows \path to /path in vim
-"set shellslash
+" set shellslash
 "integration with system clipboard register
 "set clipboard=unnamedplus
 
@@ -73,6 +73,9 @@ set smartcase
 
 " Highlight search results
 set hlsearch
+"hlsearch creates an annoyance so instead of noh press ese esc
+nnoremap <Esc><Esc> :noh<Return><Esc>
+
 
 " Makes search act like search in modern browsers
 set incsearch
@@ -99,6 +102,7 @@ set tm=500
 " Add a bit extra margin to the left
 set foldcolumn=1
 
+" set colorcolumn=80
 
 " => Colors and Fonts
 
@@ -113,7 +117,7 @@ syntax enable
 set regexpengine=0
 
 " Enable 256 colors palette in Gnome Terminal
-if $COLORTERM == 'kitty'
+if $COLORTERM == 'alacritty'
     set t_Co=256
 endif
 
@@ -127,13 +131,13 @@ set background=dark
 
 " Set extra options when running in GUI mode
 if has("gui_running")
-    set guioptions+=m
+    set guioptions+=m "menu bar
     set guioptions-=T "tool bar
-    set guioptions+=e "tab line
+    set guioptions+=e "tab line gui or cli
     "remove scrollbars
     set guioptions-=g
     set guioptions-=r
-    "set guioptions-=L 
+    set guioptions-=L "v scroll during split
 
     set t_Co=256
     set guitablabel=%M\ %t
@@ -195,6 +199,7 @@ Plug 'jiangmiao/auto-pairs'
 "Plug 'dense-analysis/ale'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
+" Plug 'jceb/vim-orgmode'
 
 call plug#end()
 
@@ -226,4 +231,11 @@ nnoremap <F6> :w<CR>:!g++ -Wall % -o %<.exe && %<.exe<CR>
 
 
 "template
-autocmd BufNewFile *.cpp 0r C:\Users\chr_58\Desktop\cppgod\main.cpp
+autocmd BufNewFile *.cpp 0r C:/Users\chr_58/Desktop/dotfilez/tmplt/template.cpp
+
+"terminal maps
+"To map <Esc> to exit terminal-mode: >vim
+    :tnoremap <Esc> <C-\><C-n>
+
+
+
