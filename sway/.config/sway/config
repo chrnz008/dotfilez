@@ -17,14 +17,14 @@ set $right l
 # Your preferred terminal emulator
 set $term kitty
 # Your preferred application launcher
-set $menu wofi --show drun
+set $menu rofi -show drun
+# set $menu wofi --show drun
 # set $menu wmenu-run
-# set $menu bemenu-run
 
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-exec_always swaybg -i ~/Pictures/wallpapers/mountains.jpg -m fill
+exec_always swaybg -i ~/dotfilez/wallpprs/feather.png -m fill
 #good for yar eyes
 exec_always wlsunset -t 3500 -T 3501 -l 0 -L 0
 
@@ -34,7 +34,7 @@ exec_always wlsunset -t 3500 -T 3501 -l 0 -L 0
 #   output HDMI-A-1 resolution 1920x1080 position 1920,0
 #
 # You can get the names of your outputs by running: swaymsg -t get_outputs
-# Only use external monitor
+# Only use external monitor #@charan scale aint reccomended if necc then place after positon scale "num"
 output HDMI-A-2 resolution 1366x768 position 0 0
 output eDP-1 disable
 
@@ -42,8 +42,8 @@ output eDP-1 disable
 #
 # Example configuration:
 #
-# exec swayidle -w \
-#          timeout 300 'swaylock -f -c 000000' \
+exec swayidle -w \
+         timeout 300 'swaylock -f -c 000000' #\
 #          timeout 600 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
 #          before-sleep 'swaylock -f -c 000000'
 #
@@ -63,7 +63,8 @@ output eDP-1 disable
    }
 #
 input "type:keyboard" {
-    xkb_options "caps:escape_shifted_capslock"
+#map esc to caps
+    xkb_options "caps:escape_shifted_capslock" 
 }
 #
 # You can also configure each device individually.
@@ -145,6 +146,10 @@ input "type:keyboard" {
     bindsym $mod+Shift+0 move container to workspace number 10
     # Note: workspaces can have any name you want, not just numbers.
     # We just use 1-10 as the default.
+
+    # Focus the previously focused window (like basic Alt+Tab behavior)
+    bindsym Mod1+Tab focus prev
+
 #
 # Layout stuff:
 #

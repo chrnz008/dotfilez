@@ -21,9 +21,10 @@ vim.cmd([[colorscheme gruvbox]])
 vim.opt.clipboard = 'unnamedplus'
 vim.opt.number = true
 vim.opt.relativenumber = true 
-vim.opt.expandtab = true
-vim.opt.shiftwidth = 2
-vim.opt.tabstop = 2
+vim.opt.expandtab = false
+vim.opt.shiftwidth = 4
+vim.opt.tabstop = 4
+vim.opt.so=7
 
 -- nvim-tree binds 
 vim.api.nvim_set_keymap('n', '<leader>e', ':NvimTreeToggle<CR>', { noremap = true, silent = true })
@@ -51,29 +52,4 @@ vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
 vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
 vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
 vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
-
-
--- Map <leader>t to open terminal in normal mode
-vim.keymap.set('n', '<leader>t', ':botright split | terminal<CR>', { desc = "Open Terminal (split bottom)" })
-
--- cp (not what you think)
-
--- Compile with optimizations (F8)
-vim.keymap.set('n', '<F8>', function()
-  vim.cmd("w")  -- Save the file
-  vim.cmd('!g++ -std=c++17 -Wshadow -Wall -o "%<" "%" -O2 -Wno-unused-result')
-end, { silent = true })
-
--- Build with debug and sanitizers (F9)
-vim.keymap.set('n', '<F9>', function()
-  vim.cmd("w")  -- Save the file
-  vim.cmd('!g++ -std=c++17 -Wshadow -Wall -o "%<" "%" -g -fsanitize=address -fsanitize=undefined -D_GLIBCXX_DEBUG')
-end, { silent = true })
-
--- Run the compiled output (F6)
-vim.keymap.set('n', '<F6>', function()
-  vim.cmd("w")  -- Save the file
-  local output = vim.fn.expand("%:r")
-  vim.cmd('!./' .. output)
-end, { silent = true })
 

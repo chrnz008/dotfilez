@@ -61,9 +61,9 @@ end
           ['<C-d>'] = cmp.mapping.scroll_docs(4),
           ['<C-f>'] = cmp_action.luasnip_jump_forward(),
           ['<C-b>'] = cmp_action.luasnip_jump_backward(),
-           ['<Tab>'] = cmp.mapping(function(fallback)
+           ['<Tab>'] = cmp.mapping(function(fallback) --map tab to hover
   local luasnip = require('luasnip')
-
+--charans config
   if cmp.visible() then
     cmp.select_next_item({ behavior = cmp.SelectBehavior.Insert }) -- Select first LSP suggestion
   elseif luasnip.expand_or_jumpable() then
