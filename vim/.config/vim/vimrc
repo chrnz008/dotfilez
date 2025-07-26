@@ -24,6 +24,12 @@ command! W execute 'w !sudo tee % > /dev/null' <bar> edit!
 " Set 7 lines to the cursor - when moving vertically using j/k
 set so=7
 
+" Avoid garbled characters in Chinese language windows OS
+let $LANG='en'
+set langmenu=en
+source $VIMRUNTIME/delmenu.vim
+source $VIMRUNTIME/menu.vim
+
 "integration with system clipboard register
 "set clipboard=unnamedplus
 
@@ -69,6 +75,7 @@ set smartcase
 " Highlight search results
 set hlsearch
 
+
 " Makes search act like search in modern browsers
 set incsearch
 
@@ -87,15 +94,24 @@ set mat=2
 " No annoying sound on errors
 set noerrorbells
 set novisualbell
+set belloff=all
 set t_vb=
 set tm=500
 
+" Properly disable sound on errors on MacVim
+if has("gui_macvim")
+    autocmd GUIEnter * set vb t_vb=
+endif
+
 " Add a bit extra margin to the left
 set foldcolumn=1
-" set signcolumn=yes
-" highlight SignColumn ctermbg=NONE guibg=NONE
+" set colorcolumn=80
 
 " => Colors and Fonts
+
+"set guifont and size
+set guifont=Fixedsys:h9
+
 
 " Enable syntax highlighting
 syntax enable
@@ -104,7 +120,7 @@ syntax enable
 set regexpengine=0
 
 " Enable 256 colors palette in Gnome Terminal
-if $COLORTERM == 'kitty'
+if $COLORTERM == 'alacritty'
     set t_Co=256
 endif
 
@@ -118,11 +134,23 @@ set background=dark
 
 " Set extra options when running in GUI mode
 if has("gui_running")
-    set guioptions-=T
-    set guioptions-=e
+    set guioptions+=m "menu bar
+    set guioptions-=T "tool bar
+    set guioptions+=e "tab line gui or cli
+    "remove scrollbars
+    set guioptions-=g
+    set guioptions-=r
+    set guioptions-=L "v scroll during split
+
     set t_Co=256
     set guitablabel=%M\ %t
 endif
+
+" Set utf8 as standard encoding and en_US as the standard language
+set encoding=utf8
+
+" Use Unix as the standard file type
+set ffs=unix,dos,mac
 
 " => Files, backups and undo
 
@@ -135,7 +163,7 @@ set noswapfile
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Text, tab and indent related
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Use spaces instead of tabs
+" Use tabs instead of spaces
 set noexpandtab
 
 " Be smart when using tabs ;)
@@ -151,9 +179,12 @@ set tw=500
 
 set ai "Auto indent
 set si "Smart indent
-autocmd FileType c,cpp setlocal cindent "c-style indent
 set wrap "Wrap lines
 
+autocmd FileType c,cpp setlocal cindent "c-style indent
+
+" Return to last edit position when opening files (You want this!)
+au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 
 " => Helper functions
 
@@ -166,15 +197,14 @@ function! HasPaste()
 endfunction
 
 "vim plug
- call plug#begin('~/.vim/plugged')
+call plug#begin('~/.vim/plugged')
 
-" Plug 'morhetz/gruvbox'
+"Plug 'morhetz/gruvbox'
 Plug 'jiangmiao/auto-pairs'
-" Plug 'sheerun/vim-polyglot'
 "Plug 'preservim/nerdtree'
 "Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 "Plug 'junegunn/fzf.vim'
-"Plug 'itchyny/lightline.vim'
+"Plug 'vim-airline/vim-airline'
 "Plug 'dense-analysis/ale'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'tpope/vim-commentary'
@@ -182,15 +212,45 @@ Plug 'tpope/vim-surround'
 
 call plug#end()
 
-"cp
-autocmd BufNewFile *.cpp 0r ~/prgmng/tmplt/template.cpp
-set makeprg=g++\ -std=c++17\ -Wall\ -O2\ %\ -o\ %<
+
 
 "extra config added for windows but some may work for linux too
-" ->keymaps
+
+" ->KEYMAPS
+
 " different keymaps for easy peasy coding
+
+"template
+autocmd BufNewFile *.cpp 0r C:/Users\chr_58/Desktop/dotfilez/tmplt/template.cpp
+
+"terminal maps
+"To map <Esc> to exit terminal-mode: >vim
+    :tnoremap <Esc> <C-\><C-n>
 
 "hlsearch creates an annoyance so instead of noh press ese esc
 nnoremap <Esc><Esc> :noh<Return><Esc>
 
+" => Moving around, tabs, windows and buffers
+
+" Smart way to move between windows
+map <C-j> <C-W>j
+map <C-k> <C-W>k
+map <C-h> <C-W>h
+map <C-l> <C-W>l
+
+" Close the current buffer
+map <leader>bd :Bclose<cr>:tabclose<cr>gT
+
+" Close all the buffers
+map <leader>ba :bufdo bd<cr>
+
+map <leader>l :bnext<cr>
+map <leader>h :bprevious<cr>
+
+" Useful mappings for managing tabs
+map <leader>tn :tabnew<cr>
+map <leader>to :tabonly<cr>
+map <leader>tc :tabclose<cr>
+map <leader>tm :tabmove
+map <leader>t<leader> :tabnext<cr>
 
