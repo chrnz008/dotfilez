@@ -220,6 +220,7 @@ call plug#end()
 
 " different keymaps for easy peasy coding
 
+let mapleader=' '
 "template
 autocmd BufNewFile *.cpp 0r C:/Users\chr_58/Desktop/dotfilez/tmplt/template.cpp
 
