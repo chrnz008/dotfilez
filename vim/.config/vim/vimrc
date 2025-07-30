@@ -110,7 +110,7 @@ set foldcolumn=1
 " => Colors and Fonts
 
 "set guifont and size
-set guifont=Fixedsys:h9
+set guifont=Fixedsys:h12
 
 
 " Enable syntax highlighting
@@ -144,6 +144,9 @@ if has("gui_running")
 
     set t_Co=256
     set guitablabel=%M\ %t
+
+	"fat cursor
+	set gcr=a:block
 endif
 
 " Set utf8 as standard encoding and en_US as the standard language
@@ -179,7 +182,7 @@ set tw=500
 
 set ai "Auto indent
 set si "Smart indent
-set wrap "Wrap lines
+set nowrap "Wrap lines
 
 autocmd FileType c,cpp setlocal cindent "c-style indent
 
@@ -201,7 +204,7 @@ call plug#begin('~/.vim/plugged')
 
 "Plug 'morhetz/gruvbox'
 Plug 'jiangmiao/auto-pairs'
-"Plug 'preservim/nerdtree'
+" Plug 'preservim/nerdtree'
 "Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 "Plug 'junegunn/fzf.vim'
 "Plug 'vim-airline/vim-airline'
@@ -220,9 +223,14 @@ call plug#end()
 
 " different keymaps for easy peasy coding
 
-let mapleader=' '
 "template
 autocmd BufNewFile *.cpp 0r C:/Users\chr_58/Desktop/dotfilez/tmplt/template.cpp
+
+let mapleader=' '
+
+"nerdtree toggle
+" nnoremap <leader>e :NERDTreeToggle<CR>
+
 
 "terminal maps
 "To map <Esc> to exit terminal-mode: >vim
@@ -230,28 +238,4 @@ autocmd BufNewFile *.cpp 0r C:/Users\chr_58/Desktop/dotfilez/tmplt/template.cpp
 
 "hlsearch creates an annoyance so instead of noh press ese esc
 nnoremap <Esc><Esc> :noh<Return><Esc>
-
-" => Moving around, tabs, windows and buffers
-
-" Smart way to move between windows
-map <C-j> <C-W>j
-map <C-k> <C-W>k
-map <C-h> <C-W>h
-map <C-l> <C-W>l
-
-" Close the current buffer
-map <leader>bd :Bclose<cr>:tabclose<cr>gT
-
-" Close all the buffers
-map <leader>ba :bufdo bd<cr>
-
-map <leader>l :bnext<cr>
-map <leader>h :bprevious<cr>
-
-" Useful mappings for managing tabs
-map <leader>tn :tabnew<cr>
-map <leader>to :tabonly<cr>
-map <leader>tc :tabclose<cr>
-map <leader>tm :tabmove
-map <leader>t<leader> :tabnext<cr>
 

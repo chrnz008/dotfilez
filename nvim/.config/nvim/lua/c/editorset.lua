@@ -1,3 +1,5 @@
+--fat cursor
+set gcr=""
 --
 vim.opt.nu= true
 vim.opt.rnu= true
