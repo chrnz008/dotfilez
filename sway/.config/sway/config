@@ -8,7 +8,7 @@
 ### Variables
 #
 # Logo key. Use Mod1 for Alt.
-set $mod Mod4
+set $mod Mod1
 # Home row direction keys, like vim
 set $left h
 set $down j
@@ -16,6 +16,8 @@ set $up k
 set $right l
 # Your preferred terminal emulator
 set $term kitty
+#@charan browser
+set $browser firefox
 # Your preferred application launcher
 set $menu rofi -show drun
 # set $menu wofi --show drun
@@ -25,6 +27,7 @@ set $menu rofi -show drun
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 exec_always swaybg -i ~/dotfilez/wallpprs/feather.png -m fill
+# output * bg ~/dotfilez/wallpprs/mandelbrot.jpg fill --this is same as above
 #good for yar eyes
 exec_always wlsunset -t 3500 -T 3501 -l 0 -L 0
 
@@ -79,6 +82,9 @@ input "type:keyboard" {
 
     # Kill focused window
     bindsym $mod+Shift+q kill
+
+	#browser @charan
+	bindsym $mod+Shift+f exec $browser
 
     # Start your launcher
     bindsym $mod+d exec $menu
