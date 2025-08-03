@@ -24,6 +24,8 @@ set $menu rofi -show drun
 # set $menu wmenu-run
 
 ### Output configuration
+#cursor style
+seat * xcursor_theme volantes_light_cursors 24
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 exec_always swaybg -i ~/dotfilez/wallpprs/feather.png -m fill
@@ -272,5 +274,4 @@ bar {
 
 bindsym $mod+backslash exec swaylock -c 000000
 include /etc/sway/config.d/*
-
 
