@@ -1,5 +1,6 @@
-"author :charan
+"author:charan
 "gmail:charancuz008@gmail.com
+"
 " => General
 " Sets how many lines of history VIM has to remember
 set history=500
@@ -13,10 +14,6 @@ set autoread
 au FocusGained,BufEnter * silent! checktime
 
 
-" :W sudo saves the file
-" (useful for handling the permission-denied error)
-command! W execute 'w !sudo tee % > /dev/null' <bar> edit!
-
 "vim plug --ontop
 call plug#begin('~/.vim/plugged')
 
@@ -26,8 +23,7 @@ Plug 'jiangmiao/auto-pairs'
 "Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 "Plug 'junegunn/fzf.vim'
 "Plug 'vim-airline/vim-airline'
-"Plug 'dense-analysis/ale'
-Plug 'christoomey/vim-tmux-navigator'
+" Plug 'christoomey/vim-tmux-navigator'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
 Plug 'vimwiki/vimwiki'
@@ -38,16 +34,10 @@ call plug#end()
 " => VIM user interface
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "fat cursor
-	set gcr=a:block
+set gcr=a:block
 
 " Set 7 lines to the cursor - when moving vertically using j/k
 set so=7
-
-" Avoid garbled characters in Chinese language windows OS
-let $LANG='en'
-set langmenu=en
-source $VIMRUNTIME/delmenu.vim
-source $VIMRUNTIME/menu.vim
 
 "integration with system clipboard register
 "set clipboard=unnamedplus
@@ -117,20 +107,12 @@ set belloff=all
 set t_vb=
 set tm=500
 
-" Properly disable sound on errors on MacVim
-if has("gui_macvim")
-    autocmd GUIEnter * set vb t_vb=
-endif
 
 " Add a bit extra margin to the left
 set foldcolumn=1
 " set colorcolumn=80
 
 " => Colors and Fonts
-
-"set guifont and size
-set guifont=Fixedsys:h12
-
 
 " Enable syntax highlighting
 syntax enable
@@ -139,7 +121,7 @@ syntax enable
 set regexpengine=0
 
 "termguicolors
-" se tgc
+se tgc
 
 " Enable 256 colors palette in Gnome Terminal
 if $COLORTERM == 'alacritty'
@@ -147,29 +129,12 @@ if $COLORTERM == 'alacritty'
 endif
 
 try
-    colorscheme retrobox 
+    colorscheme koehler 
 catch
 endtry
 
 set background=dark
 
-
-" Set extra options when running in GUI mode
-if has("gui_running")
-    set guioptions+=m "menu bar
-    set guioptions-=T "tool bar
-    set guioptions+=e "tab line gui or cli
-    "remove scrollbars
-    set guioptions-=g
-    set guioptions-=r
-    set guioptions-=L "v scroll during split
-
-    set t_Co=256
-    set guitablabel=%M\ %t
-
-	"fat cursor
-	set gcr=a:block
-endif
 
 " Set utf8 as standard encoding and en_US as the standard language
 set encoding=utf8
@@ -198,9 +163,6 @@ set smarttab
 set shiftwidth=4
 set tabstop=4
 
-" Linebreak on 500 characters
-set lbr
-set tw=500
 
 set ai "Auto indent
 set si "Smart indent
@@ -208,23 +170,14 @@ set nowrap "Wrap lines
 
 autocmd FileType c,cpp setlocal cindent "c-style indent
 
-" Return to last edit position when opening files (You want this!)
-au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
-
-" => Helper functions
-
-" Returns true if paste mode is enabled
-function! HasPaste()
-    if &paste
-        return 'PASTE MODE  '
-    endif
-    return ''
-endfunction
-
 "->plgn-spe-conf
 
 "vimwiki
-let g:vimwiki_list = [{'path': 'G:/My Drive/notes', 'syntax': 'markdown','ext': '.md'}]
+let g:vimwiki_list = [{'path': 'G:/My Drive/notes', 'syntax': 'markdown','ext': '.md'}] ",
+			" \{'path': 'G:/My Drive/notes/prgmng', 'syntax': 'markdown','ext': '.md','index': 'prgmng'},
+			" \{'path': 'G:/My Drive/notes/acad', 'syntax': 'markdown','ext': '.md','index': 'acad'}
+			" \]
+se cocu=nc
 
 "nerdtree toggle
 " nnoremap <leader>e :NERDTreeToggle<CR>
@@ -239,6 +192,11 @@ autocmd BufNewFile *.cpp 0r C:/Users\chr_58/Desktop/dotfilez/tmplt/template.cpp
 
 let mapleader=' '
 
+"easily switch windows
+map <C-j> <C-W>j
+map <C-k> <C-W>k
+map <C-h> <C-W>h
+map <C-l> <C-W>l
 
 "terminal maps
 "To map <Esc> to exit terminal-mode: >vim

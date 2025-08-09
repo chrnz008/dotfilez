@@ -1,0 +1,31 @@
+"author:charan
+"gmail:charancuz008@gmail.com
+"
+"set guifont and size
+set guifont=Fixedsys:h12
+
+colorscheme retrobox 
+
+"fat cursor
+set gcr=a:block
+
+" Set extra options when running in GUI mode
+if has("gui_running")
+    set guioptions+=m "menu bar
+    set guioptions-=T "tool bar
+    set guioptions+=e "tab line gui or cli
+    "remove scrollbars
+    set guioptions-=g
+    set guioptions-=r
+    set guioptions-=L "v scroll during split
+
+    set t_Co=256
+    set guitablabel=%M\ %t
+
+endif
+
+" Properly disable sound on errors on MacVim
+if has("gui_macvim")
+    autocmd GUIEnter * set vb t_vb=
+endif
+

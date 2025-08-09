@@ -1,8 +1,13 @@
 [terminal.shell]
 program = "C:\\Windows\\System32\\cmd.exe"
+# program = "C:\\Program Files\\Vim\\vim91\\vim.exe"
 args = []
 
 [general]
+# import = [
+#     "C:\\Users\\chr_58\\Allthemes\\themes\\gruvbox_darker.toml"
+	
+# ]
 # $HOME/.config/alacritty/alacritty.toml
 # by Rito Ghosh 2023-10-06
 #@charan place the config in Appdata\Roaming\alacritty
@@ -50,6 +55,17 @@ offset = { x = 0, y = 1 }
 [cursor]
 style = "Block"
 unfocused_hollow = false
+
+# [[keyboard.bindings]]
+# key = "F11"
+# action = "ToggleFullscreen"
+
+[keyboard]
+
+bindings = [
+	{key="F11",action="ToggleFullscreen"},
+# { key = "Space", mods = "Control", chars = "\u0000"  }	
+]
 
 [terminal]
 
