@@ -1,13 +1,16 @@
+[env]
+TERM= "screen-256color"
+
 [terminal.shell]
 program = "C:\\Windows\\System32\\cmd.exe"
 # program = "C:\\Program Files\\Vim\\vim91\\vim.exe"
 args = []
 
 [general]
-# import = [
-#     "C:\\Users\\chr_58\\Allthemes\\themes\\gruvbox_darker.toml"
-	
-# ]
+import = [
+    "C:\\Users\\chr_58\\Desktop\\dotfilez\\win\\alacritty\\blood_moon.toml"
+    # "C:\\Users\\chr_58\\Desktop\\dotfilez\\win\\alacritty\\solarized_light.toml"
+	]
 # $HOME/.config/alacritty/alacritty.toml
 # by Rito Ghosh 2023-10-06
 #@charan place the config in Appdata\Roaming\alacritty
@@ -33,7 +36,7 @@ working_directory = "C:\\Users\\chr_58"
 
 [window]
 
-opacity = 0.9
+opacity = 0.96
 
 padding.x = 0
 padding.y = 0
@@ -64,7 +67,6 @@ unfocused_hollow = false
 
 bindings = [
 	{key="F11",action="ToggleFullscreen"},
-# { key = "Space", mods = "Control", chars = "\u0000"  }	
 ]
 
 [terminal]
