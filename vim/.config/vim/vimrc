@@ -192,7 +192,7 @@ nnoremap <leader>e :NERDTreeToggle<CR>
 " different keymaps for easy peasy coding
 
 "template
-autocmd BufNewFile *.cpp 0r C:/Users\chr_58/Desktop/dotfilez/tmplt/template.cpp
+autocmd BufNewFile *.cpp 0r C:/Users\chr_58/Desktop/dotfilez/tmplt/cp/template.cpp
 
 
 "easily switch windows

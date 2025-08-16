@@ -4,7 +4,7 @@
 "set guifont and size
 set guifont=Fixedsys:h12
 
-colorscheme retrobox 
+" colorscheme retrobox 
 
 "fat cursor
 set gcr=a:block
@@ -29,3 +29,5 @@ if has("gui_macvim")
     autocmd GUIEnter * set vb t_vb=
 endif
 
+"competitive programming stuff
+set makeprg=g++\ %\ -o\ %<
