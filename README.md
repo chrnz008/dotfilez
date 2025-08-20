@@ -6,11 +6,12 @@ my dot config files
 
 >packages i cant live without
  
--crossplatform
+- crossplatform
 
 1. vim
 2. neovim
 3. gnucoreutils
+4. yazi
 
 - windows
 1. clink

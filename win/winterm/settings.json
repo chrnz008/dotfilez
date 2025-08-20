@@ -72,7 +72,7 @@
                 "useAcrylic": true
             },
             {
-                "backgroundImage": "desktopWallpaper",
+                "backgroundImage": null,
                 "backgroundImageOpacity": 0.6,
                 "backgroundImageStretchMode": "fill",
                 "colorScheme": "Solarized Dark",
@@ -88,7 +88,7 @@
                 "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
                 "hidden": false,
                 "name": "Command Prompt",
-                "opacity": 96,
+                "opacity": 100,
                 "padding": "0, 0, 0, 0 ",
                 "scrollbarState": "hidden"
             },

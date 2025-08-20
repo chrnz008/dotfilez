@@ -1,19 +1,9 @@
-"author:charan
-"gmail:charancuz008@gmail.com
-"
-" => General
+"-- Author: charan
+"-- Gmail:  charancuz008@gmail.com
+
+"  General
 let mapleader=' '
-" Sets how many lines of history VIM has to remember
-set history=500
-
-" Enable filetype plugins
-filetype plugin on
-filetype indent on
-
-" Set to auto read when a file is changed from the outside
-set autoread
-au FocusGained,BufEnter * silent! checktime
-
+set history=500 " Sets how many lines of history VIM has to remember
 
 "vim plug --ontop
 call plug#begin('~/.vim/plugged')
@@ -25,84 +15,43 @@ Plug 'preservim/nerdtree'
 "Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 "Plug 'junegunn/fzf.vim'
 "Plug 'vim-airline/vim-airline'
-" Plug 'christoomey/vim-tmux-navigator'
+Plug 'christoomey/vim-tmux-navigator' "somehow making ctrl-w to easy maps
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
 Plug 'vimwiki/vimwiki'
 Plug 'mattn/calendar-vim'
-" Plug 'itchyny/calendar.vim'
 
 call plug#end()
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => VIM user interface
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"fat cursor
-set gcr=a:block 
-
-" Set 7 lines to the cursor - when moving vertically using j/k
+" VIM UI
+"-------------------------------------------------------------
+set gcr=a:block "fat cursor --vim.o.guicursor=""
 set so=7
+"set clipboard=unnamedplus "integration with system clipboard register
+set shortmess+=I  "disables the start page
+set wildmenu " Turn on the Wild menu
+set ruler " Always show current position
+set number " show line numbers
+set relativenumber " show relativeline numbers
+set cmdheight=1 " Height of the command bar
+set foldcolumn=1 " Add a bit extra margin to the left
+" set colorcolumn=80
 
-"integration with system clipboard register
-"set clipboard=unnamedplus
 
-"disables the start page
-set shortmess+=I
-
-" Turn on the Wild menu
-set wildmenu
-
-" Ignore compiled files
-set wildignore=*.o,*~,*.pyc
-if has("win16") || has("win32")
-    set wildignore+=.git\*,.hg\*,.svn\*
-else
-    set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/.DS_Store
-endif
-
-" Always show current position
-set ruler
-
-" show line numbers
-set number
-
-" show relativeline numbers
-set relativenumber
-
-" Height of the command bar
-set cmdheight=1
-
-" A buffer becomes hidden when it is abandoned
-set hid
-
-" Configure backspace so it acts as it should act
-set backspace=eol,start,indent
+" VIM UX
+"-------------------------------------------------------------
+set hid " A buffer becomes hidden when it is abandoned
+set backspace=eol,start,indent " Configure backspace so it acts as it should act
 set whichwrap+=<,>,h,l
-
-" Ignore case when searching
-set ignorecase
-
-" When searching try to be smart about cases
-set smartcase
-
-" Highlight search results
-set hlsearch
-
-
-" Makes search act like search in modern browsers
-set incsearch
-
-" Don't redraw while executing macros (good performance config)
-set lazyredraw
-
-" For regular expressions turn magic on
-set magic
-
-" Show matching brackets when text indicator is over them
-set noshowmatch
-" How many tenths of a second to blink when matching brackets
-" set mat=2
-
+set ignorecase " Ignore case when searching
+set smartcase " When searching try to be smart about cases
+set hlsearch " Highlight search results
+set incsearch " Makes search act like search in modern browsers
+set lazyredraw " Don't redraw while executing macros (good performance config)
+set magic " For regular expressions turn magic on
+set noshowmatch " Show matching brackets when text indicator is over them
+" set mat=2 "How many tenths of a second to blink when matching brackets
+"
 " No annoying sound on errors
 set noerrorbells
 set novisualbell
@@ -111,99 +60,65 @@ set t_vb=
 set tm=500
 
 
-" Add a bit extra margin to the left
-set foldcolumn=1
-" set colorcolumn=80
-
-" => Colors and Fonts
-
-" Enable syntax highlighting
-syntax enable
-
-" Set regular expression engine automatically
-set regexpengine=0
-
-"termguicolors
-se tgc
-
-" Enable 256 colors palette in Gnome Terminal
-if $COLORTERM == 'alacritty'
+"Colors and Fonts
+"-------------------------------------------------------------
+syntax enable " Enable syntax highlighting
+set regexpengine=0 " Set regular expression engine automatically
+se tgc "termguicolors
+if $COLORTERM == 'alacritty' " Enable 256 colors palette 
     set t_Co=256
 endif
-
 set background=light "dark
 
 "solarized
 let g:solarized_statusline = "flat"
 colorscheme solarized8_high
 
+" Files, backups and undo
+" ------------------------------------------------------------
+filetype plugin on " Enable filetype plugins
+filetype indent on
+set autoread  " Set to auto read when a file is changed from the outside
+set encoding=utf8 " Set utf8 as standard encoding and en_US as the standard language
+set ffs=unix,dos,mac " Use Unix as the standard file type
 
-
-" Set utf8 as standard encoding and en_US as the standard language
-set encoding=utf8
-
-" Use Unix as the standard file type
-set ffs=unix,dos,mac
-
-" => Files, backups and undo
-
-" Turn backup off, since most stuff is in SVN, git etc. anyway...
-set nobackup
+set nobackup " Turn backup off
 set nowb
-set noswapfile
+set noswapfile "no swaps
 
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Text, tab and indent related
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Use tabs instead of spaces
+" Text, tab and indent related
+"-------------------------------------------------------------- 
 set noexpandtab
-
-" Be smart when using tabs ;)
 set smarttab
-
-" 1 tab == 4 spaces
 set shiftwidth=4
 set tabstop=4
-
-
 set ai "Auto indent
 set si "Smart indent
-set nowrap "Wrap lines
-"misc
+set nowrap "noWrap lines
+
+"-- misc
+"-------------------------------------------------------------- 
 se nojoinspaces "J doesnt join spaces 
+se concealcursor=nc "conceals cursor 
 autocmd FileType c,cpp setlocal cindent "c-style indent
 
-"->plgn-spe-conf
+"-- plgn-spe-conf
+"-------------------------------------------------------------- 
+"
+let g:vimwiki_list = [{'path': 'G:/My Drive/notes', 'syntax': 'markdown','ext': '.md'}]  "vimwiki
 
-"vimwiki
-let g:vimwiki_list = [{'path': 'G:/My Drive/notes', 'syntax': 'markdown','ext': '.md','diary_frequency':'weekly'}] ",
-			" \{'path': 'G:/My Drive/notes/prgmng', 'syntax': 'markdown','ext': '.md','index': 'prgmng'},
-			" \{'path': 'G:/My Drive/notes/acad', 'syntax': 'markdown','ext': '.md','index': 'acad'}
-			" \]
-se cocu=nc
-
-"nerdtree toggle
-nnoremap <leader>e :NERDTreeToggle<CR>
+nnoremap <leader>e :NERDTreeToggle<CR>  | "nerdtree toggle
 
 
 " ->KEYMAPS
 
 " different keymaps for easy peasy coding
 
-"template
-autocmd BufNewFile *.cpp 0r C:/Users\chr_58/Desktop/dotfilez/tmplt/cp/template.cpp
+autocmd BufNewFile *.cpp 0r C:/Users/chr_58/Desktop/dotfilez/tmplt/cp/template.cpp  "template
+
+:tnoremap <Esc> <C-\><C-n> "To map <Esc> to exit terminal-mode: >vim
+
+nnoremap <Esc><Esc> :noh<Return><Esc>  "hlsearch creates an annoyance so instead of noh press ese esc
 
 
-"easily switch windows
-" nnoremap <C-j> <C-w>j
-" nnoremap <C-k> <C-w>k
-" nnoremap <C-h> <C-w>h
-" nnoremap <C-l> <C-w>l
-
-"terminal maps
-"To map <Esc> to exit terminal-mode: >vim
-    :tnoremap <Esc> <C-\><C-n>
-
-"hlsearch creates an annoyance so instead of noh press ese esc
-nnoremap <Esc><Esc> :noh<Return><Esc>
