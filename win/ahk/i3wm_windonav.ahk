@@ -5,6 +5,9 @@
 !l::Send, #{Right}   ; Alt + L → Win + Right
 
 ;quit windows
-!q::  ; Alt+Q
-    WinClose, A  ; Close the active window
+!q::WinClose, A ; Close the active window ; Alt+Q 
+return
+
+; Open Alacritty terminal
+!t::Run, "C:\Program Files\Alacritty\alacritty.exe"
 return

@@ -2,8 +2,7 @@
 TERM= "screen-256color"
 
 [terminal.shell]
-program = "C:\\Windows\\System32\\cmd.exe"
-# program = "C:\\Program Files\\Vim\\vim91\\vim.exe"
+ program = "C:\\Windows\\System32\\cmd.exe"
 args = []
 
 [general]
@@ -36,13 +35,14 @@ working_directory = "C:\\Users\\chr_58"
 
 [window]
 
-opacity = 0.96
+opacity = 0.96#1
 
 padding.x = 0
 padding.y = 0
 
 decorations = "Full"#"None"
 decorations_theme_variant = "Dark" # "Light"
+# level = "AlwaysOnTop"
 
 [font]
 
@@ -67,6 +67,8 @@ unfocused_hollow = false
 
 bindings = [
 	{key="F11",action="ToggleFullscreen"},
+	# {key="l",mods="Control",action="ClearHistory"}
+	{ key = "N", mods = "Control|Shift", action = "CreateNewWindow" }
 ]
 
 [terminal]

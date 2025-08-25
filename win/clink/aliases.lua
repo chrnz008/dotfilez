@@ -1,0 +1,1 @@
+AppData/Local/clink/aliases.lua
