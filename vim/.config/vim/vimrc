@@ -9,7 +9,7 @@ set history=500 " Sets how many lines of history VIM has to remember
 call plug#begin('~/.vim/plugged')
 
 " Plug 'morhetz/gruvbox'
-Plug 'lifepillar/vim-solarized8'
+" Plug 'lifepillar/vim-solarized8'
 Plug 'jiangmiao/auto-pairs'
 Plug 'preservim/nerdtree'
 "Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
@@ -28,18 +28,21 @@ call plug#end()
 set gcr=a:block "fat cursor --vim.o.guicursor=""
 set so=7
 "set clipboard=unnamedplus "integration with system clipboard register
+set title " 
 set shortmess+=I  "disables the start page
 set wildmenu " Turn on the Wild menu
 set ruler " Always show current position
 set number " show line numbers
 set relativenumber " show relativeline numbers
 set cmdheight=1 " Height of the command bar
+" set laststatus=2 " always show statusline 
 set foldcolumn=1 " Add a bit extra margin to the left
 " set signcolumn=yes
-" set colorcolumn=80
+set colorcolumn=80
 
 " VIM UX
 "-------------------------------------------------------------
+" set nocompatible "(messin with :intro)
 set hid " A buffer becomes hidden when it is abandoned
 set backspace=eol,start,indent " Configure backspace so it acts as it should act
 set whichwrap+=<,>,h,l
@@ -69,11 +72,12 @@ se tgc "termguicolors
 if $COLORTERM == 'alacritty' " Enable 256 colors palette 
     set t_Co=256
 endif
-set background=light "dark
+set background=dark"light 
 
 "solarized
-let g:solarized_statusline = "flat"
-colorscheme solarized8_high
+" let g:solarized_statusline = "flat"
+" colorscheme solarized8_high
+colo retrobox
 
 " Files, backups and undo
 " ------------------------------------------------------------
@@ -118,8 +122,7 @@ nnoremap <leader>e :NERDTreeToggle<CR>  | "nerdtree toggle
 
 autocmd BufNewFile *.cpp 0r C:/Users/chr_58/Desktop/dotfilez/tmplt/cp/template.cpp  "template
 
-:tnoremap <Esc> <C-\><C-n> "To map <Esc> to exit terminal-mode: >vim
+:tnoremap <Esc> <C-\><C-n> |"To map <Esc> to exit terminal-mode: >vim
 
-nnoremap <Esc><Esc> :noh<Return><Esc>  "hlsearch creates an annoyance so instead of noh press ese esc
-
+nnoremap <Esc><Esc> :noh<Return><Esc> | " hlsearch creates an annoyance so instead of noh press ese esc
 
