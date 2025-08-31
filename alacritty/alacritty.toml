@@ -2,14 +2,16 @@
 TERM= "screen-256color"
 
 [terminal.shell]
- program = "C:\\Windows\\System32\\cmd.exe"
- # program = "C:\\msys64\\usr\\bin\\zsh.exe"
+program = "C:\\Windows\\System32\\cmd.exe"
+# program = "C:\\msys64\\usr\\bin\\zsh.exe"
+# program = "C:\\Users\\chr_58\\AppData\\Local\\Programs\\nu\\bin\\nu.exe "
 args = []
 
 [general]
 import = [
-    "C:\\Users\\chr_58\\AppData\\Roaming\\alacritty\\gnome_terminal.toml"
-	]
+	"C:\\Users\\chr_58\\AppData\\Roaming\\alacritty\\gnome_terminal.toml"
+# "C:\\Users\\chr_58\\AppData\\Roaming\\alacritty\\ubuntu.toml"
+]
 # $HOME/.config/alacritty/alacritty.toml
 # by Rito Ghosh 2023-10-06
 #@charan place the config in Appdata\Roaming\alacritty
@@ -30,10 +32,11 @@ import = [
 # Below is my initial set-up. The TOML homepage (https://toml.io/en/v1.0.0) was very helpful in figuring this out. 
 # I put the file alacritty.toml in $HOME/.config/alacritty. However it can be kept anywhere among the places mentioned in
 # https://github.com/alacritty/alacritty/tree/master#configuration
-    
+
 working_directory = "C:\\Users\\chr_58"
 
 [window]
+# title="alc"
 
 opacity = 1
 
@@ -67,10 +70,10 @@ unfocused_hollow = false
 [keyboard]
 
 bindings = [
-	{key="F11",action="ToggleFullscreen"},
-	{ key = "N", mods = "Control|Shift", action = "CreateNewWindow" },
-	# { key = "N", mods = "Control|Shift", action = "SpawnNewInstance" },
-	# { key = "Space", mods = "Control", action = "None" },
+{key="F11",action="ToggleFullscreen"},
+{ key = "N", mods = "Control|Shift", action = "CreateNewWindow" },
+# { key = "N", mods = "Control|Shift", action = "SpawnNewInstance" },
+# { key = "Space", mods = "Control", action = "None" },
 ]
 
 [terminal]
@@ -80,3 +83,14 @@ bindings = [
 # small box when a HEX is detected by the editor.
 #tips for @chrn
 # ctrl 0 for resetting font size
+
+# [[hints.enabled]] #just use the defaults
+# # command = "xdg-open" # On Linux/BSD
+# # command = "open" # On macOS
+# command = { program = "cmd", args = [ "/c", "start", ""  ]  } # On Windows
+# hyperlinks = true
+# post_processing = true
+# persist = false
+# mouse.enabled = true
+# binding = { key = "O", mods = "Control|Shift"  }
+# # regex = "(ipfs:|ipns:|magnet:|mailto:|gemini://|gopher://|https://|http://|news:|file:|git://|ssh:|ftp://)[^\u0000-\u001F\u007F-\u009F<>\"\\s{-}\\^6363`\\\\]+""`]"
