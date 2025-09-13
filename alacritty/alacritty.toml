@@ -2,15 +2,14 @@
 TERM= "screen-256color"
 
 [terminal.shell]
-program = "C:\\Windows\\System32\\cmd.exe"
-# program = "C:\\msys64\\usr\\bin\\zsh.exe"
-# program = "C:\\Users\\chr_58\\AppData\\Local\\Programs\\nu\\bin\\nu.exe "
+# program = "C:\\Windows\\System32\\cmd.exe"
+program= "C:\\Program Files\\nu\\bin\\nu.exe"
 args = []
+# args = ["/k", "title ~"]
 
 [general]
 import = [
 	"C:\\Users\\chr_58\\AppData\\Roaming\\alacritty\\gnome_terminal.toml"
-# "C:\\Users\\chr_58\\AppData\\Roaming\\alacritty\\ubuntu.toml"
 ]
 # $HOME/.config/alacritty/alacritty.toml
 # by Rito Ghosh 2023-10-06
@@ -44,6 +43,10 @@ padding.x = 0
 padding.y = 0
 dynamic_padding = true #kinda test
 
+#title
+title="~"
+dynamic_title=true
+
 decorations ="Full"#"None"
 decorations_theme_variant = "Dark" # "Light"
 # level = "AlwaysOnTop"
@@ -72,6 +75,7 @@ unfocused_hollow = false
 bindings = [
 {key="F11",action="ToggleFullscreen"},
 { key = "N", mods = "Control|Shift", action = "CreateNewWindow" },
+{ key = "Space", mods="Control",action = "ToggleViMode" }
 # { key = "N", mods = "Control|Shift", action = "SpawnNewInstance" },
 # { key = "Space", mods = "Control", action = "None" },
 ]

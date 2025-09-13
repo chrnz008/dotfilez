@@ -1,0 +1,17 @@
+{
+  "languageserver": {
+    "dart": {
+      "command": "C:\\chrdev\\flutter\\bin\\cache\\dart-sdk\\bin\\dart.exe",
+      "args": ["language-server"],
+      "filetypes": ["dart"],
+      "initializationOptions": {
+        "closingLabels": true,
+        "flutterOutline": true,
+        "onlyAnalyzeProjectsWithOpenFiles": false,
+        "outline": true,
+        "suggestFromUnimportedLibraries": true
+      }
+	}
+  }
+}
+

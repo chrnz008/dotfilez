@@ -8,10 +8,8 @@ set history=500 " Sets how many lines of history VIM has to remember
 "vim plug --ontop
 call plug#begin('~/.vim/plugged')
 
-" Plug 'morhetz/gruvbox'
-" Plug 'lifepillar/vim-solarized8'
 Plug 'jiangmiao/auto-pairs'
-Plug 'preservim/nerdtree'
+" Plug 'preservim/nerdtree'
 "Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 "Plug 'junegunn/fzf.vim'
 "Plug 'vim-airline/vim-airline'
@@ -28,7 +26,7 @@ call plug#end()
 set gcr=a:block "fat cursor --vim.o.guicursor=""
 set so=7
 "set clipboard=unnamedplus "integration with system clipboard register
-set title " 
+set notitle " 
 set shortmess+=I  "disables the start page
 set wildmenu " Turn on the Wild menu
 set ruler " Always show current position
@@ -74,10 +72,19 @@ if $COLORTERM == 'alacritty' " Enable 256 colors palette
 endif
 set background=dark"light 
 
-"solarized
-" let g:solarized_statusline = "flat"
-" colorscheme solarized8_high
 colo retrobox
+
+"charans custom colorscheme
+" colo default
+" hi Normal guibg=#1c1c1c ctermfg=187 ctermbg=234 guifg=#ebdbb2 "guibg=#1c1c1c
+" hi NonText ctermfg=239 guifg=#504945
+" hi TabLine cterm=NONE ctermfg=102 ctermbg=237 guifg=#a89984 guibg=#3c3836
+" hi TabLineFill cterm=NONE ctermfg=187 ctermbg=237 guifg=#ebdbb2 guibg=#3c3836
+" hi TabLineSel cterm=bold ctermfg=230 ctermbg=234 gui=bold guifg=#fbf1c7 guibg=#1c1c1c
+" hi VertSplit cterm=NONE
+
+" se fillchars+=vert:\ "removes that wierd | separtor during vsp
+" hi FoldColumn guibg=NONE
 
 " Files, backups and undo
 " ------------------------------------------------------------
@@ -113,7 +120,7 @@ autocmd FileType c,cpp setlocal cindent "c-style indent
 "
 let g:vimwiki_list = [{'path': 'G:/My Drive/notes', 'syntax': 'markdown','ext': '.md'}]  "vimwiki
 
-nnoremap <leader>e :NERDTreeToggle<CR>  | "nerdtree toggle
+" nnoremap <leader>e :NERDTreeToggle<CR>  | "nerdtree toggle
 
 
 " ->KEYMAPS

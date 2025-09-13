@@ -1,0 +1,578 @@
+where ls
+which ls
+which hello
+nvim
+ls -a
+nefoetch
+neofetch
+git
+exit
+where nu
+which nu
+vim AppData\Roaming\alacritty
+exit
+ls
+neofetch
+help
+vim
+ls
+ls -a
+tmux
+pacman 
+pacman -S tmux
+tmux
+pacman -Rns tmux
+ls -a
+neofetch
+ls 
+cd AppData\Roaming\nushell\
+ls
+vim config.nu
+ls
+vim env.nu
+k
+vim config.nu
+source 
+exit
+ls
+exi
+exit
+ls
+exit
+cmd
+exit
+vi
+vim
+nvim
+ls
+dir
+ls -a
+git
+ls -a
+cp
+ls -a
+neofetch
+cd 
+cd `Application Data`
+cd AppData\
+cd
+ls
+ls -a
+neofetch
+exit
+vim AppData\Roaming\alacritty\alacritty.toml
+ls
+ls -a
+neofetch
+winget remove nushell
+exit
+ls
+ls -a
+vim
+vim AppData\Roaming\alacritty\alacritty.toml
+vim AppData\Roaming\nushell\config.nu
+exit
+nu
+exit
+vi
+vim
+nvim
+git
+exit
+config nu
+vim AppData\Roaming\nushell\config.nu
+exit
+nu
+exit
+nu
+exit
+nu
+exit
+edit
+exit
+nu
+ls
+vi
+exit
+config nu
+vim AppData\Roaming\nushell\config.nu
+config nu
+exit
+config nu
+vi
+vim
+$env.config = ($env.config | upsert edit_mode vi)
+config nu 
+exit
+config nu 
+vim AppData\Roaming\nushell\config.nu
+exit
+vim AppData\Roaming\nushell\config.nu
+exit
+config nu
+vi
+vim
+ls
+ls -a
+neofetch
+nvim
+git
+exit
+git
+exit
+ls
+vi
+vim
+git
+which git
+where git
+git
+exit
+git
+exit
+git
+exit
+nu
+ls 
+ls -a
+help
+help commands
+winget list -all 
+winget list --all 
+winget list 
+winget list |nvim
+winget remove coreutils
+exit
+nu
+vi
+vim
+ls
+vi
+vim
+git
+exit
+node
+exit
+g++
+git
+exit
+git
+g++
+git
+node
+ls
+git
+vi
+vim
+cd
+ls -a
+neofetch
+vm
+vim
+nvim
+ls -a
+neofetch
+y
+nu config
+config nu
+exit
+y
+config nu
+exit
+ls
+v
+vi
+vim
+nv
+y
+exit
+config nu 
+config nu
+vim AppData\Roaming\nushell\config.nu
+exit
+vi
+y
+ls -a
+exit
+cd Desktop\dotfilez\
+git status
+vim alacritty\alacritty.toml
+exit
+ls -a
+neofetch
+exit
+vi
+vim
+ls
+vi
+ls 
+ps
+vim AppData\Roaming\alacritty\alacritty.toml
+exit
+ls
+where ls
+shich ls
+which ls
+help
+help commands
+vim AppData\Roaming\alacritty\alacritty.toml
+exit
+ls -a
+ls
+help ls
+nu config
+config nu
+exit
+config nu
+vim AppData\Roaming\nushell\config.nu
+exit
+ls
+vim AppData\Roaming\alacritty\alacritty.toml
+exit
+l
+ls
+where 
+which
+where nvim
+which nvim
+ls -a
+vim AppData\Roaming\alacritty\alacritty.toml
+eit
+exit
+ls
+ls -a
+neofetch
+ls -a
+neofetch
+winget remove clink
+clin
+clink
+winget uninstall
+winget list |nvim
+config nu
+exit
+ls
+cd Downloads\
+y
+exit
+oh-my-posh init nu --config ~/Downloads/zash.omp.json
+ls
+exit
+vim AppData\Roaming\nushell\config.nu
+exit
+ls -a
+exit
+ls
+ls -a
+neofetch
+exit
+ls
+ls -a
+neofettch
+dir
+cd `Application Data`
+ls
+exit
+nvim
+exit
+ls
+v
+y
+ttyer
+ttyper
+exit
+cd Desktop\cppgod\proj\cpp-life\
+ls
+ls -a
+src
+ls -a
+cd ~
+vi
+vim
+cd .glzr\glazewm\
+ls
+vim config.yaml
+nvim config.yaml
+exit
+nvim
+vi
+ls -a
+neofetch
+vim AppData\Roaming\alacritty\alacritty.toml
+ls 
+vim AppData\Roaming\alacritty\alacritty.toml
+ls -a
+neofetch
+vi
+ls 
+grep
+where whre
+pacman -S tmux
+tmux
+where nu
+where nushell
+which nushell
+where nushell |<\n>nvim
+where nushell
+bash
+tmux
+bash
+tmxu
+bash
+tmux
+pacman -Rns tmux
+:
+ls 
+ls | grep _vim
+vi
+cd Contacts\
+ls
+vi
+ls
+vim _vimrc
+rm _vimrc
+ls 
+cd ..
+ls
+..
+.
+ls
+cd Public\
+ls
+cd Downloads\
+ls
+cd ..
+ls
+cd WsiAccount\
+ls
+m WsiAccount\
+ls -a
+y
+ls
+cd Default\
+ls
+cd ..
+y
+exit
+y
+cd
+nv
+ls
+ls -a
+vim
+nv
+ls
+exit
+alacritty
+alacritty --help
+alacritty --daemon -T hello
+exit
+alacritty -T hello
+echo "\e]0;My New Title\a"
+echo "\e]0;charana"
+echo "\e]0; charan\a"
+title
+print (char 0x1b | append "]0;My New Title" | append (char 0x07) | str join)
+print (char '0x1b' | append "]0;My New Title" | append (char 0x07) | str join)
+print (char 0x1b | append "]0;My New Title" | append (char 0x07) | str join)
+My New Title\ar 0x1b)]0;My New Title(char 0x07)"
+print $"(char 0x1b)]0;My New Title(char 0x07)"
+print "\u{1b}]0;My New Title\u{7}"
+print (ansi osc_title "My New Title")
+print (ansi osc_title "")
+print (ansi osc_title )
+echo -n (0x1b | into string) + "]0;My New Title" + (0x07 | into string)
+printf "\033]0;My New Title\007"
+vi
+ls
+open hello.cpp
+ls
+cat
+ls
+ls -a
+neofetch
+ls
+ls -a
+neofetch
+exit
+bash
+ls
+ls a-
+ls -a
+neofetch
+ls
+sls
+ls
+sls
+ssl
+sls
+ls
+nv
+nvim
+ls
+y
+ls -a
+neofetch
+bash
+vi
+nv
+ls 
+ls-a
+ls -a
+neofetch
+neofetdh
+neofetch
+exit
+vi
+exit
+ls |fzf
+fzf
+ls
+neofetch
+vi
+exit
+y
+cd 
+ls
+ls -a
+neofetch
+exit
+nvim
+vi
+nvim
+exit
+nvim 
+winget upgrade all
+winget upgrade --all
+exit
+eixt
+exit
+nvim
+exit
+nvim
+exit
+y
+exit
+exit
+vim .glzr\glazewm\config.yaml
+ext
+exit
+ls
+ls -a
+neofetch
+ls
+ls-a
+ls -a
+cd quicknotes\
+ls
+gvim todo
+ls 
+exit
+vi
+ext
+exit
+winget search mutt
+ls
+cd Desktop\dotfilez\
+ls
+git status
+ls
+diff nvim\.config\nvim\init.lua.bak ../../AppData/Local/nvim/init.lua
+ls
+cd
+ls
+cd Desktop\dotfilez\
+mv nvim\ nvim-old
+ls
+y
+cd
+ls
+nvim
+ls -a
+neofetch
+cd Desktop\dotfilez\
+ls
+cd nvim\
+ls
+cd lua\
+ls
+cd chrn\
+ls
+cd plugins\
+ls
+vim lspcmp.lua
+cd ..
+ls
+cd ..
+ls
+cd autoload\
+ls
+cd ..
+ls
+cd nvim\
+ls
+cd ..
+exit
+cd Desktop\dotfilez\
+ls
+cd nvim\ls
+ls
+cd nvim\
+ls
+cd nvim\
+ls
+cd ..
+rm -rf nvim\
+ls
+vim init.vim.bak
+ls
+vim coc-settings.json
+ls
+cd ..
+ls
+cd nvim-old\
+ls
+cd .config\
+ls
+ls -a
+cd nvim\
+ls
+cd ~\Desktop\dotfilez\
+ls
+mkdir nvim-new
+ls
+cd nvim-new\
+mkdir .config
+cd ../..,
+cd ../..
+ls
+cd dotfilez\
+ls
+cd nvim-new\.config\
+ls
+cd ..
+mv nvim nvim-new\.config\
+ls
+cd nvim-new\.config\nvim\
+ls
+nvim
+ls
+cd ..
+y
+nvim
+cd ..
+cd Desktop\dotfilez\
+ls
+ls -a
+neofetch
+ls -a
+rm -rf tmux\
+cd win\
+ls
+cd ..
+ls
+cd yazi\
+ls
+cd ..
+ls
+git status

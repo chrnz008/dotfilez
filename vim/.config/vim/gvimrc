@@ -1,10 +1,13 @@
 "author:charan
 "gmail:charancuz008@gmail.com
-"
+
 "set guifont and size
 set guifont=Fixedsys:h12
 
-" colorscheme retrobox 
+"colors
+colorscheme default
+se background=light
+hi FoldColumn guibg=NONE
 
 "fat cursor
 set gcr=a:block
