@@ -1,5 +1,0 @@
-$if clink
-    set editing-mode vi
-	#hellow
-$endif
-

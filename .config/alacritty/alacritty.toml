@@ -5,7 +5,6 @@ TERM= "screen-256color"
 # program = "C:\\Windows\\System32\\cmd.exe"
 program= "C:\\Program Files\\nu\\bin\\nu.exe"
 args = []
-# args = ["/k", "title ~"]
 
 [general]
 import = [
@@ -35,7 +34,6 @@ import = [
 working_directory = "C:\\Users\\chr_58"
 
 [window]
-# title="alc"
 
 opacity = 1
 
@@ -53,10 +51,10 @@ decorations_theme_variant = "Dark" # "Light"
 
 [font]
 
-normal.family = "UbuntuMono Nerd Font Mono"
-bold.family = "UbuntuMono Nerd Font Mono"
-italic.family = "UbuntuMono Nerd Font Mono"
-bold_italic.family = "UbuntuMono Nerd Font Mono"
+normal.family = "Cascadia Mono NF"
+bold.family = "Cascadia Mono NF"
+italic.family = "Cascadia Mono NF"
+bold_italic.family = "Cascadia Mono NF"
 
 size = 12.0
 
@@ -73,11 +71,11 @@ unfocused_hollow = false
 [keyboard]
 
 bindings = [
-{key="F11",action="ToggleFullscreen"},
+{ key="F11", action="ToggleFullscreen" },
 { key = "N", mods = "Control|Shift", action = "CreateNewWindow" },
-{ key = "Space", mods="Control",action = "ToggleViMode" }
+{ key = "Space", mods="Control",action = "ToggleViMode" },
+# { key = "Enter", mods="Alt",action = "CreateNewWindow"}
 # { key = "N", mods = "Control|Shift", action = "SpawnNewInstance" },
-# { key = "Space", mods = "Control", action = "None" },
 ]
 
 [terminal]

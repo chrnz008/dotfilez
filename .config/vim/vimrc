@@ -1,5 +1,8 @@
 "-- Author: charan
 "-- Gmail:  charancuz008@gmail.com
+iab ch charan
+iab mal charancuz008gmail.com
+
 
 "  General
 let mapleader=' '
@@ -12,12 +15,10 @@ Plug 'jiangmiao/auto-pairs'
 " Plug 'preservim/nerdtree'
 "Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 "Plug 'junegunn/fzf.vim'
-"Plug 'vim-airline/vim-airline'
 Plug 'christoomey/vim-tmux-navigator' "somehow making ctrl-w to easy maps
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
 Plug 'vimwiki/vimwiki'
-Plug 'mattn/calendar-vim'
 
 call plug#end()
 
@@ -41,6 +42,7 @@ set colorcolumn=80
 " VIM UX
 "-------------------------------------------------------------
 " set nocompatible "(messin with :intro)
+set path+=** "make the find to search through dirs and subdirs
 set hid " A buffer becomes hidden when it is abandoned
 set backspace=eol,start,indent " Configure backspace so it acts as it should act
 set whichwrap+=<,>,h,l
@@ -127,9 +129,16 @@ let g:vimwiki_list = [{'path': 'G:/My Drive/notes', 'syntax': 'markdown','ext': 
 
 " different keymaps for easy peasy coding
 
-autocmd BufNewFile *.cpp 0r C:/Users/chr_58/Desktop/dotfilez/tmplt/cp/template.cpp  "template
-
 :tnoremap <Esc> <C-\><C-n> |"To map <Esc> to exit terminal-mode: >vim
 
 nnoremap <Esc><Esc> :noh<Return><Esc> | " hlsearch creates an annoyance so instead of noh press ese esc
+
+nnoremap <leader>bd :bd<Return><Esc>  | " much easier
+
+nnoremap <leader>y :%y+<CR> |"system clipboard
+xnoremap <leader>y "+y  |"system clipboard for all visual modes
+
+nnoremap <leader>f :fin |"easy find
+
+autocmd BufNewFile *.cpp 0r C:/Users/chr_58/Desktop/dotfilez/tmplt/cp/template.cpp  "template
 

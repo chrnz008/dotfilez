@@ -1,6 +1,6 @@
 -- Author: charan
 -- Gmail:  charancuz008@gmail.com
-
+-- vim.keymap.set('ia','ch','charan')
 -- General
 -------------------------------------------------------------
 vim.o.history = 500
@@ -11,12 +11,10 @@ vim.o.autoread=true
 vim.cmd([[
 call plug#begin('~/Appdata/Local/nvim-data/plugged')
 
-"Plug 'lifepillar/vim-solarized8'
-"Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
 Plug 'jiangmiao/auto-pairs'
 "Plug 'preservim/nerdtree'
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } } "//cont:no need when fzf is in system
-Plug 'junegunn/fzf.vim'
+"Plug 'junegunn/fzf', { 'do': { -> fzf#install() } } "//cont:no need when fzf is in system
+"Plug 'junegunn/fzf.vim'
 Plug 'christoomey/vim-tmux-navigator' "somehow making ctrl-w easy maps (nvim)
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
@@ -48,6 +46,7 @@ vim.o.winblend = 0--make the window opaque
 
 -- VIM UX
 -------------------------------------------------------------
+vim.opt.path:append("**")
 vim.o.hid=true
 vim.o.backspace = "eol,start,indent"
 vim.o.ignorecase = true
@@ -66,11 +65,12 @@ vim.cmd([[colorscheme retrobox]])
 -- vim.cmd([[colorscheme vim]])
 
 -- colorscheme deps
--- vim.api.nvim_set_hl( "NormalFloat", { bg =" " })  -- lmao there is no none in nvim
-vim.cmd([[hi NormalFloat guibg=NONE]])
+vim.api.nvim_set_hl( 0, "NormalFloat", {})  -- remove that weird abstraction due to winblend
+-- vim.api.nvim_set_hl( 0, "Statusline", {})  -- remove that weird abstraction due to winblend
 
 -- Files
 -------------------------------------------------------------
+vim.o.ffs=dos,unix
 vim.o.backup = false
 vim.o.writebackup = false
 vim.o.swapfile = false
@@ -93,23 +93,34 @@ vim.cmd([[autocmd FileType c,cpp setlocal cindent]])
 
 -- Keymaps
 -------------------------------------------------------------
--- Terminal mode: Map <Esc> to exit terminal mode
-vim.keymap.set("t", "<Esc>", [[<C-\><C-n>]], { silent = true })
+
+local map = vim.keymap.set
 
 -- Normal mode: Double <Esc> to clear search highlight
-vim.keymap.set("n", "<Esc><Esc>", ":noh<CR><Esc>", { silent = true })
+map("n", "<Esc><Esc>", ":noh<CR><Esc>", { silent = true })
 
+--
+map({"n"},"<leader>bd",":bd<CR>")
+
+-- clipboard yanking
+
+map({'x'},"<leader>y",'"+y')
+map({'n'},"<leader>y",':%y+<CR>')
+
+-- Terminal mode: Map <Esc> to exit terminal mode
+map("t", "<Esc>", [[<C-\><C-n>]], { silent = true })
+
+--plugin
 -- FZF: <leader>ff to open Files
-vim.keymap.set("n", "<leader>ff", ":Files<CR>", { silent = true })
+-- map("n", "<leader>ff", ":Files<CR>", { silent = true })
 -- vim.g.fzf_comm0and_prefix = 'Fzf'
 
 --NerdTreeToggle
--- vim.keymap.set("n", "<leader>e", ":NERDTreeToggle<CR>", { silent = true })
--- vim.keymap.set("n", "<Leader>e", "<Cmd>NERDTreeClose<Bar>silent! NERDTreeFind<Bar>NERDTreeFocus<CR>", { silent = true }) //for autobuffing
-
+-- map("n", "<leader>e", ":NERDTreeToggle<CR>", { silent = true })
+-- map("n","<leader>e",vim.cmd.Vexplore)
 
 -- Insert mode: Tab completion like nvim-cmp / coc
-vim.keymap.set("i", "<Tab>", 'pumvisible() ? coc#_select_confirm() : "\\<Tab>"', {
+map("i", "<Tab>", 'pumvisible() ? coc#_select_confirm() : "\\<Tab>"', {
   expr = true,
   silent = true,
   noremap = true

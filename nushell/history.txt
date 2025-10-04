@@ -576,3 +576,2185 @@ ls
 cd ..
 ls
 git status
+git add .
+ls
+git commit -m "organized nvim"
+git push
+ripgrep
+rg
+winget search ripgrep
+exit
+winget install BurntSushi.ripgrep.GNU
+rg
+rg --help
+nv
+fzf
+cd
+fzf --help
+fzf
+y
+ls
+ls -a
+neofetch
+vi
+nvim
+ls
+nvim
+ls -a
+fzf
+ls 
+ls -a
+y
+ls
+ls -a
+neofetch
+vi
+ls
+ls -a
+cd Desktop\
+ls
+mv cppgod dartgod flutter htmlgod javagod ../Documents/prgmng
+mkdir ../Documents/prgmng
+mv cppgod dartgod flutter htmlgod javagod ../Documents/prgmng/
+ls -a
+neofetch
+ls -a
+vi desktop.ini
+vimc
+vi
+cd
+nvim Documents\prgmng\cppgod\learn\constructor.cpp
+nvim
+exit
+vi Documents\prgmng\cppgod\learn\constructor.cpp
+echo -ne "\033]0;          My Title          \007"
+ls
+exit
+vi
+y
+cd prgmng\cppgod\proj\cpp-life\
+ls
+vi Documents\prgmng\cppgod\learn\constructor.cpp
+vim AppData\Roaming\alacritty\alacritty.toml
+exit
+vi Documents\prgmng\cppgod\proj\cpp-life\src.cpp
+cd
+vi Desktop\dotfilez\vim\.config\vim\vimrc
+vim
+nvim 
+ls -a
+neofetch
+exit
+ls
+ls -a
+neofetch
+vi
+exit
+man ascii
+pacman -S ascii
+exit
+vim AppData\Roaming\alacritty\alacritty.toml
+ls
+ls -a
+neofetch
+ls -
+ls -a
+git
+ls -a
+neofetch
+ls -a
+fzf --help
+ls 
+ls -a
+neofetch
+ls -a
+neofetch
+nvim
+ls -a
+neofetch
+nvim
+vi
+ls
+vi
+wignet upgrade all
+winget upgrade all
+winget upgrade --all
+oh-my-posh.exe 
+exit
+ls
+ls     -h
+vi
+exvim :h explore
+exvim
+exim
+vi
+ls -a
+neofetch
+fzf 
+ls
+exit
+y
+alacritty.exe -h
+alacritty.exe -e CreateNewWindow
+alacritty-e CreateNewWindow
+alacritty -e CreateNewWindow
+alacritty -e vi
+vim ~/AppData\Roaming\alacritty\alacritty.toml
+exit
+exit
+EXIT
+vim ~/AppData\Roaming\alacritty\alacritty.toml
+winget search 
+winget search multiplexer
+wezter
+ls
+winget search terminal
+exit
+vim quicknotes\todo
+exit
+r
+rg
+rg --help
+rg todo
+cd quicknotes\
+rg todo
+rg bath
+rg ps
+vim todo
+exit
+curl ysap.sh
+curl ysap.sh/json
+exit
+ls -a
+cd Documents\prgmng\
+vim hello.sh
+chmod +x hello.sh
+hello
+./hello
+hello.sh
+./hello
+ls 
+ls -a
+neofetch
+ls -a
+cd cppgod\
+ls
+cd proj\
+ls
+cd cpp-life\
+ls
+ls -a
+neofetch
+ls -lbk
+ls -blk
+sl
+exit
+ls
+ls -a
+neofetch
+exit
+py
+python -V
+python3
+ls
+vi
+ls
+fzf
+winget list all
+winget search rufus
+winget install Rufus.Rufus
+winget remove rufus
+winget install Rufus.Rufus --interactive
+rufus
+winget remove rufus
+exit
+winget remove neofetch
+where neofetch
+which neofetch
+winget uninstall neofetch
+neofetch
+pacman -S neofetch
+neofetch
+bash 
+exit
+winget search terminal
+winget isntall 9N0DX20HK701
+winget install 9N0DX20HK701
+neofetch
+ls
+ls -a
+neofetc
+python 
+python3
+winget search zathura
+winget search pdf
+pacman -S zathura
+winget search Mu
+winget search MuPDF
+pacman -Ss zathura
+bash
+pacman -S mingw-w64-x86_64-zathura mingw-w64-x86_64-zathura-pdf-mupdf
+ls -a
+neofetch
+vi
+nv
+ls -a
+neofetch
+which neofetch
+where neofetch
+c:\msys64\usr\bin\neofetch
+"c:\msys64\usr\bin\neofetch"
+ls -a
+neofetch
+ls -a
+vi
+ls -a
+neofetch
+vi
+fzf
+ls -a
+ls -lbk
+sl
+vim
+vi
+exit
+vi Desktop\dotfilez\vim\.config\vim\vimrc
+exit
+vi AppData\Roaming\alacritty\alacritty.toml
+ls -a
+vi AppData\Roaming\alacritty\alacritty.toml
+exit
+vi AppData\Roaming\alacritty\alacritty.toml
+exit
+ls -a
+exit
+y
+winget search wezterm
+winget search komerobi
+winget install LGUG2Z.komorebi
+winget install LGUG2Z.whkd
+vim
+vi notes
+exit
+komorebic quickstart
+komorebic start --whkd --bar
+winget remove LGUG2Z.whkd
+winget remove komerobi
+winget remove komorebi
+ls -a
+rm -rf applications.json komorebi.bar.json komorebi.json
+exit
+vi ${fzf}
+vi {$fzf}
+ls -a
+vim "$(fzf)"
+vi (fzf)
+ls -a
+neofetch
+ls -a
+neofetch
+vi
+pwsh
+ps
+powershell.exe 
+ls
+cron
+man cron
+pacman -Ss cron
+pacman -Ss pdf
+nvi
+nv
+fzf
+winget install neofetch
+neofetch
+winget install neofetch
+winget install neofetch --interective
+winget install neofetch --uninstalll-previous
+winget install neofetch --uninstall-previous
+winget install neofetch --force
+neofetch
+where neofetch
+which neofetch
+y
+ls -a |rg neofetch
+neofetch.exe 
+ls -a
+cd
+cmd
+ls -a
+cd .config\
+ls
+cd scoop\
+ls
+cd ..
+rm -rf scoop whkdrc
+ls
+ls -a
+cd ..
+cd c
+cd c:
+cd c:\
+fzf
+ls -a
+cd
+neofetch --version
+neofetch --config
+neofetch -config
+winget search neofetch
+winget install nepnep.neofetch-win
+winget install fastfetch
+fastfetch
+ls -a
+flashfastfetch
+flashfetch
+fastfetch --gen-config-fulls -a
+fastfetch --gen-config-fulls
+fastfetch --gen-config-full
+vim .config\fastfetch\
+vim .config\fastfetch\config.jsonc
+fastfetch
+vim .config\fastfetch\config.jsonc
+fastfetch.exe --log
+fastfetch.exe --logo
+fastfetch.exe --logo none
+fastfetch.exe --logo small
+fastfetch.exe 
+vim .config\fastfetch\config.jsonc
+fastfetch
+vim .config\fastfetch\config.jsonc
+fastfetch
+winget remove neofetch
+fastfetch
+vim Desktop\dotfilez\nushell\config.nu
+neofetch
+exit
+neofetch
+ls -a
+neofetch
+vi .config\fastfetch\config.jsonc
+fastfetch
+vi .config\fastfetch\config.jsonc
+fastfetch
+vi .config\fastfetch\config.jsonc
+neofetch
+exit
+where vim
+which vim
+vi C:\Windows\
+exit
+neofetch
+ls -a
+vim notes
+exit
+ls -a
+neofetch
+vim AppData\Roaming\alacritty\alacritty.toml
+ls -a
+y
+cd
+exit
+vi AppData\Roaming\alacritty\alacritty.toml
+nv AppData\Roaming\alacritty\alacritty.toml
+vi AppData\Roaming\alacritty\alacritty.toml
+y
+ls -a
+winget search window
+winget search windowmanager
+winget search wm
+write
+exit
+pacman -S qed
+pacman -Ss qed
+ed
+pacman -Ss ed
+pacman -Ss qed
+pacman -Ss go
+exit
+wsl
+wsl --list
+wsl
+cmd
+exit
+winget search powertoys
+winget install Microsoft.PowerToys 
+u
+winget remove notepad++
+winget search shell
+nv
+ls -a
+neofetch
+exi
+nvim
+vi
+ls
+ls -a
+neofetct
+vi
+vim AppData\Roaming\alacritty\alacritty.toml
+nv AppData\Roaming\alacritty\alacritty.toml
+ls -a
+exit
+exit
+winget remove notepad++
+winget remove Notepad++.Notepad++
+notepad++
+winget remove notepad++
+fzf
+winget search fzf
+winget install junegunn.fzf
+fzf
+fzf --help
+fzf --help |gvim
+fzf --help |nvim
+ls -a
+neofetch
+exit
+cd Documents\prgmng\flutter\
+ls
+flutter --doctor
+flutter 
+flutter doctor
+ls
+cd learnin\
+ls
+cd lib\
+ls
+nvim.exe main.dart
+ls -a
+neofetch
+winget search neovim
+winget install neovide
+winget remove neovide
+ls
+y
+ls -a
+neofetch
+ls -a
+neofetch
+y
+ls -a
+neofetch
+cd
+vim notes.md
+rm -rf notes.md
+vim notes
+cd Documents\prgmng\flutter\learnin\
+ls
+y
+ls -a
+neofetch
+exit
+winget search discord
+ls -a
+neofetch
+ls -a
+ls -a |nvim
+exit
+pacman -Ss zathura
+sumatra
+pdf
+ls
+winget search pdf
+wls
+wls --list
+wsl --list
+wsl --help
+wzir
+exit
+winget search hostess
+pacman -Ss hostess
+exit
+winget search calibre
+winget isntall calibre.calibre
+winget install calibre.calibre
+winget install calibre.calibre --interacitve
+winget install calibre.calibre 
+winget install calibre.calibre --interacitve
+winget install calibre.calibre 
+exit
+cd Documents\prgmng\cppgod\cf\
+sublime
+exit
+cd Documents\prgmng\cppgod\cf\
+cd ..
+cd learn\
+vim map.cpp
+exit
+cd Documents\prgmng\cppgod\cf\
+cd ..\learn\
+g++ examly.cpp -o examly
+examly
+g++ examly.cpp -o examly
+examly.exe
+g++ examly.cpp -o examly
+examly
+g++ examly.cpp -o examly
+examly
+g++ examly.cpp -o examly
+examly
+cd Documents\prgmng\cppgod\cf\
+cd ..\l
+cd ..\learn\
+g++ examly.cpp -o examly
+examly
+g++ examly.cpp -o examly
+examly
+g++ examly.cpp -o examly
+examly
+g++ examly.cpp -o examly
+examly
+g++ examly.cpp -o examly
+examly
+g++ examly.cpp -o examly
+examly
+g++ examly.cpp -o examly
+examly
+g++ examly.cpp -o examly
+examly
+g++ examly.cpp -o examly
+examly
+g++ examly.cpp -o examly
+examly
+g++ examly.cpp -o examly
+examly
+g++ examly.cpp -o examly
+examly
+exit
+pacman -S tmux
+bash
+tmux
+bash
+tmux
+pacman -Rns tmux
+exit
+exut
+exit
+nvim .glzr\glazewm\config.yaml
+exit
+y
+exit
+ls -a
+neofetch
+vi
+y
+ls -a
+neofetch
+exit
+pacman -Ss zelij
+pacman -Ss zellij
+exit
+exit
+eixit
+exit
+y
+ls =a
+ls -a
+neofetch
+exit
+vi
+exit
+winget install chrome
+winget search chrome
+winget install Google.Chrome
+cd Documents\prgmng\cppgod\cf\
+laser
+y
+exit
+cd Documents\prgmng\flutter\
+git clone https://github.com/padhisneha/BikerX
+cd BikerX\
+flutter run
+cd ..
+ls -a
+rm -r BikerX\
+rm -rf BikerX\
+pwd
+cd ..
+ls -a
+cd flutter\
+ls
+rm -rf BikerX\
+rm -f Documents\prgmng\flutter\BikerX\
+pkill BikerX
+lsof +D Documents\prgmng\flutter\BikerX\
+y
+ls
+ls -a
+rm -rf BikerX
+rm -rf Documents\prgmng\flutter\BikerX\
+ls Documents\prgmng\flutter\
+cd
+exit
+pacman -Ss i3
+pacman -Ss sway
+exit
+exut
+exit
+winget upgrade --all
+jjjjjjjjjjjjjj
+pacman -Ss vi
+vim notes
+vim 
+vim
+vi
+ls -a
+neofetch
+vi
+nvim.exe 
+nv
+ls -a
+neofetch
+vi .config\fastfetch\config.jsonc
+ls -a
+neofet h
+neofetch
+cls
+ls
+cls
+y
+cd
+y
+cd
+ls
+y
+vi .glzr\glazewm\config.yaml
+ls -a
+neofetch
+winget search password
+exit
+vi
+nvi
+nv
+vi
+rm -rf hel.cpp
+rm -rf hel.exe
+vi
+nv hel.cpp
+ls -a
+neofetch
+nv
+exit
+y
+nvim
+vim 
+exit
+nv
+exit
+wignet search run
+winget search run
+winget search executer
+exit
+exit
+winget search powertoys
+winget install Microsoft.PowerToys 
+vi
+vim notes
+vim hello.py
+python
+python3
+python --version
+where python
+which python
+python
+winget search python
+python
+winget search python
+winget install 9PNRBTZXMB4Z
+python
+ls -
+python -version
+python --version
+python hello.py
+nv
+gvim
+gvi
+gvim
+vi
+ls -a
+neofetch
+nv
+vi
+neofetch
+y
+python
+vim hello.py
+nvim hello.py
+python hello.py
+cd Documents\prgmng\
+mkdir pygod
+cd 
+mv hello.py Documents\prgmng\pygod\
+cd Documents\prgmng\pygod\
+vim vowels.py
+nv vowels.py
+python vowels.py
+nv vowels.py
+python vowels.py
+ls
+vi
+nvim
+vim
+ls -a
+neofetch
+ls
+exit
+nvim
+ls -a
+neofetch
+exit
+winget search ralib
+pacman -S raylib
+pacman -Ss raylib
+bash
+cd Documents\prgmng\cppgod\
+ls
+cd proj\
+ls
+app
+vim app.cpp
+ls -a
+cd cpp-life\
+ls
+ls -a
+nvim gui.cpp
+gcc main.c -o main -lraylib -lopengl32 -lgdi32 -lwinmm
+g++ gui.cpp -o gui -lraylib -lopengl32 -lgdi32 -lwinmm
+gui
+vim src.cpp
+ls -a
+vim gui.cpp
+gui
+vim gui.cpp
+nvim src.cpp
+g++ src.cpp -o src
+g++ src.cpp -o src -lraylib -lopengl32 -lgdi32 -lwinmm
+nvim src.cpp
+g++ src.cpp -o src -lraylib -lopengl32 -lgdi32 -lwinmm
+ls -a
+neofetch
+ls -a
+neofetch
+g++ src.cpp -o src -lraylib -lopengl32 -lgdi32 -lwinmm
+nvim src.cpp
+ls
+cd ..
+cd cpp-life\
+git pull
+ls -a
+nvim src.cpp
+git restore .
+ls
+ls -a
+git restore .
+ls -a
+git clean -fd
+ls -a
+vim src.cpp
+cd
+cd Documents\prgmng\cppgod\
+ls -a
+cd proj\
+cd ..
+cd learn\
+nvim raylib.cpp
+g++ test.cpp -o test.exe -lraylib -lopengl32 -lgdi32 -lwinmm
+./test.exe
+g++ raylib.cpp -o raylib -lraylib -lopengl32 -lgdi32 -lwinmm
+raylib
+nvim raylib.cpp
+g++ raylib.cpp -o raylib -lraylib -lopengl32 -lgdi32 -lwinmm
+raylib
+nvim raylib.cpp
+cp raylib.cpp ../proj/cpp-life/
+cd ../proj/cpp-life/
+ls
+vim raylib.cpp
+ls -a
+vim raylib.hpp
+rm -rf raylib.hpp
+vim raylib.cpp
+cd Documents\prgmng\cppgod\proj\cpp-life\
+g++ src.cpp -o game.exe -lraylib -lopengl32 -lgdi32 -lwinmm
+ls 
+game
+g++ src.cpp -o game.exe -lraylib -lopengl32 -lgdi32 -lwinmm
+src
+game
+g++ src.cpp -o game.exe -lraylib -lopengl32 -lgdi32 -lwinmm
+game
+g++ src.cpp -o game.exe -lraylib -lopengl32 -lgdi32 -lwinmm
+game
+g++ src.cpp -o game.exe -lraylib -lopengl32 -lgdi32 -lwinmm
+game
+g++ src.cpp -o game.exe -lraylib -lopengl32 -lgdi32 -lwinmm
+game
+g++ src.cpp -o game.exe -lraylib -lopengl32 -lgdi32 -lwinmm
+game
+ls 
+ls -a
+neofetch
+ls -a
+rm -rf raylib.cpp
+game
+ls
+mkdir src
+vim src.cpp
+mv gui.hpp patterns.hpp src.cpp src\
+ls
+cd src\
+ls -a
+cd ..
+ls 
+vim README.md
+exit
+nvim raylib.cpp
+ls 
+rm -rf raylib.hpp
+nvim README.md
+vi README.md
+ls -a
+neofetch
+ls -a
+g++ src.cpp -o game.exe -lraylib -lopengl32 -lgdi32 -lwinmm
+g++ src\src.cpp -o game.exe -lraylib -lopengl32 -lgdi32 -lwinmm
+game
+g++ src\src.cpp -o src -lraylib -lopengl32 -lgdi32 -lwinmm
+src
+g++ src\src.cpp -o game -lraylib -lopengl32 -lgdi32 -lwinmm
+gma
+game
+ls
+ls -a
+rm -rf src.exe
+ls
+game
+ls
+nvim Makefile
+make
+ls -a
+rm -rf game
+make
+make clean
+make
+game
+ls -a
+git add .
+git commit -m "added raylib gui and 30 fps :O"
+git push
+vi
+exit
+pacman -Ss zed
+ucrt64/mingw-w64-ucrt-x86_64-zed 0.195.5-1
+pacman -S ucrt64/mingw-w64-ucrt-x86_64-zed 0.195.5-1
+pacman -S ucrt64/mingw-w64-ucrt-x86_64-zed 
+zed
+zeditor
+pacman -Rns ucrt64/mingw-w64-ucrt-x86_64-zed 
+pacman -Rns zed
+pacman -Qe|grep zed
+pacman -Rns mingw-w64-ucrt-x86_64-zed
+winget search neovide
+winget install neovide
+ls -a
+neofetch
+exit
+winget remove neovide
+exit
+ls
+ls -a
+nefoetch
+exit
+ctags
+exit
+vi
+exit
+y
+cd
+vi
+y
+rm -rf class.cpp.html
+ls -a
+neofetch
+oh-my-posh.exe 
+nu init
+exit
+nu
+exit
+nu
+nu --help
+config ny
+config nu
+y
+exit
+y
+exit
+ls 
+y
+ls -a
+cd
+ls -a
+neofetch
+ls -a
+exit
+ls
+ls -a
+ls -
+ls -an
+ls -a
+neofetch
+exit
+ls -a
+neofetch
+ls -a
+neofetch
+cls
+exit
+vi
+exit
+vi
+y
+cd $VIMRUNTIME
+vi
+cd `C:\Program Files\Vim\vim91\`
+ls
+y
+cd
+ls 
+ls -a
+neofetch
+tm
+vi
+exit
+vi
+nv
+ls -a
+neofetch
+cls
+ls 
+ls -a
+vi
+ls -a
+vi
+vim
+y
+ls
+vim alacritty.toml
+vim
+vim 
+vim
+vim 
+vim alacritty.toml
+y
+ls -a
+cd
+exit
+ls
+ls -a
+neofetch
+vim 
+vim
+vi
+vim
+nv
+y
+vi
+vim
+vi
+y
+cd C:\Users\chr_58\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup
+cd "C:\Users\chr_58\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup"
+cd C:\Users\chr_58\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup
+cd `C:\Users\chr_58\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\`
+ls
+y
+vimdiff i3wm_windonav.ahk ~/Desktop/dotfilez/win/ahk/i3wm_windonav.ahk
+vimdiff vim_caps_remap.ahk ~/Desktop/dotfilez/win/ahk/vim_caps_remap.ahk
+ls -a
+rm -rf i3wm_windonav.ahk vim_caps_remap.ahk
+cd
+y
+ls 
+ls -a
+cd `C:\Users\chr_58\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\`
+ls
+ls -a
+cp ~/Desktop/dotfilez/win/ahk/i3wm_windonav.ahk 
+cp ~/Desktop/dotfilez/win/ahk/i3wm_windonav.ahk /
+cd
+cd Desktop\dotfilez\win\ahk\
+ls -a
+neofetch
+ls -a
+neofetch
+neofehtc
+exit
+vi
+nvi
+nv
+ls -a
+neofetch
+ls -a
+neofetch
+exit
+y
+pacman -Ss jp2a
+winget search jp2a
+y
+jp2a.exe
+jp2a ../../ichigo.jpeg
+jp2a 
+jp2a --background=light ../../ichigo.jpeg
+jp2a <\n>
+jp2a --background=light --colors ../../ichigo.jpeg
+y
+cd
+exit
+y
+jp2a --background=light --colors ../../berserk.png
+jp2a --background=light --colors `../../Toji Fushiguro _ Jujutsu Kaisen.jpg`
+jp2a
+jp2a --background=light --colors `../../Toji Fushiguro _ Jujutsu Kaisen.jpg` --output=toji.txt
+ls
+vim toji.txt
+rm -rf toji.txt
+jp2a --background=light --colors `../../Toji Fushiguro _ Jujutsu Kaisen.jpg`
+jp2a --background=light `../../Toji Fushiguro _ Jujutsu Kaisen.jpg`
+vi
+jp2a --background=dark`../../Toji Fushiguro _ Jujutsu Kaisen.jpg`
+jp2a --background=dark `../../Toji Fushiguro _ Jujutsu Kaisen.jpg`
+nvim
+ls
+ls -a
+jp2a --background=dark `../../Toji Fushiguro _ Jujutsu Kaisen.jpg`
+vim 
+vi
+vim 
+vi toji.txt
+convert
+convert -background black -fill green -font Monospace -pointsize 20 label:@mytext.txt wallpaper.png
+convert -background black -fill green -font Monospace -pointsize 20 label:toji.txt wallpaper.png
+gick convert -background "black" -fill "lime" -font "Consolas" -pointsize 20 label:@mytext.txt wallpaper.png
+magick convert -background "black" -fill "lime" -font "Consolas" -pointsize 20 label:toji.txt wallpaper.png
+which convert
+which magic
+which magick
+which convert
+winget search magic
+winget install ImageMagick.ImageMagic --interactive
+winget install ImageMagick.ImageMagick --interactive
+magick -background black -fill lime -font Consolas -pointsize 20 label:@mytext.txt wallpaper.png
+magic
+winget remove Imagemagick
+winget remove ImageMagick.ImageMagick
+vu
+vi
+y
+ls -a
+neofetch
+ls -a
+neofetch
+nu config
+config nu
+ls -a
+neofetch
+vim AppData\Roaming\alacritty\alacritty.toml
+ls -a
+neofetch
+vi
+nvim 
+vi
+ls -a
+vi
+nv
+vi
+nv
+ls -a
+vim
+y
+vim AppData\Roaming\alacritty\alacritty.toml
+y
+vim AppData\Roaming\alacritty\alacritty.toml
+nvim AppData\Roaming\alacritty\alacritty.toml
+y
+winget search cascadia
+nvim AppData\Roaming\alacritty\alacritty.toml
+ls =a
+ls -a
+neofetch
+y
+vim AppData\Roaming\alacritty\alacritty.toml
+exit
+vi
+nvim AppData\Roaming\alacritty\alacritty.toml
+y
+exit
+y
+nvim AppData\Roaming\alacritty\alacritty.toml
+exit
+y
+ls -a
+neofetch
+ls -a
+neofeth
+neofetch
+ls -a
+ls -s
+neofetch
+vi
+ls -a
+neofeth
+exit
+vim AppData\Roaming\alacritty\alacritty.toml
+y
+ls -a
+neofetch
+exi
+exit
+ls -a
+neofetch
+nvim
+ls -a
+neofetch
+fzf
+winget remove fzf
+exit
+ls -a
+neofetch
+ls -a
+neofetch
+ls -a
+vi
+nv
+ls -a
+neofetch
+nv
+ls -a
+neofetch
+y
+vim 
+ls -a
+neofetch
+vi
+nv
+ls -a
+neofetch
+vi
+ls -a
+neofetch
+exit
+nv
+ls -a
+nv
+ls -a
+neofetch
+nv
+ls -a
+neofetch
+fastfetch.exe 
+flashfetch.exe 
+config nu
+exit
+config nu
+$env.config.color_config | sort
+config nu
+vim AppData\Roaming\nushell\config.nu
+exit
+vim AppData\Roaming\nushell\config.nu
+nvim AppData\Roaming\alacritty\alacritty.toml
+config nu
+ls
+config nu
+ls
+exit
+ls
+exit
+ls
+exit
+ls
+exit
+ls
+exit
+ls
+config nu
+ls
+exit
+cd Downloads\
+ls |grep apprentice.nu
+exit
+ls
+cd Downloads\
+y
+yazi
+exit
+ls -a
+neofetch
+config nu
+exit
+y
+ls -a
+neofetch
+pacman -Ss tmux
+pacman -Ss zellij
+cd
+bash <(curl -L https://zellij.dev/launch)
+pacman -Ss screen
+pacman -Ss gnu
+t
+exit
+ls
+vim AppData\Roaming\nushell\config.nu
+exit
+ls -a
+neofetch
+vi
+alacritty.exe -o "window.startup_mode=""Fullscreen"""
+exit
+alacritty.exe -o window.startup_mode=""Fullscreen""
+alacritty.exe -o window.startup_mode = ""Fullscreen""
+exit
+alacritty.exe -o window.startup_mode=""Fullscreen""
+exit
+alacritty.exe -o window.startup_mode='"Fullscreen"'
+kitten
+nvim AppData\Roaming\alacritty\alacritty.toml
+ls -a
+neofetch
+nvim AppData\Roaming\alacritty\alacritty.toml
+ls -a
+nvim AppData\Roaming\alacritty\alacritty.toml
+ls -a
+exit
+ls
+ls -a
+neofetch
+exit
+alacritty.exe -o window.startup_mode='"Fullscreen"'
+exit
+nvim AppData\Roaming\alacritty\alacritty.toml
+cd Desktop\dotfilez\
+ls
+cd kitty\
+ls
+vim .config\kitty\kitty.conf
+cd ..
+ls -a
+rm -rf kitty 
+ls
+cd nvim-old\
+ls
+cd .config\
+ls
+cd nvim\
+ls
+y
+cd
+ls
+nv
+y
+cd
+nvim 
+ls -a
+neofethc
+neofetch
+nv
+vi
+ls -a
+neofetch
+ls -a
+neofetch
+ls -a
+ls --plain
+ls --help
+ls|get name
+s
+cls
+ls --plain
+ls |to text
+ls |get name|to text
+ls | get name | each { echo $it }
+ls | get name | each { echo it }
+ls | get name | each { echo $it }
+ls -l
+table
+ls -a
+ls --help
+dir
+ls -a
+config nu
+ls
+exit
+vim AppData\Roaming\nushell\config.nu
+exit
+ls
+ls -a
+ls -ls
+dir
+ls 
+ls
+exit
+dir /A:-H:-S
+ls 
+ls
+ls -a
+ls
+dir /A:-H:-S
+dir c:/A:-H:-S
+t
+to
+config nu
+ls
+ls |to msgpack
+to
+ls |to tsv
+ls |to xml
+ls | to xml
+ls | to text
+y
+jp2a --background=dark gundu.jpg
+jp2a --background=dark --color gundu.jpg
+rm -rf gundu.jpg
+exit
+cofig nu
+config nu
+exit
+ls
+dir
+dir 
+ls -a
+ls
+cd Documents\
+ls
+y
+ls -a
+neofetch
+exit
+winget search terminal
+vi
+ls -a
+neofetch
+winget search clangd
+winget install clangd
+winget install clangd --interactive
+clangd
+ls
+y
+nv constructor.cpp
+cd
+pacman -Ss clangd
+pacman -Ss clang
+pacman -Ss clangd
+where g++
+which g++
+nv
+nvim Documents\prgmng\cppgod\learn\constructor.cpp
+clang
+clangd
+ls -a
+nvim 
+ls -a
+winget remove clangd
+clangd
+nvim
+cd   "clangd.path": "~\\AppData\\Local\\coc\\extensions\\coc-clangd-data\\install\\20.1.8\\clangd_20.1.8\\bin\\clangd.exe"
+cd ~\AppData\Local\coc\extensions\coc-clangd-data\install\20.1.8
+ls
+rm -rf clangd_20.1.8\
+ls
+cd ..
+ls -a
+rm -rf 20.1.8\
+ls
+cd ..
+ls -a
+cd ..
+ls -a
+rm -rf coc-clangd-data\
+ls -a
+cd //
+cd
+ls
+cd ~\AppData\Local\coc\extensions\coc-clangd-data\install\20.1.8
+cd ~\AppData\Local\coc\extensions\
+ls
+cd ..
+ls
+cd
+ls -a
+nvim
+pacman -Qe |grep g++
+pacman -Qe |grep gcc
+pacman -Rns mingw-w64-ucrt-x86_64-gcc
+pacman -Ss clangd
+clangd --help
+winget install clangd
+clangd --help
+clangd --enable-config
+cd AppData\Local\clink\
+cd ..
+ls -a
+rm -rf clink\
+dir
+rm -rf zoxide neovide komorebi kate-externaltoolspluginrc OneDrive Lenovo
+ls -a
+rm -rf Perplexity\
+dir
+clangd
+clangd --help
+ls -a
+mkdir clangd
+ls
+clangd --help
+cd clangd\
+where g++
+vim config.yaml
+clangd
+exit
+nvim
+cd
+nvim
+exit
+clangd
+cd Documents\prgmng\cppgod\learn\
+nvim class.cpp
+ls 
+ls -a
+cd
+cd AppData\Local\
+rm -rf clangd
+cd
+nvim
+nvim class .cpp
+cd AppData\Local\
+mkdir clangd
+cd clangd\
+nvim config.yaml
+cd
+nvim Documents\prgmng\cppgod\learn\constructor.cpp
+winget search gcc
+bash
+winget search gcc
+winget install rtinStorsjo.LLVM-MinGW.UCRT --interactive
+winget install MartinStorsjo.LLVM-MinGW.UCRT --interactive
+where g++
+which g++
+pacman -Rns mingw-w64-ucrt-x86_64-gcc
+g++
+gcc 
+exit
+g++
+where g++
+exit
+g++
+ls -a
+cd AppData\Local\
+rm -rf clangd\
+winget remove  MartinStorsjo.LLVM-MinGW.UCRT --interactive
+winget remove  --id MartinStorsjo.LLVM-MinGW.UCRT --interactive
+winget list all|nvim
+winget list all >pak.txt
+winget list all > pak.txt
+winget list
+winget install MartinStorsjo.LLVM-MinGW.UCRT
+winget remove MartinStorsjo.LLVM-MinGW.UCRT
+winget remove LLVM MinGW (UCRT runtime) 
+winget remove LLVM MinGW 
+winget remove --id MartinStorsjo.LLVM-MinGW.UCRT                              
+winget remove
+winget remove --id 
+winget remove --id MartinStorsjo.LLVM-MinGW.UCRT                              
+winget remove --id MartinStorsjo.LLVM-MinGW.UCRT
+winget list --id MartinStorsjo.LLVM-MinGW.UCRT
+winget uninstall --id MartinStorsjo.LLVM-MinGW.UCRT
+winget rm --id MartinStorsjo.LLVM-MinGW.UCRT
+winget list --name llvm
+winget rm --v 21.1.2-20250924 
+winget rm -v 21.1.2-20250924 
+winget remove --id MartinStorsjo.LLVM-MinGW.UCRT
+g++
+exit
+winget list --name llvm
+winget uninstall --id MartinStorsjo.LLVM-MinGW.UCRT
+winget uninstall --id MartinStorsjo.LLVM-MinGW.UCRT --version 21.1.2-20250924
+nget uninstall --id MartinStorsjo.LLVM-MinGW.UCRT --version 21.1.2-20250924
+winget uninstall --id MartinStorsjo.LLVM-MinGW.UCRT --version 21.1.2-20250924
+fxf
+which g++
+where g++
+winget list 
+winget remove --id MartinStorsjo.LLVM-MinGW.UCRT
+where g++
+winget install fzf
+fzf
+cd
+cd C:\
+fzf
+fzf mingw>nvim
+fz
+winget remove --id MartinStorsjo.LLVM-MinGW.UCRT
+g++
+pacman -S mingw-w64-ucrt-x86_64-gcc
+g++
+gcc
+ls -a
+neofetch
+winget remove clangd
+ls -a
+neofetch
+winget list
+cls
+winget list
+ls -a
+winget list
+ls -a
+neofetch
+ls -a
+cd Documents\prgmng\cppgod\learn\
+nvim class.cpp
+exit
+nv
+cd Documents\prgmng\cppgod\learn\
+nv constructor.cpp
+cd Documents\prgmng\
+cd ~Documents\prgmng\
+cd ~\chr_58\Documents\prgmng\
+cd 
+cd Documents\prgmng\pygod\
+ls
+nv vowels.py
+ls -a
+neofetch
+cd 
+cd Documents\prgmng\
+cd cppgod\learn\
+which g++
+exit
+nvim class.cpp
+winget install clangd
+clangd
+nvim class.cpp
+cls
+which g++
+exit
+nvim class.cpp
+winget remove clangd
+ls
+pacman -S mingw-w64-ucrt-x86_64-ccls
+pacman -Ss ccls
+pacman -Ss zed
+cls
+pacman -Ss zed
+pacman -S ucrt64/mingw-w64-ucrt-x86_64-zed 0.195.5-1
+pacman -S ucrt64/mingw-w64-ucrt-x86_64-zed
+zeditor
+pacman -Rns ucrt64/mingw-w64-ucrt-x86_64-zed
+pacman -Rns mingw-w64-ucrt-x86_64-zed
+exit
+pacman -Ss clang
+pacman -Ss clangd
+pacman -Ss lsp
+cd Documents\prgmng\flutter\learnin\lib\
+nvim main.dart
+ls -a
+neofetch
+exit
+g++ -v -E -x c++ -
+cd AppData\Local\
+mkdir clangd 
+cd clangd\
+nvim config.yaml
+cd Documents\prgmng\cppgod\learn\
+nvim class.cpp
+clangd
+winget install clangd
+nvim class.cpp
+nvim config.yaml
+nvim class.cpp
+ls -a
+neofetch
+exit
+nvim
+ls 0a
+ls 
+dir
+vi
+nv
+vi
+exit
+cd Documents\prgmng\cppgod\learn\
+ls
+ls -a
+neofetch
+ls -a
+nvim alacritty.py
+alacritty -h
+cls
+alacritty -h
+alacritty --class
+alacritty --class vim|vim,vim
+exit
+vim qn.py
+nvim qn.py
+alacritty msg 
+alacritty -h
+alacritty --daemin
+alacritty --daemon
+alacritty --daemon vim
+alacritty --daemon 
+ialacritty msg create-window -T "Dev" -e nvim
+alacritty msg create-window -T "Monitor" -e htop
+ialacritty msg create-window -T "Test" -e cmd
+alacritty msg create-window -T "Test" -e cmd
+alacritty create-window -T "Test" -e cmd
+alacritty -h
+alacritty -e vi
+alacritty -e "vi"
+alacritty -e vim
+alacritty --hold -e vim 
+vim
+neofetch
+exit
+alacritty --print-events
+exit
+cls
+alacritty -h
+alacritty --ref-test
+alacritty -v
+exit
+alacritty -T helllo
+alacritty -T scratchpad -e "cd"
+alacritty --help
+exit
+alacritty -o window.opacity=0
+alacritty --daemon -o window.opacity=0
+nvim
+exit
+alacritty -o window.opacity=0.7
+ls -a
+neofetch
+alacritty --class
+exit
+alacritty --class vim
+alacritty --class vim|vim
+:q
+exit
+alacritty --class vim|alacritty.exe 
+pacman -Ss screen
+pacman -Ss tmux
+pacman -S tmux
+tmux
+pacman -Rns tmux
+ls
+nvi
+nvim qn.py
+exot
+exit
+l
+nvim
+ls -a
+ls 
+ls -a
+neofethc
+exit
+explorer shell: 
+cd Documents\prgmng\cppgod\learn\
+vim class.cpp
+nvim class.exe
+nvim class.cpp
+cd
+cd Desktop\
+cd dotfilez\
+git status
+ls -a
+neofetch
+cd
+ls -a
+vim
+nvim 
+ls -a
+vi
+vi 
+vi
+ls
+cd Desktop\dotfilez\
+vim
+cd
+cd Desktop\
+vi
+ls 
+cd dotfilez\
+vim
+vi
+ls
+nvim
+nvim 
+cd
+nvim 
+vim 
+nvim 
+vi
+ls -a
+neofetch
+vim size.json
+ls -a
+y
+ls
+cd src\
+ls -a
+cd ..
+git status
+ls -a
+mkdir assets
+ls 
+cd assets\
+cd ..
+game
+nvim src\gui.hpp
+make
+ls 
+make clean
+make
+game
+make clean
+nvim src\gui.hpp
+make 
+game
+make clean
+nvim src\gui.hpp
+make
+game
+make clean
+nvim src\gui.hpp
+make 
+game
+y
+ls
+vim src
+git status
+gut add .
+git add .
+git commit -m "added an example img"
+git push
+ping google.com
+qn
+ls -a
+vim qn.py
+config nu
+qn
+vim AppData\Roaming\nushell\config.nu
+qn
+config nu
+wn
+qn
+ls -a
+config nu
+mv notes quicknotes
+ls
+vim quicknotes
+config nu
+wn
+qn
+cd 
+cd AppData\
+qn
+exit
+ls
+cd Documents\prgmng\flutter\learnin\lib\
+nvim main.dart
+cd 
+nvim
+vim
+qn
+nvim
+nvim --help
+nvim 
+ls -a
+nvim --clean
+nvim
+ls -a
+neofetch
+nvim
+vim 
+neofetch
+flashfetch.exe 
+fastfetch
+ls
+ls -a
+neofetch
+qn
+ls -a
+neofetch
+vim alacritty.recording
+ls -a
+vim 
+y
+pacman -Ss mupdf
+pacman -Q|grep mupdf
+winget search mupdf
+winget list|grep pdf
+winget list|rg pdf
+winget list all|grep pdf
+winget list all|rg pdf
+config nu
+l
+exit
+l
+ls
+config nu
+exit
+l
+exit
+config nu
+l
+ls -a
+neofetch
+qn
+ls -a
+rm -rf quicknotes.md
+vim quicknotes
+qn
+ls -a
+l
+vim config.json
+size.json
+rm -rf size.json config.json
+ls
+config nu
+qn
+exit
+qn
+fzf
+ls
+ls 
+fzf --help
+cls
+fzf --help
+cd FZF_DEFAULT_OPTS_FILE
+FZF_DEFAULT_OPTS_FILE
+fzf --man
+cls
+fzf --man
+fzf --style full \
+fzf
+ls
+ls |fzf
+ls 
+ls -a
+neofetch
+exit
+ls 
+ls -a
+l
+cls
+keybinds
+keybindings 
+keybindings default 
+keybindings 
+keybindings list
+config nu
+exit
+f
+if
+fzf
+config nu
+ls -a
+neofetc
+ls -a
+neofetc
+neofetch
+popup
+exit
+alacritty
+alacritty --help
+qn
+nv
+neofetch
+nv
+vi
+curl ysap.sh
+curl ysap.sh/episodes
+tmput smcup
+mut
+tput smcup
+vi
+tput smcup
+echoo hello
+echo hello
+rm smcup
+tput rmcup
+cd Desktop\dotfilez\
+tput smcup
+vim README.md
+tput rmcup
+l
+exit
+winget search bash
+winget search gnu
+winget install utils.coreutils
+winget install uutils.coreutils
+coreutils
+where coreutils
+which coreutils
+which whoami
+whoami
+uname -a
+uname 
+vim
+vim 
+vim quicknotes.md
+ls -a
+neofetch
+qn
+ls -a
+neofetch
+cd Documents\
+ls -a
+neofetch
+cd
+nvim
+ls -a
+neofetch
+tmux
+screen
+pwsh
+ps
+pkill 
+ls -a
+neofetch
+sl
+l
+nvim
+l
+rm -rf alacritty.recording grid.json 
+vim Untitled
+rm -rf Untitled
+nvim
+nv
+vi
+vim
+ls -a
+neofetch
+l
+vi
+rg
+rg --help
+cls
+rg --help
+ls
+l
+vi
+nvi
+nv
+ls -a
+exit
+winget search sk
+l
+tmux
+pacman -S tmux
+bash
+cls
+cd Desktop\dotfilez\
+git status
+vim README.md
+ls
+l
+cd alacritty\
+ls
+cd ..
+l
+cd nvim\
+ls
+cd ..
+mkdir .config
+cd nvim-old\
+ls
+cd ..
+ls
+cd linux\
+ls
+cd ..
+ls
+cd .git\
+ls
+vi config
+ls -a
+cd ..
+ls -a
+cd sway\
+ls
+cd .config\
+mv sway\ ..
+ls
+cd ..
+ls
+rm -rf .config\
+ls
+cd ..
+ls
+cd sway\
+ls
+cd sway\
+ls
+cd ..
+ls
+mv sway sway1
+cd sway1\
+ls
+mv sway ..
+ls
+cd ..
+ls -a
+cd sway\
+ls
+cd ..
+rm -rf sway1\
+ls
+l
+ls -a
+cd alacritty\
+ls
+cd ..
+mv alacritty .config\
+ls
+exit
+ls
+cd Desktop\dotfilez\
+ls
+ls -a
+cd i3\.config\
+mv i3 ..
+cd ..
+ls
+cd ..
+mv i3 i39
+cd i39\
+mv i3 ..
+cd ..
+rm -rf i39\
+cd i3\
+ls
+cd ..
+ls -a
+mv i3 .config\
+ls
+cd linux\
+ls
+cd ..
+ls
+y
+ls
+cd nvim\
+ls
+cd ..
+ls -a
+cd yazi\
+ls
+cd ..
+ls
+cd yazi\
+ls
+vim README.md
+rm -rf README.md
+ls
+cd ..
+mv yazi .config\
+y
+ls
+cd 
+cd Desktop\dotfilez\
+ls
+cd nvim-old\
+ls
+cd .config\
+ls
+mv nvim\
+mv nvim ..
+ls
+cd ..
+ls
+mv nvim nvim-do
+l
+ls 
+mv nvim-do ..
+cd ..
+rm -rf nvim-old\
+cd nvim-do\
+ls
+cd ..
+mv nvim-do nvim-dol
+ls
+cd sway\
+ls
+cd ..
+mv sway .config\
+ls
+cd .config\
+ls
+cd sway\
+vim config
+ls
+cd ..
+ls
+cd ..
+l
+ls
+cd vim\
+ls
+cd .config\
+ls
+mv vim .
+mv vim ..
+ls
+cd ..
+ls
+mv vim-script
+mv vim vim-script
+ls
+mv vim-scrip ..\
+mv vim-scrip ..
+ls
+mv vim-script .. 
+cd ..
+rm -rf vim\
+ls
+mv vim-script vim
+ls
+mv vim .config\
+vi
+vim
+ls
+vi
+ls
+mv nvim nvim-adslf
+cd nvim-adslf\
+ls
+mv .config\nvim ..
+ls
+cd .config\
+ls
+cd ..
+ls
+cd nvim\
+ls
+cd ..
+rm -rf nvim-adslf\
+ls
+cd nvim\
+ls
+cd ..
+mv nvim .config\
+ls
+nvim
+y
+cd
+cd Desktop\dotfilez\
+y
+nvim
+ls
+vim install.sh
+rm -rf install.sh
+ls
+vim .git
+ls
+git diff
+git status
+git add .

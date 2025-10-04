@@ -1,0 +1,118 @@
+"author:charan
+"gmail:charancuz008@gmail.com
+
+" => General
+"-------------------------------------------------------------
+let mapleader=' '
+set history=500
+set autoread
+
+" Enable filetype plugins
+filetype plugin on
+filetype indent on
+
+"vim plug on top
+call plug#begin('~/Appdata/Local/nvim-data/plugged')
+
+Plug 'jiangmiao/auto-pairs'
+Plug 'preservim/nerdtree'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+Plug 'christoomey/vim-tmux-navigator' "somehow making ctrl-w easy maps (nvim)
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-surround'
+
+"for flutter
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'dart-lang/dart-vim-plugin'
+
+call plug#end()
+
+"-- VIM user interface
+"-------------------------------------------------------------
+set gcr=a:block 
+set so=7
+set shortmess+=I
+set wildmenu
+set ruler
+set number
+set relativenumber
+set foldcolumn=1
+set signcolumn=no
+
+set winborder=rounded
+set winblend=0
+
+"-- VIM UX
+"-------------------------------------------------------------
+set hid
+set backspace=eol,start,indent
+set whichwrap+=<,>,h,l
+set ignorecase
+set smartcase
+set lazyredraw
+set magic
+set noshowmatch
+set tm=500
+set smoothscroll
+
+" -- Syntax and colors
+"-------------------------------------------------------------
+set regexpengine=0
+se tgc
+set background=dark
+if $COLORTERM == 'alacritty'
+    set t_Co=256
+endif
+colorscheme retrobox
+
+"-- colorscheme deps
+hi NormalFloat guibg=NONE
+
+"-- Files
+"-------------------------------------------------------------
+set nobackup
+set nowb
+set noswapfile
+
+"-- Tabs & Indentation
+"-------------------------------------------------------------
+set noexpandtab
+set shiftwidth=4
+set tabstop=4
+set linebreak
+set textwidth=500
+set si
+set nowrap
+
+" -- misc
+" -------------------------------------------------------------
+set nojoinspaces
+set concealcursor=nc
+autocmd FileType c,cpp setlocal cindent
+
+" Make background transparent
+" hi Normal guibg=NONE ctermbg=NONE
+" hi NormalFloat guibg=NONE ctermbg=NONE
+
+" -- Keymaps
+" -------------------------------------------------------------
+
+" different keymaps for easy peasy coding
+
+"template
+" autocmd BufNewFile *.cpp 0r C:/Users\chr_58/Desktop/dotfilez/tmplt/cp/template.cpp
+
+"terminal maps
+"To map <Esc> to exit terminal-mode: >vim
+    :tnoremap <Esc> <C-\><C-n>
+
+"hlsearch creates an annoyance so instead of noh press ese esc
+nnoremap <Esc><Esc> :noh<Return><Esc>
+
+"fzf
+nnoremap <leader>ff :Files<CR>
+
+"tab completion like nvim
+" Pressing Tab will instantly select the first suggestion if popup is visible
+inoremap <silent><expr> <Tab> pumvisible() ? coc#_select_confirm() : "\<Tab>"
