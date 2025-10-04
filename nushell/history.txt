@@ -2758,3 +2758,11 @@ ls
 git diff
 git status
 git add .
+git commit -a
+ls
+git statuc
+git push
+git status
+cd ..
+cd Desktop\dotfilez\
+git status
