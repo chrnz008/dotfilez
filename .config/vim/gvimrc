@@ -1,11 +1,14 @@
 "author:charan
 "gmail:charancuz008@gmail.com
 
+:let g:did_install_default_menus = 1
+
 "set guifont and size
-set guifont=Fixedsys:h12
+" set guifont=Fixedsys:h11
+set guifont=Cascadia\ Mono\ NF:h12
 set guicursor=a:block
 set guicursor=a:blinkon0 "disable cursor blinking in gvim
-
+set linespace=0
 "colors
 " colorscheme default
 " se background=light
@@ -19,23 +22,24 @@ set gcr=a:block
 " Set extra options when running in GUI mode
 if has("gui_running")
 
-    set guioptions+=m "menu bar
+	set guioptions+=d
+
+    set guioptions-=m "menu bar
     set guioptions-=T "tool bar
     set guioptions+=e "tab line gui or cli
 	 
     "remove scrollbars
-    set guioptions-=g
-    set guioptions-=r
-    set guioptions-=L "v scroll during split
+	set guioptions-=grL
 
     set t_Co=256
-    set guitablabel=%M\ %t
+    " set guitablabel=%M\ %t
 
 endif
 
-se wak=menu
+se wak=no
 au GUIEnter * simalt ~x
 
+se showtabline=2 "always show tabs
 " Properly disable sound on errors on MacVim
 if has("gui_macvim")
     autocmd GUIEnter * set vb t_vb=
@@ -46,8 +50,4 @@ set makeprg=g++\ %\ -o\ %<
 
 "charan things
 let g:netrw_winsize=20
-
-
-"keymaps that i want to test
-			
 " nnoremap <leader>e :Vexplore<Return><Esc>  | " simple filetree

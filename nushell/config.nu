@@ -5,8 +5,9 @@ edit_mode: vi
 $env.config.buffer_editor = "vim"
 $env.config.show_banner = false
 
-$env.PROMPT_INDICATOR_VI_NORMAL = ":"
-$env.PROMPT_INDICATOR_VI_INSERT = ">"
+$env.PROMPT_INDICATOR_VI_NORMAL = (ansi red) + ":" + (ansi red)
+$env.PROMPT_INDICATOR_VI_INSERT = (ansi red) + "❯" + (ansi red)
+
 
 $env.config.table.mode = 'default'
  
@@ -20,7 +21,7 @@ alias neofetch = fastfetch
 
 alias qn = vim -o ~\\quicknotes.md
 
-oh-my-posh init nu --config ~/Downloads/zash.omp.json
+# oh-my-posh init nu --config ~/Downloads/zash.omp.json
 
 def --env y [...args] {
 		let tmp = (mktemp -t "yazi-cwd.XXXXXX")

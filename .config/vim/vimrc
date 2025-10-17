@@ -5,16 +5,20 @@ iab mal charancuz008gmail.com
 
 
 "  General
+"-------------------------------------------------------------
+
 let mapleader=' '
 set history=500 " Sets how many lines of history VIM has to remember
 
 "vim plug --ontop
 call plug#begin('~/.vim/plugged')
 
+Plug 'Konfekt/filepicker.vim' "use yazi as filemanager 
+
 Plug 'jiangmiao/auto-pairs'
 " Plug 'preservim/nerdtree'
-"Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-"Plug 'junegunn/fzf.vim'
+" Plug 'junegunn/fzf'", { 'do': { -> fzf#install() } }
+" Plug 'junegunn/fzf.vim'
 Plug 'christoomey/vim-tmux-navigator' "somehow making ctrl-w to easy maps
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
@@ -34,10 +38,13 @@ set ruler " Always show current position
 set number " show line numbers
 set relativenumber " show relativeline numbers
 set cmdheight=1 " Height of the command bar
-" set laststatus=2 " always show statusline 
+set laststatus=2 " always show statusline 
 set foldcolumn=1 " Add a bit extra margin to the left
 " set signcolumn=yes
 set colorcolumn=80
+set cursorline
+set cursorlineopt=number "just hi the number
+set showtabpanel=0
 
 " VIM UX
 "-------------------------------------------------------------
@@ -54,6 +61,7 @@ set lazyredraw " Don't redraw while executing macros (good performance config)
 set magic " For regular expressions turn magic on
 set noshowmatch " Show matching brackets when text indicator is over them
 set smoothscroll
+" set nostartofline
 " set mat=2 "How many tenths of a second to blink when matching brackets
 "
 " No annoying sound on errors
@@ -62,7 +70,6 @@ set novisualbell
 set belloff=all
 set t_vb=
 set tm=500
-
 
 "Colors and Fonts
 "-------------------------------------------------------------
@@ -75,6 +82,7 @@ endif
 set background=dark"light 
 
 colo retrobox
+" hi clear StatusLine
 
 "charans custom colorscheme
 " colo default
@@ -115,17 +123,18 @@ set nowrap "noWrap lines
 "-------------------------------------------------------------- 
 se nojoinspaces "J doesnt join spaces 
 se concealcursor=nc "conceals cursor 
-autocmd FileType c,cpp setlocal cindent "c-style indent
+" autocmd FileType c,cpp setlocal cindent "c-style indent
 
 "-- plgn-spe-conf
 "-------------------------------------------------------------- 
 "
 let g:vimwiki_list = [{'path': 'G:/My Drive/notes', 'syntax': 'markdown','ext': '.md'}]  "vimwiki
 
-" nnoremap <leader>e :NERDTreeToggle<CR>  | "nerdtree toggle
-
+let g:no_filepicker_maps = 1 "unmap the default
+nnoremap <silent> <leader>e <Plug>(FilePicker)
 
 " ->KEYMAPS
+"-------------------------------------------------------------- 
 
 " different keymaps for easy peasy coding
 
@@ -133,12 +142,11 @@ let g:vimwiki_list = [{'path': 'G:/My Drive/notes', 'syntax': 'markdown','ext': 
 
 nnoremap <Esc><Esc> :noh<Return><Esc> | " hlsearch creates an annoyance so instead of noh press ese esc
 
+nnoremap <leader>w <Cmd>update<CR>
+nnoremap <leader>bs :ls<CR>:b<Space>
 nnoremap <leader>bd :bd<Return><Esc>  | " much easier
 
 nnoremap <leader>y :%y+<CR> |"system clipboard
 xnoremap <leader>y "+y  |"system clipboard for all visual modes
 
 nnoremap <leader>f :fin |"easy find
-
-autocmd BufNewFile *.cpp 0r C:/Users/chr_58/Desktop/dotfilez/tmplt/cp/template.cpp  "template
-

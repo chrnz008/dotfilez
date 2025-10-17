@@ -14,3 +14,4 @@ dont use unless you are charan mandati
 4. yazi
 
 - windows
+- vim has a rtp search that which is better it is at .home/vim or .config/vim in unix and vimfiles in win yk what to do

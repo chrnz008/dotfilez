@@ -2766,3 +2766,1519 @@ git status
 cd ..
 cd Desktop\dotfilez\
 git status
+git add .
+git commit -m "clean the config"
+git push
+cd
+ls
+cd G:
+cd G:\
+y
+cd
+cd G:\
+vi
+cd 
+y
+vi
+l
+rm -rf quicknotes.md
+cd G:
+cd G:\
+y
+cd
+qn
+vi
+ls
+cd G:\
+ls
+cd `My Drive\notes\`
+ls
+rm -rf quicknotes.md
+ls
+vim todo.md
+vi
+ls
+rm -rf viki.md Untitled.md
+vim index.md
+ls
+rm -rf todo.md
+ls
+vi
+ls
+cd
+exit
+vim AppData\Roaming\alacritty\alacritty.toml
+exit
+vim AppData\Roaming\alacritty\alacritty.toml
+exit
+l
+nvim AppData\Roaming\alacritty\alacritty.toml
+ls
+cd Documents\prgmng\
+ls
+cd cppgod\proj\
+;s
+cd cpp-life\
+ls
+vim src\src.cpp
+exit
+nv Documents\prgmng\cppgod\proj\cpp-life\src\src.cpp
+ls 
+l
+cd Documents\prgmng\flutter\learnin\learnin.iml
+cd Documents\prgmng\flutter\learnin\lib\
+nv main.dart
+ls -a
+neofetch
+winget search tabbed
+winget search gropy
+winget search groupy
+winget list all|rg tabbed
+winget list all| nvim
+winget list all > pak.txt
+winget list > pak.txt
+ls
+winget list all
+winget list 
+winget remove MSIX\2505FireCubeStudios.Tabbed_1.1.12.0_x86__k45w5yt88e21j                        
+neofetch
+neofetch
+exit
+ls 
+ls -a
+winget search unitedsets
+wignet search sets
+winget search sets
+winget install 9N7CWZ3L5RWL                
+winget list | rg opensets
+winget list | rg sets
+winget list | rg s
+winget list | united
+winget list | rg united
+winget list | rg United
+iwinget search united sets
+winget search united
+winget remove 9N7CWZ3L5RWL                  
+exit
+winget search weechat
+pacman -Ss weechat
+winget search hexchat
+winget install HexChat.HexChat
+ls
+ldsjflsdjfiils
+l
+exit
+exit
+winget reinstall Hexchat.Hexchat
+winget repair Hexchat.Hexchat
+winget install HexChat.HexChat --force
+cd AppData\
+fzf
+nvim Roaming\HexChat\hexchat.conf
+exit
+ls
+winget search irc
+fzf
+cd AppData\Roaming\HexChat\hexchat.conf
+cd AppData\Roaming\HexChat\
+ls
+vim chanopt.conf
+vim hexchat.conf
+ls
+vim ignore.conf
+vim notify.conf
+vim servlist.conf
+vim sound.conf
+exit
+vim external_editor_revived.json
+pwd
+ls
+rm -rf external_editor_revived.json
+cd
+cd AppData\Roaming\HexChat\
+ls
+rm -rf hexchat.conf
+exit
+winget remove HexChat
+rm -rf AppData\Roaming\HexChat\
+rm -rf AppData\Roaming\HexChat
+exit
+y
+cd
+winget install HexChat.HexChat
+qn
+todo
+td
+tn
+qn
+exit
+winget search gnu
+pass
+ps
+pacman -Ss pass
+cls
+pacman -Ss pass
+pacman -S pass
+man pass
+pacman -Rns pass
+cls
+exit
+winget search samsung
+winget search pass
+winget install Samsung Pass
+winget list |rg samsung
+winget list 
+winget remove 9P98T77876KZ                                                                       
+qn
+ls
+l
+ls
+y
+vim _viminfo
+rm -rf _viminfo
+ls
+vi
+exit
+vim AppData\Roaming\alacritty\alacritty.toml
+exit
+vim
+ls |rg vim
+cd .vim\
+ls
+cd ..
+ls
+vi
+vi --help
+vi --version
+vi 
+ls
+l
+cd Cookies
+ls
+exit
+winget install LGUG2Z.komorebi
+winget install LGUG2Z.whkd
+komorebic quickstart
+komorebic
+komorebic quickstart
+winget list
+cls
+winget list
+komorebi quickstart
+ls
+l
+vim komorebi.json
+l
+ls |grep .json
+rm -rf |ls|grep .json
+rm -rf | ls|grep .json
+rm -rf  ls|grep .json
+rm -rf  applications.json komorebi.json
+rm -rf komorebi.bar.json
+ls
+l
+winget list
+winget remove LGUG2Z.komorebi
+winget remove LGUG2Z.whkd
+ls
+exit
+cd Documents\prgmng\flutter\learnin\lib\
+nvim main.dart
+ls
+cd
+winget search windowmanager
+winget search tiling
+ls
+l
+pacman -Ss wee
+pacman -Ss weechat
+winget search starship
+winget install Starship.Starship
+config nu
+exit
+ls
+config nu
+winget remove oh-my-posh
+cd AppData\Roaming\nushell\vendor\autoload\
+exit
+ls
+winget search starship
+mkdir ($nu.data-dir | path join "vendor/autoload")
+starship init nu | save -f ($nu.data-dir | path join "vendor/autoload/starship.nu")
+starship
+winget install Starship.Starship
+exit
+starship
+winget remove starship
+winget install Starship.Starship
+nu --version
+ls
+cd $nu.config-path
+cd C:\Users\chr_58\Desktop\dotfilez\nushell\config.nu
+cd C:\Users\chr_58\Desktop\dotfilez\nushell\
+ls
+cd vendor\autoload\
+ls
+starship
+star
+starship init nu | save -f ($nu.data-dir | path join "vendor/autoload/starship.nu")
+$nu.data-dir
+ls
+y
+ls
+cd ..
+exit
+starship
+cd AppData\Roaming\nushell\vendor\autoload\
+ls
+vim starship.nu
+exit
+ls
+l
+y
+exit
+ls
+cd Desktop\dotfilez\
+ls
+ls -a
+ls
+zsh
+bash
+exit
+ls -a
+neofetch
+ls
+ls -a
+cd
+cd .config\starship\
+ls
+pacman -S
+ls
+ls -a
+l
+cd .config\
+ls
+cd Desktop\
+exit
+vi starship.toml
+exit
+exit
+cd Desktop\
+pwd
+cd 
+vim .config\starship\starship.toml
+exit
+cd Desktop\
+vim .config\starship\starship.toml
+ls
+cd
+exit
+vim .config\starship\starship.toml
+ls
+exit
+exit
+cd Desktop\dotfilez\
+cd ..
+cd
+ls
+vim .config\starship\starship.toml
+ls
+exit
+ls 
+starship
+starship config
+cd Documents\
+ls
+ccd
+ls
+ls -a
+neofetch
+exit
+ls
+ls -a
+cd Desktop\dotfilez\
+ls
+cd 
+ls -a
+starship config
+ls
+ls -a
+ls
+ls -lbk
+ls -b
+ls -hekp
+ls --help
+ls -a ~ |where type == dir
+ls --help
+ls -a **/*
+ls
+ls -a
+winget search irc
+ls
+ls -a
+ls
+l
+dir
+ls
+ls -a
+neofetch
+ls -a
+neofetch
+cl
+cls
+ls -a
+cd Documents\prgmng\cppgod\proj\cpp-life\
+game
+ls
+ls -a
+y
+ls
+sl
+ls
+ls -a
+l
+ls
+ls -a
+vi
+exit
+ls
+cd .config\starship\
+ls
+starship.exe 
+starship.toml
+starship preset starship.toml
+starship preset no-nerdfont-symbols
+starship preset 'no-nerdfont-symbols'
+starship preset 'nerd-font-symbols'
+ls
+vim starship.toml
+starship.toml
+exit
+ls
+cd .config\
+ls
+vim starship.toml
+cd starship\
+ls
+cd ..
+ls
+vim starship/starship.toml
+rm -rf starship.toml
+exit
+ls
+cd .config\starship\
+ls
+vim starship.toml
+c
+cd Desktop\
+cd
+vim .config\starship.toml
+exit
+ls
+ls -a
+vim .config\starship.toml
+exit
+ls
+ls 
+ls -a
+cd Desktop\
+ls
+ls -a
+vim .config\starship.toml
+cd
+vim .config\starship.toml
+ls
+vim .config\starship.toml
+ls
+exit
+ls
+vim .config\starship.toml
+exit
+ls
+vim .config\starship.toml
+ls
+cd .config\
+ls
+cd starship.toml
+:cd
+cd
+cd Desktop\dotfilez\
+cd
+vim .config\starship.toml
+exit
+ls
+ls -a
+neofetch
+qn
+ls -a
+nvim
+ls -a
+neofetch
+winget search vim
+cd Documents\prgmng\cppgod\proj\cpp-life\
+vim src\src.cpp
+exit
+ls
+winget search emacs
+winget install GNU.Emacs
+nv
+ls
+nvim
+nv
+vi
+nv
+expor
+export
+nvim
+where nu
+which nu
+nvim
+ls
+nvim
+ls
+ls -a
+ls
+nv
+ls
+nvim
+exit
+nv
+winget search thonny
+ls
+l
+exit
+y
+vim desk.ahk
+y
+ls
+cd Desktop\dotfilez\win\ahk\
+ls
+vi i3wm_windonav.ahk
+qn
+vim
+nvim 
+ls
+cd 
+cd Desktop\dotfilez\.config\nvim\
+ls
+mkdir lsp
+cd lsp\
+ls
+nvim clangd.lua
+cd 
+ls
+ls |rg .txt
+ls
+l
+cd Desktop\dotfilez\win\ahk\
+ls
+mv sc.txt ~/
+cd
+ls
+vim sc.txt
+nvim
+ls
+nvim
+ls
+nvim
+nvim Documents\prgmng\cppgod\learn\constructor.cpp
+ls
+nvim 
+nvim Documents\prgmng\cppgod\learn\constructor.cpp
+ls
+ls -a
+neofetch
+ls
+ls -a
+neofetch
+ls
+ls 
+ls -a
+neofetch
+vi
+winget seach sublime
+winget search sublime
+exit
+ls
+config nu
+ls
+l
+ls -a
+ls
+winget remove starhip
+winget remove starship
+cd AppData\Roaming\nushell\vendor\autoload\
+ls
+cd AppData\Roaming\nushell\vendor\autoload\
+exit
+ls
+winget remove starship
+l
+ls
+ls -a
+neofetch
+ls
+ls -a
+neofetch
+y
+ls
+config nu
+exit
+cd AppData\
+ls
+cd 
+cd Desktop\dotfilez\win\ahk\
+cd
+ls
+ls -a
+neofetch
+config nu
+asldfjka
+exti
+ls
+config nu
+vim .config\starship.toml
+ls
+config nu
+exit
+cd
+cd ..
+ls
+cd 
+l
+cd
+ls
+sc
+s
+sc
+exit
+ls
+pwsh
+powershell.exe 
+ls
+ls -a
+neofetch
+ls
+ls -a
+neofetch
+vi
+sl
+y
+ls
+exit
+ls
+ls -a
+nvim
+ls
+:cd
+ls -a
+ls -a
+neofetch
+exit
+alacritty.exe 
+ls
+tmux
+tmux a
+tmux ls
+where neovm
+which neovim
+exit
+tmux
+exit
+ls
+l
+vim .glzr\glazewm\config.yaml
+ls -a
+neofetch
+fastfetch
+fastfetch --gen-config-full
+cd .config\fastfetch\
+vim config.jsonc
+fastfetch 
+cd
+vim .glzr\glazewm\config.yaml
+y
+ls
+ls -a 
+neofetch
+ls -a
+neofetch
+ls
+ls -a
+l
+vim .glzr\glazewm\config.yaml
+exit
+ls
+vim .glzr\glazewm\config.yaml
+ls
+l
+neofetch
+ls
+cd Desktop\dotfilez\
+ls
+cd win\
+ls
+cd glazewm\
+ls
+cd ..
+rm -rf glazewm\
+mv ~/.glzr/glazewm/config.yaml 
+mkdir glazewm
+ls
+mv ~/.glzr/glazewm/config.yaml glazewm\
+ls
+cd glazewm\
+ls
+y
+exit
+tmux new
+exit
+winget remove HexChat.HexChat
+nv
+vi
+nv
+rm -rf someth.lua
+ls
+vi
+ls
+ls -a
+vi
+ls
+exit
+notepad $PROFILE
+notepad PROFILE
+exity
+y
+l
+rm -rf linux nvim-dol nushell tmplt wallpprs win
+ls
+cd Desktop\dotfilez\
+ls
+cd ..
+ls
+cd
+ls
+l
+qn
+ls
+enter
+p
+n
+winget search enter
+winget search terminator
+wt 
+exit
+ls
+tmux
+where nu
+which nu
+tmux a
+tmux
+ls
+ls -a
+l
+exit
+ls --raw
+ls
+ls |into string
+ls |into text
+l
+vi
+ls
+cd
+pwd
+ls
+vi
+vim
+ls
+vim
+y
+yazi
+pacman -Ss tmux
+pacman -S mingw-w64-x86_64-tmux
+ls
+ls -a
+l
+vim
+exit
+l
+ls -a
+l
+ls
+ls -a
+neofetch
+cd
+bash
+exit
+tmux -a
+tmux ls
+2cvi
+vi
+ls
+vi
+ls
+where vi
+:q
+exit
+tmux
+ls
+nvim
+ls
+cd Documents\prgmng\cppgod\proj\cpp-life\
+vim src\src.cpp
+nvim src\src.cpp
+:exit
+exit
+tmux
+ls
+nvim Documents\prgmng\cppgod\learn\constructor.cpp
+ls
+ls -a
+neofetch
+v
+vi
+ls
+l
+where tmux
+which tmux
+cd C:\msys64\usr\bin\
+ls
+ls |grep tmux.exe
+cp tmux.exe ~/Desktop/
+cd 
+cd Desktop\
+ls
+exit
+exit
+eix
+texit
+exit
+tmux
+rm -rf tmux.exe
+ls
+cd
+nvi
+nv
+vi
+ls
+vi
+ls
+exit
+ls
+exit
+tmux
+l
+ls -a
+neofetch
+where
+wsl
+ls
+l
+dir
+dir --help
+dir -C
+ls
+l
+wl
+wsl
+WSL
+exit
+Iwsl
+wsl
+wsl.exe
+winget search wsl
+ls
+winget search wsl
+winget install Microsoft.Wsl
+exit
+wsl
+winget list |nv
+sl
+exit
+cd Documents\prgmng\cppgod\proj\cpp-life\
+ls
+nvim README.md
+y
+yy
+yazi
+ls
+cd
+exit
+y
+exit
+nvim AppData\Roaming\alacritty\alacritty.toml
+winget search Microsoft.Wsl
+winget search wsl
+winget search wezter
+exit
+eix
+tmux newAAAAAAAAAAAAexit
+exit
+exiBt
+exit
+tmux
+iexit
+exit
+cmd
+winget search wsl
+winget install Microsoft.WSL
+wsl
+wsl.exe --list --online
+wsl --install archlinux
+wsl
+wsl --install archlinux
+wsl
+ls
+wsl
+wsl --list verbose
+st --verbose
+wsl --list --verbose
+wsl --unregister Arch
+wsl --unregister archlinux
+ls
+wsl
+wsl .exe --list --online
+wsl.exe --list --online
+wsl
+exit
+tmux
+pacman -Rns tmux
+vim
+nvim
+exit
+wsl tmux
+tmux
+wsl tmux
+wsl
+wsl --unregister archlinux
+wsl
+ls
+winget remove Microsoft.WSL
+wsl
+winget list |rg wsl
+ls
+winget list
+cls
+winget list |nvim
+ls
+where wsl
+which wsl
+cd C:\Windows\System32\
+ls -a
+ls |nvim
+rm -rf wsl
+exit
+wsl
+where wsl
+which wsl
+rm -rf :\WINDOWS\system32\wsl.exe 
+rm -rf C:\WINDOWS\system32\wsl.exe 
+sudo rm -rf C:\WINDOWS\system32\wsl.exe 
+ls C:\WINDOWS\system32\wsl.exe 
+wsl
+exit
+wsl
+ls -a
+exit
+wls
+wsl
+winget remove Microsoft.WSL
+winget search wsl
+winget install Microsoft.WSL
+winget remove Microsoft.WSL
+wsl
+wsl.exe --install archlinux
+exit
+cd 
+cd c
+cd C:\
+ls
+fzf
+cd `C:\Program Files\`
+ls
+rm -rf WSL
+sudo rm -rf WSL
+ls
+ls |grep wsl
+sudo rm -rf `Microsoft OneDrive\` `Windows Defender\` `Windows Defender Advanced Threat Protection\` `Windows Mail\` 
+ls
+l
+exit
+ls
+vi
+winget upgrade --all
+winget search vim
+gvim
+ls
+vi
+exit
+sl
+ls
+l
+vi
+nvim
+gvim
+ls
+gvim
+exit
+pacman -Ss vi
+exit
+winget search terminator
+winget search terminal
+winget search bobcat
+winget install rio
+winet install raphamorim.rio
+winget install raphamorim.rio
+rio
+cd
+ls
+cd AppData\Local\rio\
+ls
+vim config.toml
+exit
+winget remove rio
+wsl
+exit
+winget search gnome
+winget install gnome.Dia
+dia
+winget removegnome.Dia
+winget remove gnome.Dia
+ls
+ssh
+ssh u0_a764@192.168.1.3
+ls
+ping 192.168.1.3
+bash
+ls
+tmux
+ssh -p 8022 u0_a764@192.168.1.3
+exit
+winget search terminal
+tab
+exit
+alacritty.exe 
+ls
+l
+exit
+exit
+l
+ls
+l
+vi
+nv
+vi
+ls
+vi
+ls
+exit
+vi
+nv
+ls
+nvim
+ls
+l
+ls -a
+neofetch
+wsl
+ls
+l
+winget search panes
+winget search windows
+l
+tmux
+tm
+ls
+neofetch
+vi
+lsexit
+exit
+tmux
+pacman -Rns tmux
+pip
+pip install pymux
+pymux
+cd
+cd C:\Users\chr_58\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\Scripts
+ls
+pymux
+cd
+pip remove pymux
+pip uninstall pymux
+winget search Konsole
+winget install Konsole
+konsolre
+konsole
+winget remove Konsole
+neofetch
+exit
+l
+rm -rf PSTerminalMultiplexer\
+winget install conemu
+ls
+l
+neofetch
+ls
+exit
+ls
+nvim AppData\Roaming\ConEmu.xml
+ls
+exit
+ls
+l
+w
+kil
+kill
+ls
+l
+ls 
+ls -a
+neofetch
+vi
+ls
+cd
+ls
+l
+exit
+exit
+exit
+exit
+exit
+nv
+tmu
+ls
+pwd
+ls
+nvim
+ls
+exit
+tmux
+tmux r
+exit
+tmux 
+tmux lx
+tmux ls
+tmux rm 
+tmuxh -h
+tmuxh --help
+tmux --help
+tmux -T
+ls
+ssh -p 8022 u0_a764@192.168.1.3
+ssh -p 8022 u0_a764@192.168.1.2
+powershell.exe 
+ls
+l
+exi
+exit
+nu
+ls
+ls -a
+ls
+ls -a
+cd AppData\Local\rio\
+l
+cd ..
+rm -rf rio\
+ls
+l
+rm -rf enchant komorebi wsl oh-my-posh konsole Lenovo konsolerc 
+cd
+ls
+l
+neofetch
+l
+ll
+l
+ll
+l
+exit
+ls
+l
+ls
+vi .glzr\glazewm\config.yaml
+nv .glzr\glazewm\config.yaml
+ls
+l
+nv .glzr\glazewm\config.yaml
+exit
+ls
+ls -a
+neofetch
+l
+neoetch
+neofetch
+iv
+vi
+ls
+nvi
+ls
+pwd
+exit
+ls
+neofetch
+exit
+nv
+$env.TERM = "xterm-256color"$env.COLORTERM = "truecolor"
+$env.TERM = "xterm-256color"
+$env.COLORTERM = "truecolor"
+neofetch
+ls
+l
+ls
+neofetch
+l
+neofetch
+cd
+exit
+tmux
+ls
+ps
+p
+l
+ls
+l
+nv
+echo $TERM
+bash
+zsh
+where bash
+which bash
+msys
+tmux -u
+vi
+neofetch
+exit
+nv
+tmux kill-server
+ls
+cmd
+config nu
+exit
+pwd
+config nu
+exit
+winget search elvishh
+winget search elvish
+winget install elvish.elvish
+winget install elves.elvish
+exit
+elvish
+winget remove elvish
+gstat
+config nu
+winget search libreoffice
+winget search libreoffice draw
+vi
+cd Documents\prgmng\cppgod\learn\
+ls
+vi hello.cpp
+vim hello.cpp
+cd ../..
+ls
+cd pygod\
+ls
+vim hello.py
+ls
+cd ..
+ls
+vim hello.c
+ls
+rm -rf hello.c
+vim hello.sh
+ls
+l
+icd
+cd
+nvim Documents\prgmng\cppgod\learn\constructor.cpp
+tmux
+bash
+tmux
+l
+neofetch
+exit
+cmd
+ls
+vi
+ls
+vi
+ls
+cd
+pwd
+cd Contacts\
+ls
+cd 
+ls
+exit
+config nu
+winget search numx
+winget search nmux
+ls
+l
+cd vimfiles\
+ls
+cd doc\
+ls
+cd 
+ls
+cd vimfiles\doc\
+cd .
+cd ..
+..
+cd vimfiles\
+l
+cd compiler\
+ls
+l
+ls
+..
+l
+cd keymap\
+ls
+cd
+ls
+l
+winget install wezterm
+winget remove wezterm
+ll
+l
+vi s-ms
+l
+ls
+cd Documents\
+ls
+exit
+y
+cd
+vi
+cd
+cd vimfiles\colors\
+rm -rf emacs.vim
+exit
+wt.exe -w _quake
+exit
+exit
+vi
+ls
+ic
+cc
+ls
+winget search menu
+winget search popup
+winget search pop
+winget upgrade
+winget search vim
+winget install vim.vim.nightly
+vi
+nvi
+vi
+exit
+vi
+vi --version
+i
+ls
+ls -a
+cd .vim\
+ls
+ls -a
+cd
+ls
+vi
+ls
+vi
+cls
+vi --version
+vi
+vi --help
+vi
+ls
+vi
+ls
+nv
+vi
+y
+vi
+vi 
+ls
+exit
+ls
+l
+ls
+l
+rm -rf new
+ls
+cl
+l
+cal
+l
+vim diaryold.md
+vi
+rm -rf diaryold.md
+ls
+vim _vimrc
+ls
+vim _vimrc
+ls
+nvim
+ls
+vi
+y
+cd
+vi
+ls
+cd vimfiles\
+y
+cd 
+ls
+diff vimfiles\autoload\plug.vim Desktop\dotfilez\.config\vim\autoload\plug.vim
+rm -rf vimfiles
+y
+ls
+vi
+ls
+cd vimfiles
+ls
+cd
+ls
+mv _vimrc vimrc 
+mv _gvimrc gvimrc
+ls
+l
+vi
+mv gvimrc _gvimrc
+mv vimrc _vimrc
+ls
+mv vimfiles vimx
+vi
+ls
+vim
+ls
+vim 
+mv vimx vimfiles
+vim
+y
+exit
+ls
+mv vimfiles vim
+mv vim vimx
+ls
+cmd
+vi
+vim vimx/autoload/plug.vim
+vim vimfiles\autoload\plug.vim
+vim vimx/autoload/plug.vim
+vim vimfiles\autoload\plug.vim
+vim
+cd vimfiles\
+ls
+cd
+rm -rf vimfiles
+mv vimx vimfiles
+y
+ls
+exit
+qn
+ls
+vi
+evim
+vim -v
+vim -version
+vim --help
+vi --version
+exit
+cd c
+cd c:
+cd c:\
+exit
+winget search mutt
+pacman -Ss mutt
+exit
+ctags
+ls
+ctags --help
+ctags --list languages
+cls
+ctags --help
+ctags    For each line, associated language name is printed when "all" is
+ctags --list languages
+ctags --list-languages
+ctags -R
+cd ci
+ils
+ls
+l
+cd Documents\prgmng\cppgod\
+--fields=-k+K
+--languages=-html
+--tag-relative=yes
+--exclude=build
+ctags -R --languages=C,C++ --c-kinds=+p --c++-kinds=+p ^
+--exclude=.git --exclude=build --exclude=bin --exclude=obj ^
+-f C:\Users\Charan\global_tags ^
+C:\Users\Charan\Projects\CommonLibs C:\Program Files\SomeLibrary\include
+ctags -R
+ls
+cd tags
+vi tags
+vi
+winget remove ctags
+winget search ctags
+winget remove UniversalCtags.Ctags  
+winget remove UniversalCtags.Ctags
+ctags
+cd
+winget list |nvim
+winget remove UniversalCtags.Ctags                      
+cd C:/
+winget uninstall --id UniversalCtags.Ctags                      
+cd
+vi
+exit
+nv
+ls
+winget search ctags
+winget install UniversalCtags.Ctags
+cd Documents\prgmng\cppgod\cf
+ls
+ctags -R --languages=C,C++ .
+ls
+vim tags
+rm -rf tags
+ctags -R --languages=C,C++ .
+exit
+l
+exit
+winget search zed
+winget install ZedIndustries.Zed      
+winget remove ZedIndustries.Zed      
+winget search php
+winget install PHP.PHP.8.4                   
+php
+php --help
+exit
+php
+ls
+where php
+which php
+cmd
+winget remove PHP.PHP.8.4                   
+winget list
+exit
+winge search neovim
+winget search neovim
+winget install equalsraf.neovim-qt   
+qt
+nevim
+neovim
+nvim
+winget remove equalsraf.neovim-qt   
+nvim
+winget install neovide
+winget remove neovide
+vi
+cd Desktop\dotfilez\
+ls
+git statusl
+git status
+git diff
+ls

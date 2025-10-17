@@ -74,6 +74,7 @@ bindings = [
 { key="F11", action="ToggleFullscreen" },
 { key = "N", mods = "Control|Shift", action = "CreateNewWindow" },
 { key = "Space", mods="Control",action = "ToggleViMode" },
+# { key = "N", mods = "Control", action = "CreateNewWindow" },
 # { key = "Enter", mods="Alt",action = "CreateNewWindow"}
 # { key = "N", mods = "Control|Shift", action = "SpawnNewInstance" },
 ]
