@@ -2,11 +2,13 @@ $env.config = {
 # buffer_editor = "vim",
 edit_mode: vi
 }
+$env.TERM = "xterm-256color"
 $env.config.buffer_editor = "vim"
 $env.config.show_banner = false
 
 $env.PROMPT_INDICATOR_VI_NORMAL = (ansi red) + ":" + (ansi red)
 $env.PROMPT_INDICATOR_VI_INSERT = (ansi red) + "❯" + (ansi red)
+$env.PROMPT_COMMAND_RIGHT = "" #disable the right prompt
 
 
 $env.config.table.mode = 'default'
@@ -14,6 +16,7 @@ $env.config.table.mode = 'default'
 # aliases
 
 alias l = dir
+alias ls = dir
 alias nv = nvim
 alias vi = vim
 alias y = yazi

@@ -15,3 +15,5 @@ dont use unless you are charan mandati
 
 - windows
 - vim has a rtp search that which is better it is at .home/vim or .config/vim in unix and vimfiles in win yk what to do
+- changing the power plan to perfromace in powerplan in windows improves cursor
+scrolling performance in vim

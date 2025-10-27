@@ -1,0 +1,1 @@
+require("cman.plugins.lspconf")

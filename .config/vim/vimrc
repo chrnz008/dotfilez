@@ -1,129 +1,77 @@
-"-- Author: charan
-"-- Gmail:  charancuz008@gmail.com
 iab ch charan
 iab mal charancuz008gmail.com
+set nocp "i strongly discourage it
 
-
-"  General
 "-------------------------------------------------------------
 
+filetype plugin indent on " Enable filetype plugins
+syntax on" Enable syntax highlighting
+
 let mapleader=' '
-set history=500 " Sets how many lines of history VIM has to remember
 
 "vim plug --ontop
 call plug#begin('~/.vim/plugged')
 
+Plug 'octol/vim-cpp-enhanced-highlight'
 Plug 'Konfekt/filepicker.vim' "use yazi as filemanager 
 
 Plug 'jiangmiao/auto-pairs'
-" Plug 'preservim/nerdtree'
-" Plug 'junegunn/fzf'", { 'do': { -> fzf#install() } }
-" Plug 'junegunn/fzf.vim'
 Plug 'christoomey/vim-tmux-navigator' "somehow making ctrl-w to easy maps
-Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
 Plug 'vimwiki/vimwiki'
 
 call plug#end()
 
-" VIM UI
-"-------------------------------------------------------------
-set gcr=a:block "fat cursor --vim.o.guicursor=""
-set so=7
-"set clipboard=unnamedplus "integration with system clipboard register
-set notitle " 
-set shortmess+=I  "disables the start page
-set wildmenu " Turn on the Wild menu
-set ruler " Always show current position
-set number " show line numbers
-set relativenumber " show relativeline numbers
-set cmdheight=1 " Height of the command bar
-set laststatus=2 " always show statusline 
-set foldcolumn=1 " Add a bit extra margin to the left
-" set signcolumn=yes
-set colorcolumn=80
-set cursorline
-set cursorlineopt=number "just hi the number
-set showtabpanel=0
+packadd comment "vims default
+packadd nohlsearch "performs noh aut
 
-" VIM UX
 "-------------------------------------------------------------
-" set nocompatible "(messin with :intro)
-set path+=** "make the find to search through dirs and subdirs
-set hid " A buffer becomes hidden when it is abandoned
-set backspace=eol,start,indent " Configure backspace so it acts as it should act
-set whichwrap+=<,>,h,l
-set ignorecase " Ignore case when searching
-set smartcase " When searching try to be smart about cases
-set hlsearch " Highlight search results
-set incsearch " Makes search act like search in modern browsers
-set lazyredraw " Don't redraw while executing macros (good performance config)
-set magic " For regular expressions turn magic on
-set noshowmatch " Show matching brackets when text indicator is over them
-set smoothscroll
-" set nostartofline
-" set mat=2 "How many tenths of a second to blink when matching brackets
-"
-" No annoying sound on errors
-set noerrorbells
-set novisualbell
-set belloff=all
-set t_vb=
-set tm=500
-
-"Colors and Fonts
-"-------------------------------------------------------------
-syntax enable " Enable syntax highlighting
-set regexpengine=0 " Set regular expression engine automatically
-se tgc "termguicolors
-if $COLORTERM == 'alacritty' " Enable 256 colors palette 
-    set t_Co=256
-endif
-set background=dark"light 
 
 colo retrobox
-" hi clear StatusLine
-
-"charans custom colorscheme
-" colo default
-" hi Normal guibg=#1c1c1c ctermfg=187 ctermbg=234 guifg=#ebdbb2 "guibg=#1c1c1c
-" hi NonText ctermfg=239 guifg=#504945
-" hi TabLine cterm=NONE ctermfg=102 ctermbg=237 guifg=#a89984 guibg=#3c3836
-" hi TabLineFill cterm=NONE ctermfg=187 ctermbg=237 guifg=#ebdbb2 guibg=#3c3836
-" hi TabLineSel cterm=bold ctermfg=230 ctermbg=234 gui=bold guifg=#fbf1c7 guibg=#1c1c1c
-" hi VertSplit cterm=NONE
-
-" se fillchars+=vert:\ "removes that wierd | separtor during vsp
-" hi FoldColumn guibg=NONE
-
-" Files, backups and undo
-" ------------------------------------------------------------
-filetype plugin on " Enable filetype plugins
-filetype indent on
+set autoindent "Auto indent
 set autoread  " Set to auto read when a file is changed from the outside
+set background=dark
+set belloff=all
+set cmdheight=1 " Height of the command bar (default)
+set colorcolumn=80 "Will make screen redrawing slower
+set concealcursor=nc "conceals cursor 
+set cursorline
+set cursorlineopt=number "just hi the number
 set encoding=utf8 " Set utf8 as standard encoding and en_US as the standard language
 set ffs=unix,dos,mac " Use Unix as the standard file type
-
-set nobackup " Turn backup off
-set nowb
-set noswapfile "no swaps
-
-
-" Text, tab and indent related
-"-------------------------------------------------------------- 
+set foldcolumn=1 
+set gcr=a:block "fat cursor --vim.o.guicursor=""
+set hid " A buffer becomes hidden when it is abandoned
+set hlsearch " Highlight search results
+set ignorecase " Ignore case when searching
+set incsearch " Makes search act like search in modern browsers
+set laststatus=2 " always show statusline 
+set lazyredraw " Don't redraw while executing macros (good performance config)
 set noexpandtab
-set smarttab
-set shiftwidth=4
-set tabstop=4
-set ai "Auto indent
-set si "Smart indent
+set nojoinspaces "J doesnt join spaces 
+set noshowmatch " matching bracks
+set noswapfile "no swaps
 set nowrap "noWrap lines
-
-"-- misc
-"-------------------------------------------------------------- 
-se nojoinspaces "J doesnt join spaces 
-se concealcursor=nc "conceals cursor 
-" autocmd FileType c,cpp setlocal cindent "c-style indent
+set nowritebackup
+set number " show line numbers
+set path+=** "make the find to search through dirs and subdirs
+set regexpengine=0 "performance on windows"
+set relativenumber " show relativeline numbers
+set ruler " Always show current position
+set scrolloff=7
+set shiftwidth=4
+set shortmess+=I  "disables the start page
+set showtabpanel=0 "only vimm
+set smartcase " When searching try to be smart about cases
+set smartindent 
+set smarttab
+set softtabstop-=1"inherit from shiftwidth
+set tabstop=4
+set termguicolors
+set timeoutlen=500
+set title
+set whichwrap+=<,>,h,l "makes cursor move from one to another at ends
+set wildmenu " Turn on the Wild menu
 
 "-- plgn-spe-conf
 "-------------------------------------------------------------- 
@@ -138,15 +86,18 @@ nnoremap <silent> <leader>e <Plug>(FilePicker)
 
 " different keymaps for easy peasy coding
 
-:tnoremap <Esc> <C-\><C-n> |"To map <Esc> to exit terminal-mode: >vim
-
-nnoremap <Esc><Esc> :noh<Return><Esc> | " hlsearch creates an annoyance so instead of noh press ese esc
+nnoremap <Esc><Esc> <Cmd>nohlsearch<CR>| " hlsearch creates an annoyance so instead of noh press ese esc
+"above one has a default plugin
 
 nnoremap <leader>w <Cmd>update<CR>
-nnoremap <leader>bs :ls<CR>:b<Space>
-nnoremap <leader>bd :bd<Return><Esc>  | " much easier
+nnoremap <leader>bs <Cmd>ls<CR>:b<Space>
+" nnoremap <leader>bd :bd<Return><Esc>  | " much easier
+nnoremap <leader>bd <Cmd>bd<CR>
+
+nnoremap <leader>te :tabe<Space>
 
 nnoremap <leader>y :%y+<CR> |"system clipboard
 xnoremap <leader>y "+y  |"system clipboard for all visual modes
 
 nnoremap <leader>f :fin |"easy find
+tnoremap t   |"terminal mode

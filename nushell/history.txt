@@ -4282,3 +4282,1134 @@ git statusl
 git status
 git diff
 ls
+git add .
+git commit -m "freshhh"
+git push
+exit
+cd Documents\prgmng\cppgod\cf
+clangd --help
+vi hello.cpp
+ang-format -style=llvm -dump-config > .clang-format
+clang-format -style=llvm -dump-config > .clang-format
+clang
+:!clangd --check=%:p --format-style=file --fallback-style=llvm
+!clangd --check=%:p --format-style=file --fallback-style=llvm
+clangd --check=%:p --format-style=file --fallback-style=llvm
+clang-format
+format
+cmd
+winget search clangd
+swinget search clang-format
+winget search clang-format
+nvim
+gex
+exit
+nv
+nvim --version
+exit
+nvim
+ls
+cd AppData\Local\nvim\
+y
+vi 
+ls
+vim telescope.lua
+rm -rf telescope.lua
+ls
+cd ..
+ls
+cd
+ls
+cd AppData\Local\nvim\
+ls
+vim lsp\
+ls
+cd lsp\
+ls
+cd ..
+vim coc-settings.json
+cd AppData\Local\nvim\
+ls
+mv dartls.lua lsp\
+ls
+cd lsp\
+ls
+cd
+cd AppData\Local\nvim\
+nvim ~/Documents/prgmng/flutter/learnin/lib/main.dart
+nvim.
+nvim
+nvim 
+nvim
+cd
+cd Documents\prgmng\flutter\learnin\lib\
+nvim main.dart
+cd
+cd AppData\Local\nvim\
+ls
+cd lsp\
+ls
+rm -rf dartls.lua
+ls
+cd ..
+ls
+vim autoload\
+cd lua\
+ls
+cd cma
+exit
+nvim
+vi
+ls
+neofetch
+yazi
+ls
+ls -a
+neofetch
+exit
+ls
+neofetch
+ls
+neofetch
+ls
+l
+ils
+ls
+vi
+nvim
+ls
+neofetch
+exit
+vi
+nvi
+nv
+ls
+l
+ls
+nv
+ls
+l
+ls
+alacritty
+exit
+ls
+ls -a
+neofetch
+l
+vim
+nv
+vi
+ls
+vim AppData\Roaming\alacritty\alacritty.toml
+ls
+l
+vi
+nvi
+nv
+y
+ls
+nvim init.lua
+nvim 
+nvim
+ls
+l
+cd lsp\
+ls
+cd ..
+sl
+ls
+cd ftplugin\
+ls
+vim cpp.lua
+ls
+cd ..
+ls
+nv lsp\dart_ls.lua
+nvim
+ls
+l
+neofetc
+neofetch
+ls
+l
+neofetch
+ls
+vi
+ls
+vim
+exit
+vi AppData\Roaming\alacritty\alacritty.toml
+winget upgrade
+winget search alacritty
+winget upgrade Alacritty.Alacritty
+exit
+ls
+config nu
+cd AppData\Roaming\nushell\vendor\autoload\
+ls
+vim starship.nu
+ls
+cd ..
+ls
+cd ..
+ls
+vim env.nu
+ls
+vim history.txt
+$env.PROMPT_COMMAND
+$env.PROMPT_COMMAND_RIGHT
+config nu
+ext
+exit
+ls
+config nu
+ls
+vim AppData\Roaming\alacritty\alacritty.toml
+vi
+vi vimfiles/vimrc
+vi
+vim
+ut
+rusth
+rust
+vi
+winget search gnome
+ls
+exit
+vi
+y
+vi
+ls
+vi
+exit
+vi
+vim
+ls
+vi
+ls
+vi
+ls
+nv
+vi
+nvim
+nvim vimfiles/vimrc
+vim
+ls
+vim
+ls
+nv
+vi
+vim 
+exit
+vi
+exit
+vim AppData\Roaming\alacritty\alacritty.toml
+exit
+vi vimfiles/vimrc
+vi
+vi vimfiles/vimrc
+vi
+vi AppData\Roaming\alacritty\alacritty.toml
+alacritty msg
+alacritty --help
+nv
+nv AppData\Roaming\alacritty\alacritty.toml
+TERM=xterm-256color nvim
+TERM=xterm-256color 
+ls
+alacritty --version
+neofetch
+xit
+exit
+ext
+exit
+ls
+l
+ls
+neofetch
+vim
+exit
+winget search conemu
+winget remove Maximus5.ConEmu 
+ls
+l
+vi
+ls
+ansi
+ansi 
+ansi hello.php
+ansi /9
+ansi 
+ansi strip 
+ls
+vi
+ls
+vi
+winget search terminal
+winget remove Microsoft.WindowsTerminal           
+wsl
+ssh
+ls
+msys
+sys
+sys cpu
+ls
+neofetch
+ls
+neofetch
+ls
+nvim
+vi
+ls
+exit
+ext
+ls
+winget search git
+winget search multiplexer
+winget search tmux
+winget install trzsz
+trz
+winget remove trzsz
+bash
+exit
+tmux
+rm -rf Downloads\screen-5.0.1.tar.gz.sig
+ls
+vi
+ls
+vim quicknotes.md
+echo -e "\e[4:3mTEST"
+echo  "\e[4:3mTEST"
+echo $TERM
+winget install  Microsoft.WindowsTerminal           
+env
+export
+export TERM=alacritty
+infocmp
+infocmp -l -x | grep Smulx
+infocmp > /tmp/xterm-256color.ti
+sudo infocmp > /tmp/xterm-256color.ti
+nvim /tmp/xterm-256color.ti
+sudo nvim /tmp/xterm-256color.ti
+nvim /tmp/xterm-256color.ti
+notepad /tmp/xterm-256color.ti
+infocmp > /tmp/xterm-256color.ti
+nvim quicknotes.md
+viquicknotes.md
+vi quicknotes.md
+echo -e "\e[4:3mThis text has an undercurl\e[0m"
+echo --help
+echo echo -e "\e[4:3mThis text has an undercurl\e[0m"
+echo "\e[4:3mThis text has an undercurl\e[0m"
+vi
+where infocmp
+which infocmp
+bash
+nvim quicknotes.md
+vi quicknotes.md
+powershell.exe 
+exit
+powershell.exe 
+$TERM
+echo $TERM
+config nu
+vi vimf
+vi vimfiles/vimrc
+nv 
+nv
+nv 
+nvim quicknotes.md
+nv
+exit
+printf
+# Test undercurl
+printf '\e[4:3mThis should be undercurled\e[0m\n'
+# Test colored undercurl (red)
+printf '\e[4:3;58:2::255:0:0mThis should be red undercurl\e[0m\n'
+vi
+# Normal underline (works everywhere)
+Write-Host "`e[4mThis is underlined`e[0m"
+# Attempt undercurl (may work in Windows Terminal)
+Write-Host "`e[4:3mThis is undercurled`e[0m"
+nvim quicknotes.md
+vim quicknotes.md
+exit
+powershell.exe 
+wsl
+powershell.exe 
+where echo
+which echo
+echo 
+vi
+exit
+winget search powersehll
+winget search powershell
+winget install Microsoft.PowerShell
+winget list|nvim
+winget remove Microsoft.PowerShell
+vi quicknotes.md
+echo
+which echo
+git bash
+where bash
+which bash
+exit
+vi
+vi 
+vi quicknotes.md
+vi 
+ls
+vim
+exit
+echo 
+echo
+which echo
+where yazi
+which yazi
+ls
+ls -a
+neofetch
+nvim quicknotes.md
+vi
+ls
+winget search shell
+winget search bash
+exit
+winget search sehll
+winget search bash
+bash
+wsl
+winget search warp
+winget install Warp.warp
+config nu
+exit
+nvim quicknotes.md
+vi quicknotes.md
+winget remove Warp.Warp
+nvim
+exit
+echo $TERM
+echo $env.TERM
+nvim
+exit
+gvim sc.txt
+exit
+ls
+emoji
+ls
+nvim
+ls
+vim
+vim 
+vim
+ls
+vi
+nv
+ls
+vi
+ls
+vim Desktop\dotfilez\.config\nvim\init.lua
+exit
+nv
+nv 
+nv
+vi vimfiles/vimrc
+vi
+nv
+ls
+ci
+vi
+ls
+l
+vi
+sl
+ls
+nv
+exit
+vi
+ls
+ls -a
+neofetch
+l
+powershell.exe 
+exit
+winget search emacs
+winget install GNU.Emacs
+agentactivationruntimestarter.exe 
+winget search gpg
+winget install GnuPG.Gpg4win         
+emacs
+emacs -nw
+gpg
+ls
+gpge
+gpg
+cd AppData\Roaming\
+ls
+vim .emacs.d\
+cd
+where emacs
+which emacs
+where |emacs
+where emacs|vim
+where 
+cmd
+emac
+emacs
+vim AppData\Roaming\.emacs.d\init.el
+exit
+winget remove GnuPG.Gpg4win         
+vim AppData\Roaming\.emacs.d\init.el
+winget remove Gnu.
+winget remove Gnu.emacs
+vi
+nv
+ls
+l
+ll
+l
+vi
+v
+vi
+vim AppData\Roaming\
+ls
+vi
+ls
+neofetch
+vim AppData\Roaming\alacritty\alacritty.toml
+vi
+nv quicknotes.md
+vi
+nv quicknotes.md
+vi quicknotes.md
+vi
+ls 
+ls -a
+neofetch
+nvim
+nv
+vi
+ls
+exit
+vi
+nvi
+nvim
+nv
+C:\chrdev\flutter\bin\cache\dart-sdk\dart
+C:\chrdev\flutter\bin\cache\dart-sdk\
+ls
+cd
+iclss
+cls
+C:\chrdev\flutter\bin\cache\dart-sdk\bin\dart.exe
+cd Documents\prgmng\flutter\learnin\lib\
+nv main.dart
+nvim main.dart
+exit
+vi
+ls
+rm -rf hello.php
+ls
+exit
+nv
+l
+ls
+vi
+nv
+l
+config nu
+ls
+exit
+l
+ls
+exit
+winget search nautilus
+winget search linux
+vi
+nv 
+y
+cd
+y
+exit
+ColorTool.exe
+cmd
+ext
+exit
+dart
+where dart
+which flutte
+cd C:\
+ls
+cd chrdev\
+ls
+cd ..
+rm -rf chrdev\
+ls
+cd 
+ls
+nvim
+cd Documents\prgmng\
+ls
+rm -rf dartgod flutter 
+cd
+winget search rust
+cls
+winget search rust
+winget install Rustlang.Rustup  
+rustc
+rustup
+cargo
+cmd
+winget install Rustlang.Rustup -e
+rustc
+exit
+rust
+cargo
+rustc
+cd Documents\prgmng\rustgod\
+ls
+vim hello.rs
+rustc hello.rs
+rustup install stable-x86_64-pc-windows-gnu
+rustup toolchain list
+rustup default stable-x86_64-pc-windows-gnu
+rustup toolchain list
+rustup uninstall stable-x86_64-pc-windows-msvc
+rustup toolchain list
+rustc hello.rs
+ls
+hello.exe
+cargo new hello_cargo
+cd hello_cargo\
+ls
+vim src\
+cargo build
+ls
+cd target\
+ls
+cd debug\
+ls
+.\hello_cargo.exe
+cd ..
+ls
+cd ...
+cd hello_cargo\
+cargo run
+cd ..
+mkdir learn
+ls
+mv hello.rs hello.exe learn\
+ls
+cd learn\
+ls
+nvim guess.rs
+rustc guess.rs
+nvim guess.rs
+rustc guess.rs
+guess.exe
+winget search rust
+nvim
+vi
+ls
+nvim
+rustup component add rust-analyzer
+rust-analyzer
+nv
+cls
+y
+cd ..
+nvim learn\hello.rs
+nvim
+nvim learn\hello.rs
+nvim
+nvim learn\hello.rs
+nvim
+rust-analyzer.exe 
+nvim
+nvim learn\hello.rs
+cd ../..
+cd prgmng\cppgod\proj\cdo\src.cpp
+nv prgmng\cppgod\proj\cdo\src.cpp
+cd prgmng\rustgod\
+nvim learn\hello.rs
+nvim
+nvim learn\hello.rs
+nvim --version
+nvim 
+cd hello_cargo\
+ls
+vim src\main.rs
+nvim src\main.rs
+ls
+nvim src\main.rs
+man rust
+rustdoc.exe 
+ls
+cd 
+ls
+vi
+cd Documents\prgmng\rustgod\
+nv learn\guess.rs
+cd learn\
+nv struct.rs
+vi struct.rs
+vi
+cd Documents\prgmng\rustgod\learn\
+ls
+vim struct.rs
+exit
+cd C:\
+rm -rf   msys64\ucrt64\share\terminfo\72\rio-direct
+rm -rf     msys64\ucrt64\lib\terminfo\72\rio-direct
+rm -rf   msys64\ucrt64\lib\terminfo\72\rio-direct
+rm -rf   msys64\usr\share\terminfo\72\rio-direct
+rm -rf   msys64\usr\lib\terminfo\72\rio-direct
+rm -rf   msys64\ucrt64\share\terminfo\72\rio
+rm -rf   msys64\ucrt64\lib\terminfo\72\rio
+rm -rf   msys64\usr\share\terminfo\72\rio
+rm -rf  msys64\usr\lib\terminfo\72\rio                                                       
+exit
+vi
+vi AppData\Roaming\alacritty\alacritty.toml
+ls
+ls -a
+neofetch
+vi
+ls
+neofetch
+ls
+ls -a
+list
+table
+ls
+vi AppData\Roaming\alacritty\alacritty.toml
+neofetch
+ls
+vi
+ls
+ls -a
+neofetch
+vi AppData\Roaming\alacritty\alacritty.toml
+vi
+neofetch
+vi
+ls
+l
+neofetch
+ls -a
+nvim
+vim AppData\Roaming\alacritty\alacritty.toml
+ls
+ls -a
+neofetch
+blue
+nvi
+blue
+ls
+ls -a
+nord
+ls
+vim AppData\Roaming\alacritty\alacritty.toml
+vi
+nv
+cd Documents\prgmng\rustgod\hello_cargo\
+nvim src\main.rs
+cd ..
+ls
+nvim learn\struct.rs
+ls
+vi
+nv
+nvim
+vi
+exit
+exi
+exit
+vi
+ls
+exit
+y
+nvim
+cd
+vi
+cd Documents\prgmng\rustgod\learn\
+vim enums.rs
+cargo install rustlings
+cd ../../
+cd rustgod\
+rustlings init
+cd rustlings\
+cd Documents\prgmng\rustgod\rustlings\
+ls
+cd exercises\
+ls
+cd 00_intro\
+rustlings.exe 
+y
+exit
+vi AppData\Roaming\alacritty\alacritty.toml
+neofetch
+vi
+vi AppData\Roaming\alacritty\alacritty.toml
+ls
+neofetch
+vi AppData\Roaming\alacritty\alacritty.toml
+ls
+neofetch
+vi
+ls
+neofetc
+neofetch
+vi AppData\Roaming\alacritty\alacritty.toml
+nvim learn\struct.rsim
+nvim
+ls
+ls -a
+neofetch
+ls
+neofetch
+exit
+nvim -h
+nvim 
+vim
+where vim
+which vim
+vi
+bash
+exit
+tmux
+vim
+vim 
+vim
+:q
+ls
+exit
+vim
+vim y
+y
+:q
+exit
+tmux
+y
+vi
+vim
+ls
+neofetch
+ls
+dir
+neofetch
+vim
+ls
+neofetch
+nvim
+ls
+neofetch
+exit
+exit
+eixt
+exit
+tmux
+ls
+sls
+ls
+neofetch
+winget search helix
+winget install Helix.Helix
+hx
+hx -help
+hx --help
+cd Documents\prgmng\rustgod\learn\
+hx struct.rs
+winget remove Helix.Helix
+hx struct.rs
+winget install Helix.Helix
+hx
+winget remove Helix.Helix
+nvim
+nvm
+nv
+ls
+neofetch
+vi
+cd Documents\prgmng\rustgod\learn\
+vi hello.rs
+ls
+vim format.rs
+vi hellow.rs
+exit
+wignet search google
+winget search google
+winget install Helix.Helix
+hx
+winget remove Helix.Helix
+winget search nix
+vim
+cd Documents\prgmng\rustgod\learn\
+vim struct.rs
+nvim struct.rs
+ls
+vim struct.rs
+exit
+vi
+cd Documents\prgmng\rustgod\learn\
+vim vimfiles\vimrc
+nvim vimfiles\vimrc
+exit
+vim struct.rs
+nvim struct.rs
+vim struct.rs
+winget search gedit
+winget install gedit.gedit
+winget install gnome.gedit
+gedit
+winget remove gnome.gedit
+winget search gnome
+java
+javac
+exit
+where java
+which java
+cd C:\
+y
+ls
+cd
+ssh -p 8022 u0_a764@192.168.1.3
+exit
+winget search tab
+winget search terminal
+cls
+winget search terminal
+cargo search 
+cargo info zellij
+cargo install zellij
+cargo 
+cargo uninstall zellij
+exit
+cargo list
+cargo-list
+exit
+winget search conemu
+winget install Maximus5.ConEmu
+ils
+exit
+ls
+wzur
+winget remove Maximus5.ConEmu
+winget search zebar
+exit
+winget search windows
+winget search shell
+cls
+winget search shell
+pacman -Rns tmux
+winget search gnu
+winget search bsd
+vi AppData\Roaming\alacritty\alacritty.toml
+neofetch
+ls
+exit
+vi
+ls
+config nu
+ls
+vi AppData\Roaming\alacritty\alacritty.toml
+ls
+neofetch
+vi
+ls
+ls -a
+neofetch
+winget search ion
+exit
+nvim
+cd Documents\prgmng\
+vim
+cd 
+vi fzf.nu
+use fzf.nu
+fzf
+rm -rf fzf.nu
+config nu
+exit
+config nu
+vim $(fzf)
+vi fzf
+ght 40%
+fzf --height 40%
+fzf --height 40% --layout reverse --border
+fzf --man
+man ripgrep
+cd Documents\prgmng\rustgod\learn\
+rg arrays.rs fn
+rg arrays.rs 
+rg 
+rg --help
+y
+cd
+cd Documents\prgmng\rustgod\learn\
+vim
+ls
+vim Session.vim
+vim -S Session.vim
+rm -rf Session.vim
+cd ..
+ls
+cd hello_cargo\
+ls
+cd src\
+ls
+vi main.rs
+vim main.rs
+cd ../..
+cargo new my-project
+cd my-project\
+ls
+vim Cargo.toml
+git status
+cd src\
+ls
+cd ..
+rm -rf hello_cargo\
+cd my-project\
+ls
+cargo new restaurant --lib
+ls
+cd restaurant\
+ls
+vim src\lib.rs
+ls
+cd ..
+ls
+cd restaurant\
+ls -a
+vim Cargo.toml
+vim src\lib.rs
+cd ../../learn/
+vi vec.rs
+winget search cairo
+winget install Cairo.Cairo
+exit
+ls
+winget remove Cairo.Cairo
+vim AppData\Roaming\alacritty\alacritty.toml
+neofetch
+ls
+vi
+ls
+neofetch
+vim vimfiles\vimrc
+vim AppData\Roaming\alacritty\alacritty.toml
+ls
+vim _vimrc
+vim
+gvim
+vim AppData\Roaming\alacritty\alacritty.toml
+ls
+vim
+neofetch
+cls
+vim AppData\Roaming\alacritty\alacritty.toml
+ls
+winget search vim
+config nu
+exit
+winget install Jelmerro.Vieb          
+winget remove Jelmerro.Vieb          
+winget search vim
+winget install qutebrowser.qutebrowser
+winget remove qutebrowser.qutebrowser
+winget install Jelmerro.Vieb          
+vieb
+winget remove Jelmerro.Vieb          
+ls
+exit
+ls
+ls -a
+winget remove Jelmerro.Vieb          
+java
+rm -rf .jmc
+ls
+vim
+ls
+vi
+vim vimfiles\vimrc
+vim 
+vim
+nvim
+vim
+nvim 
+nvim
+vim
+vim _vimrc
+vim
+vim vimfiles\vimrc
+vim
+winget install fvim
+vim
+nvim
+vim
+vim -v
+vim --version
+vim vimfiles
+vim
+vim vimfiles
+ls
+neofetch
+cd Documents\prgmng\rustgod\learn\
+vi hasmap
+vim vec.rs
+winget install Jelmerro.Vieb          
+vim
+gvim -u NONE
+ls
+vim
+vim _vimrc
+vim
+vim _vimrc
+exit
+vi
+exit
+vim AppData\Roaming\alacritty\alacritty.toml
+ls
+vim 
+vi
+vim
+vim _vimer
+vim _vimrc
+vi
+nvim
+exit
+y
+cd
+vi
+vi vimfiles/vimrc
+vim vimfiles/vimrc
+nvim vimfiles\vimrc
+vim
+vim vimfiles/vimrc
+nvim vimfiles/vimrc
+vim vimfiles/vimrc
+nvim vimfiles/vimrc
+vim vimfiles/vimrc
+nvim vimfiles/vimrc
+vim vimfiles/vimrc
+nvim vimfiles/vimrc
+exit
+nvim vimfiles/vimrc
+vim vimfiles/vimrc
+nvim
+exit
+winget search zed
+winget install ZedIndustries.Zed      
+winget remove3 ZedIndustries.Zed      
+winget remove ZedIndustries.Zed      
+nvim 
+nvim
+vi
+nv
+nvim
+vim vimfiles/vimrc
+y
+cd ../Desktop/dotfilez/
+ls
+git status

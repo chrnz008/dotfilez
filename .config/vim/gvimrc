@@ -1,19 +1,18 @@
 "author:charan
 "gmail:charancuz008@gmail.com
 
-:let g:did_install_default_menus = 1
+" set guioptions+=M "disable loading of menu bar at runtime itself so alt doesnt hinder (add this in locvimrc)
+"this too :let g:did_install_default_menus = 1
 
 "set guifont and size
-" set guifont=Fixedsys:h11
+
 set guifont=Cascadia\ Mono\ NF:h12
 set guicursor=a:block
 set guicursor=a:blinkon0 "disable cursor blinking in gvim
 set linespace=0
+
 "colors
-" colorscheme default
-" se background=light
-" hi FoldColumn guibg=NONE
-colorscheme retrobox
+colorscheme slate
 se background=dark
 
 "fat cursor
@@ -29,25 +28,13 @@ if has("gui_running")
     set guioptions+=e "tab line gui or cli
 	 
     "remove scrollbars
-	set guioptions-=grL
-
-    set t_Co=256
-    " set guitablabel=%M\ %t
+	set guioptions-=rL
 
 endif
 
 se wak=no
-au GUIEnter * simalt ~x
-
 se showtabline=2 "always show tabs
-" Properly disable sound on errors on MacVim
-if has("gui_macvim")
-    autocmd GUIEnter * set vb t_vb=
-endif
 
 "competitive programming stuff
 set makeprg=g++\ %\ -o\ %<
 
-"charan things
-let g:netrw_winsize=20
-" nnoremap <leader>e :Vexplore<Return><Esc>  | " simple filetree

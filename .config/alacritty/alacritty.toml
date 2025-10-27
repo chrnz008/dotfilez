@@ -2,7 +2,6 @@
 TERM= "screen-256color"
 
 [terminal.shell]
-# program = "C:\\Windows\\System32\\cmd.exe"
 program= "C:\\Program Files\\nu\\bin\\nu.exe"
 args = []
 
@@ -10,26 +9,6 @@ args = []
 import = [
 	"C:\\Users\\chr_58\\AppData\\Roaming\\alacritty\\gnome_terminal.toml"
 ]
-# $HOME/.config/alacritty/alacritty.toml
-# by Rito Ghosh 2023-10-06
-#@charan place the config in Appdata\Roaming\alacritty
-
-# Alacritty now uses TOML formatting for its config files.
-# This is a simple example.
-
-# There are the specification here: https://github.com/alacritty/alacritty/blob/master/extra/man/alacritty.5.scd
-# It is not obvious how it translates to TOML. But it is extremely straightforward.
-
-# example: WINDOW, COLORS, etc. are tables, and should be represented as [window], [colors], respectively.
-# specifics of variables go under them. e.g.- look under "dynamic_padding" under-
-# https://github.com/alacritty/alacritty/blob/master/extra/man/alacritty.5.scd#window
-# write `dynamic_padding = true` (without backticks -`) under the table [window]
-# for variables with multiple values, use "dotted keys". Like setting `padding.x = 5` under [window].
-# This is simple. If not clear, do several trials and errors.
-
-# Below is my initial set-up. The TOML homepage (https://toml.io/en/v1.0.0) was very helpful in figuring this out. 
-# I put the file alacritty.toml in $HOME/.config/alacritty. However it can be kept anywhere among the places mentioned in
-# https://github.com/alacritty/alacritty/tree/master#configuration
 
 working_directory = "C:\\Users\\chr_58"
 
@@ -39,14 +18,13 @@ opacity = 1
 
 padding.x = 0
 padding.y = 0
-dynamic_padding = true #kinda test
+dynamic_padding = true 
 
-#title
 title="~"
 dynamic_title=true
 
-decorations ="Full"#"None"
-decorations_theme_variant = "Dark" # "Light"
+decorations ="Full"
+decorations_theme_variant = "Dark"
 # level = "AlwaysOnTop"
 
 [font]
@@ -61,12 +39,8 @@ size = 12.0
 offset = { x = 0, y = 1 }	
 
 [cursor]
-style = "Block"
-unfocused_hollow = false
-
-# [[keyboard.bindings]]
-# key = "F11"
-# action = "ToggleFullscreen"
+style = {shape="Block",blinking="Never"}
+unfocused_hollow = true
 
 [keyboard]
 
@@ -74,26 +48,8 @@ bindings = [
 { key="F11", action="ToggleFullscreen" },
 { key = "N", mods = "Control|Shift", action = "CreateNewWindow" },
 { key = "Space", mods="Control",action = "ToggleViMode" },
-# { key = "N", mods = "Control", action = "CreateNewWindow" },
-# { key = "Enter", mods="Alt",action = "CreateNewWindow"}
-# { key = "N", mods = "Control|Shift", action = "SpawnNewInstance" },
 ]
 
-[terminal]
+[colors]
+cursor = { text = "CellBackground" ,cursor = "#fbf1c7" } #dont change the cursor color
 
-# Tip: for inspiration, look for values in the source code files of your favorite VS Code themes, and use the color picker in
-# Google to test colors before setting a value, or simply using an editor such as VS Code where colors are displayed in a 
-# small box when a HEX is detected by the editor.
-#tips for @chrn
-# ctrl 0 for resetting font size
-
-# [[hints.enabled]] #just use the defaults
-# # command = "xdg-open" # On Linux/BSD
-# # command = "open" # On macOS
-# command = { program = "cmd", args = [ "/c", "start", ""  ]  } # On Windows
-# hyperlinks = true
-# post_processing = true
-# persist = false
-# mouse.enabled = true
-# binding = { key = "O", mods = "Control|Shift"  }
-# # regex = "(ipfs:|ipns:|magnet:|mailto:|gemini://|gopher://|https://|http://|news:|file:|git://|ssh:|ftp://)[^\u0000-\u001F\u007F-\u009F<>\"\\s{-}\\^6363`\\\\]+""`]"
