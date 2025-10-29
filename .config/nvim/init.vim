@@ -17,6 +17,8 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'christoomey/vim-tmux-navigator' "somehow making ctrl-w to easy maps
 Plug 'tpope/vim-surround'
 
+Plug 'saghen/blink.cmp', { 'tag': 'v1.*' }
+
 call plug#end()
 
 packadd nohlsearch "performs noh aut
@@ -87,4 +89,5 @@ tnoremap t   | "terminal mode
 "-------------------------------------------------------------- 
 lua << EOF
 require("cman.lsp")
+require("cman.plugins")
 EOF

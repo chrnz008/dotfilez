@@ -1,27 +1,19 @@
 "author:charan
 "gmail:charancuz008@gmail.com
 
-" set guioptions+=M "disable loading of menu bar at runtime itself so alt doesnt hinder (add this in locvimrc)
-"this too :let g:did_install_default_menus = 1
+colorscheme slate
 
 "set guifont and size
-
 set guifont=Cascadia\ Mono\ NF:h12
 set guicursor=a:block
 set guicursor=a:blinkon0 "disable cursor blinking in gvim
 set linespace=0
-
-"colors
-colorscheme slate
-se background=dark
 
 "fat cursor
 set gcr=a:block
 
 " Set extra options when running in GUI mode
 if has("gui_running")
-
-	set guioptions+=d
 
     set guioptions-=m "menu bar
     set guioptions-=T "tool bar
@@ -34,7 +26,3 @@ endif
 
 se wak=no
 se showtabline=2 "always show tabs
-
-"competitive programming stuff
-set makeprg=g++\ %\ -o\ %<
-

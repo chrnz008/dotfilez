@@ -1,1 +1,1 @@
-require("cman.plugins.lspconf")
+require("cman.plugins.blink")
