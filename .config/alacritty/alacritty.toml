@@ -7,7 +7,7 @@ args = []
 
 [general]
 import = [
-	"C:\\Users\\chr_58\\AppData\\Roaming\\alacritty\\gnome_terminal.toml"
+	"gnome_terminal.toml"
 ]
 
 working_directory = "C:\\Users\\chr_58"
@@ -18,14 +18,13 @@ opacity = 1
 
 padding.x = 0
 padding.y = 0
-dynamic_padding = true 
+dynamic_padding = true
 
 title="~"
 dynamic_title=true
 
 decorations ="Full"
 decorations_theme_variant = "Dark"
-# level = "AlwaysOnTop"
 
 [font]
 
@@ -36,7 +35,7 @@ bold_italic.family = "Cascadia Mono NF"
 
 size = 12.0
 
-offset = { x = 0, y = 1 }	
+offset = { x = 0, y = 1 }
 
 [cursor]
 style = {shape="Block",blinking="Never"}

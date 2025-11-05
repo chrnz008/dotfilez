@@ -13,6 +13,7 @@ call plug#begin(stdpath('data').'/plugged')
 
 Plug 'Konfekt/filepicker.vim' "use yazi as filemanager 
 
+Plug 'ap/vim-css-color'
 Plug 'jiangmiao/auto-pairs'
 Plug 'christoomey/vim-tmux-navigator' "somehow making ctrl-w to easy maps
 Plug 'tpope/vim-surround'
@@ -25,7 +26,7 @@ packadd nohlsearch "performs noh aut
 
 "-------------------------------------------------------------
 
-colo retrobox
+colo quack
 set cmdheight=1 " Height of the command bar (default)
 set colorcolumn=80 "Will make screen redrawing slower
 set concealcursor=nc "conceals cursor 

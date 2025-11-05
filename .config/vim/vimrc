@@ -1,39 +1,59 @@
-iab ch charan
+iab me charan
 iab mal charancuz008gmail.com
 set nocp "i strongly discourage it
+
+"--------------------------------------------------------------------
+"gvim
+set guioptions+=M
+:let g:did_install_default_menus = 1
+"-------------------------------------------------------------------
 
 filetype plugin indent on " Enable filetype plugins
 syntax on" Enable syntax highlighting
 
 let mapleader=' '
 
+"vim plug --ontop
+"-------------------------------------------------------------
+call plug#begin('~/.vim/plugged')
+
+Plug 'octol/vim-cpp-enhanced-highlight'
+Plug 'Konfekt/filepicker.vim' "use yazi as filemanager
+
+Plug 'jiangmiao/auto-pairs'
+Plug 'christoomey/vim-tmux-navigator'
+Plug 'tpope/vim-surround'
+Plug 'vimwiki/vimwiki'
+
+call plug#end()
+"--------------------------------------------------------------
+
 packadd comment "vims default
 packadd nohlsearch "performs noh aut
 
 "-------------------------------------------------------------
 
-colo retrobox
+colo quack
 set autoindent "Auto indent
 set autoread  " Set to auto read when a file is changed from the outside
-set background=dark
 set belloff=all
 set cmdheight=1 " Height of the command bar (default)
 set colorcolumn=80 "Will make screen redrawing slower
-set concealcursor=nc "conceals cursor 
+set concealcursor=nc "conceals cursor
 set cursorline
 set cursorlineopt=number "just hi the number
 set encoding=utf8 " Set utf8 as standard encoding and en_US as the standard language
 set ffs=unix,dos,mac " Use Unix as the standard file type
-set foldcolumn=1 
+set foldcolumn=1
 set gcr=a:block "fat cursor --vim.o.guicursor=""
 set hid " A buffer becomes hidden when it is abandoned
 set hlsearch " Highlight search results
 set ignorecase " Ignore case when searching
 set incsearch " Makes search act like search in modern browsers
-set laststatus=2 " always show statusline 
+set laststatus=2 " always show statusline
 set lazyredraw " Don't redraw while executing macros (good performance config)
 set noexpandtab
-set nojoinspaces "J doesnt join spaces 
+set nojoinspaces "J doesnt join spaces
 set noshowmatch " matching bracks
 set noswapfile "no swaps
 set nowrap "noWrap lines
@@ -48,7 +68,7 @@ set shiftwidth=4
 set shortmess+=I  "disables the start page
 set showtabpanel=0 "only vimm
 set smartcase " When searching try to be smart about cases
-set smartindent 
+set smartindent
 set smarttab
 set softtabstop-=1"inherit from shiftwidth
 set tabstop=4
@@ -59,7 +79,7 @@ set whichwrap+=<,>,h,l "makes cursor move from one to another at ends
 set wildmenu " Turn on the Wild menu
 
 " ->KEYMAPS
-"-------------------------------------------------------------- 
+"--------------------------------------------------------------
 
 nnoremap <Esc><Esc> <Cmd>nohlsearch<CR>
 
@@ -72,3 +92,13 @@ nnoremap <leader>y :%y+<CR> |"system clipboard
 xnoremap <leader>y "+y  |"system clipboard for all visual modes
 
 tnoremap >   |"terminal mode >cuz yazi uses term
+
+"-- plgn-spe-conf
+"--------------------------------------------------------------
+"
+let g:vimwiki_list = [{'path': 'G:/My Drive/notes', 'syntax': 'markdown','ext': '.md'}]  "vimwiki
+
+let g:no_filepicker_maps = 1 "unmap the default
+nnoremap <silent> <leader>e <Plug>(FilePicker)
+
+"-------------------------------------------------------------
