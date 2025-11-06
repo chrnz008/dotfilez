@@ -12,7 +12,7 @@ $env.PROMPT_COMMAND_RIGHT = "" #disable the right prompt
 
 
 $env.config.table.mode = 'default'
- 
+
 # aliases
 
 alias l = dir
@@ -20,11 +20,14 @@ alias ls = dir
 alias nv = nvim
 alias vi = vim
 alias y = yazi
-alias neofetch = fastfetch 
+alias neofetch = fastfetch
 
 alias qn = vim -o ~\\quicknotes.md
 
-# oh-my-posh init nu --config ~/Downloads/zash.omp.json
+alias ga = git add
+alias gc = git clone
+alias gs = git status
+
 
 def --env y [...args] {
 		let tmp = (mktemp -t "yazi-cwd.XXXXXX")
@@ -32,10 +35,10 @@ def --env y [...args] {
 				let cwd = (open $tmp)
 				if $cwd != "" and $cwd != $env.PWD {
 							cd $cwd
-								
+
 				}
 					rm -fp $tmp
-					
+
 }
 
 # --- Add keybinding for Ctrl-f to launch fzf ---

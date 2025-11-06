@@ -1,7 +1,7 @@
 "author:charan
 "gmail:charancuz008@gmail.com
 
-colorscheme slate
+colorscheme quack
 
 "set guifont and size
 set guifont=Cascadia\ Mono\ NF:h12

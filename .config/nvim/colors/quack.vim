@@ -1,1 +1,0 @@
-/c/Users/chr_58/Desktop/dotfilez/.config/vim/colors/quack.vim

@@ -11,7 +11,7 @@ let mapleader=' '
 "vim plug --ontop
 call plug#begin(stdpath('data').'/plugged')
 
-Plug 'Konfekt/filepicker.vim' "use yazi as filemanager 
+Plug 'Konfekt/filepicker.vim' "use yazi as filemanager
 
 Plug 'ap/vim-css-color'
 Plug 'jiangmiao/auto-pairs'
@@ -26,17 +26,15 @@ packadd nohlsearch "performs noh aut
 
 "-------------------------------------------------------------
 
-colo quack
-set cmdheight=1 " Height of the command bar (default)
 set colorcolumn=80 "Will make screen redrawing slower
-set concealcursor=nc "conceals cursor 
+set concealcursor=nc "conceals cursor
 set cursorline
 set cursorlineopt=number "just hi the number
 set ffs=unix,dos,mac " Use Unix as the standard file type
-set foldcolumn=1 
-set gcr=a:block "fat cursor --vim.o.guicursor=""
+set foldcolumn=1
+set gcr=a:block "fat cursor
 set ignorecase " Ignore case when searching
-set laststatus=3 " always show statusline 
+set laststatus=3 " always show statusline
 set noexpandtab
 set noshowmatch " matching bracks
 set noswapfile "no swaps
@@ -49,8 +47,9 @@ set relativenumber " show relativeline numbers
 set scrolloff=7
 set shiftwidth=4
 set shortmess+=I  "disables the start page
+set signcolumn=number "use numberline
 set smartcase " When searching try to be smart about cases
-set smartindent 
+set smartindent
 set softtabstop-=1 "inherit from shiftwidth
 set tabstop=4
 set timeoutlen=500
@@ -60,13 +59,13 @@ set wildmenu " Turn on the Wild menu
 set winborder=rounded
 
 "-- plgn-spe-conf
-"-------------------------------------------------------------- 
+"--------------------------------------------------------------
 
 let g:no_filepicker_maps = 1 "unmap the default
 nnoremap <silent> <leader>e <Plug>(FilePicker)
 
 " ->KEYMAPS
-"-------------------------------------------------------------- 
+"--------------------------------------------------------------
 
 " different keymaps for easy peasy coding
 
@@ -84,10 +83,10 @@ nnoremap <leader>y :%y+<CR> | "system clipboard
 xnoremap <leader>y "+y | "system clipboard for all visual modes
 
 nnoremap <leader>f :fin | "easy find
-tnoremap t   | "terminal mode
+tnoremap >   | "terminal mode
 
 "LUABLOCK
-"-------------------------------------------------------------- 
+"--------------------------------------------------------------
 lua << EOF
 require("cman.lsp")
 require("cman.plugins")

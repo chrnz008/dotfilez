@@ -1,19 +1,18 @@
 # dotfilez
-my dot config files 
+my dot config files
 dont use unless you are charan mandati
 
 -----
 
 >packages i cant live without
- 
+
 - crossplatform
 
 1. vim
-2. neovim
 3. gnucoreutils
-4. yazi
+4. alacritty
+5. yazi
 
-- windows
-- vim has a rtp search that which is better it is at .home/vim or .config/vim in unix and vimfiles in win yk what to do
+# windows
 - changing the power plan to perfromace in powerplan in windows improves cursor
 scrolling performance in vim
