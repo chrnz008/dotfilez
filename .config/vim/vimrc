@@ -1,12 +1,14 @@
-iab me charan
+iab mee charan
 iab mal charancuz008gmail.com
 set nocp "i strongly discourage it
 
-"--------------------------------------------------------------------
+"------------------------------------------------------------------------------
 "gvim
 set guioptions+=M
-:let g:did_install_default_menus = 1
-"-------------------------------------------------------------------
+let g:did_install_default_menus = 1
+let g:loaded_netrwPlugin = 0
+
+"------------------------------------------------------------------------------
 
 filetype plugin indent on " Enable filetype plugins
 syntax on" Enable syntax highlighting
@@ -14,38 +16,40 @@ syntax on" Enable syntax highlighting
 let mapleader=' '
 
 "vim plug --ontop
-"-------------------------------------------------------------
+"------------------------------------------------------------------------------
 call plug#begin('~/.vim/plugged')
 
-Plug 'octol/vim-cpp-enhanced-highlight'
 Plug 'Konfekt/filepicker.vim' "use yazi as filemanager
-
-Plug 'jiangmiao/auto-pairs'
+Plug 'NLKNguyen/papercolor-theme'
+Plug 'chriskempson/vim-tomorrow-theme'
 Plug 'christoomey/vim-tmux-navigator'
+Plug 'chrnz008/quack.vim'
+Plug 'chrnz008/schizo.vim'
+Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
+Plug 'jiangmiao/auto-pairs'
+Plug 'octol/vim-cpp-enhanced-highlight' "hmm
+Plug 'sainnhe/everforest' "cusor s:palette.fg
 Plug 'tpope/vim-surround'
 Plug 'vimwiki/vimwiki'
 
 call plug#end()
-"--------------------------------------------------------------
 
 packadd comment "vims default
 packadd nohlsearch "performs noh aut
 
-"-------------------------------------------------------------
+"------------------------------------------------------------------------------
 
-colo quack
 set autoindent "Auto indent
 set autoread  " Set to auto read when a file is changed from the outside
 set belloff=all
-set cmdheight=1 " Height of the command bar (default)
-set colorcolumn=80 "Will make screen redrawing slower
+set colorcolumn+=80
 set concealcursor=nc "conceals cursor
 set cursorline
 set cursorlineopt=number "just hi the number
-set encoding=utf8 " Set utf8 as standard encoding and en_US as the standard language
-set ffs=unix,dos,mac " Use Unix as the standard file type
+set encoding=utf8 "Self explanatory
+set fillchars+=vert:│,fold:·,foldsep:│"make seperator better
 set foldcolumn=1
-set gcr=a:block "fat cursor --vim.o.guicursor=""
+set gcr=a:block "fat cursor
 set hid " A buffer becomes hidden when it is abandoned
 set hlsearch " Highlight search results
 set ignorecase " Ignore case when searching
@@ -54,20 +58,14 @@ set laststatus=2 " always show statusline
 set lazyredraw " Don't redraw while executing macros (good performance config)
 set noexpandtab
 set nojoinspaces "J doesnt join spaces
-set noshowmatch " matching bracks
-set noswapfile "no swaps
+set noswapfile
 set nowrap "noWrap lines
-set nowritebackup
 set number " show line numbers
 set path+=** "make the find to search through dirs and subdirs
-set regexpengine=0 "performance on windows"
+set regexpengine=0
 set relativenumber " show relativeline numbers
-set ruler " Always show current position
-set scrolloff=7
 set shiftwidth=4
-set shortmess+=I  "disables the start page
-set showtabpanel=0 "only vimm
-set smartcase " When searching try to be smart about cases
+set smartcase
 set smartindent
 set smarttab
 set softtabstop-=1"inherit from shiftwidth
@@ -76,10 +74,15 @@ set termguicolors
 set timeoutlen=500
 set title
 set whichwrap+=<,>,h,l "makes cursor move from one to another at ends
-set wildmenu " Turn on the Wild menu
+
+" OS
+"------------------------------------------------------------------------------
+if has("win64")
+	set renderoptions=type:directx
+endif
 
 " ->KEYMAPS
-"--------------------------------------------------------------
+"------------------------------------------------------------------------------
 
 nnoremap <Esc><Esc> <Cmd>nohlsearch<CR>
 
@@ -91,14 +94,24 @@ nnoremap <leader>te :tabe<Space>
 nnoremap <leader>y :%y+<CR> |"system clipboard
 xnoremap <leader>y "+y  |"system clipboard for all visual modes
 
-tnoremap >   |"terminal mode >cuz yazi uses term
+tnoremap >   |"terminal mode
 
 "-- plgn-spe-conf
-"--------------------------------------------------------------
+"------------------------------------------------------------------------------
 "
-let g:vimwiki_list = [{'path': 'G:/My Drive/notes', 'syntax': 'markdown','ext': '.md'}]  "vimwiki
+let g:vimwiki_list = [{'path': '~/notes', 'syntax': 'markdown','ext': '.md'}]  "vimwiki
 
 let g:no_filepicker_maps = 1 "unmap the default
 nnoremap <silent> <leader>e <Plug>(FilePicker)
 
-"-------------------------------------------------------------
+let g:mkdp_combine_preview = 0
+let g:mkdp_combine_preview_auto_refresh = 1
+
+"------------------------------------------------------------------------------
+"exp
+set tags=./tags;,tags
+
+inoremap <c-g><c-h> <Left>
+inoremap <c-g><c-l> <Right>
+
+"------------------------------------------------------------------------------

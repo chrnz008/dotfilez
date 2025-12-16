@@ -1,10 +1,7 @@
 "author:charan
 "gmail:charancuz008@gmail.com
 
-colorscheme quack
-
 "set guifont and size
-set guifont=Cascadia\ Mono\ NF:h12
 set guicursor=a:block
 set guicursor=a:blinkon0 "disable cursor blinking in gvim
 set linespace=0
@@ -18,11 +15,11 @@ if has("gui_running")
     set guioptions-=m "menu bar
     set guioptions-=T "tool bar
     set guioptions+=e "tab line gui or cli
-	 
+
     "remove scrollbars
 	set guioptions-=rL
 
 endif
 
-se wak=no
-se showtabline=2 "always show tabs
+set wak=no
+set showtabline=2 "always show tabs

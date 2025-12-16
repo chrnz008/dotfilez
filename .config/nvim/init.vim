@@ -1,23 +1,19 @@
-iab ch charan
+iab mee charan
 iab mal charancuz008gmail.com
 
 "-------------------------------------------------------------
-
-filetype plugin indent on " Enable filetype plugins
-syntax on" Enable syntax highlighting
 
 let mapleader=' '
 
 "vim plug --ontop
 call plug#begin(stdpath('data').'/plugged')
 
+Plug 'sainnhe/everforest'
 Plug 'Konfekt/filepicker.vim' "use yazi as filemanager
-
-Plug 'ap/vim-css-color'
-Plug 'jiangmiao/auto-pairs'
 Plug 'christoomey/vim-tmux-navigator' "somehow making ctrl-w to easy maps
+Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-surround'
-
+Plug 'NTBBloodbath/doom-one.nvim'
 Plug 'saghen/blink.cmp', { 'tag': 'v1.*' }
 
 call plug#end()
@@ -26,12 +22,11 @@ packadd nohlsearch "performs noh aut
 
 "-------------------------------------------------------------
 
+colo everforest
 set colorcolumn=80 "Will make screen redrawing slower
 set concealcursor=nc "conceals cursor
 set cursorline
 set cursorlineopt=number "just hi the number
-set ffs=unix,dos,mac " Use Unix as the standard file type
-set foldcolumn=1
 set gcr=a:block "fat cursor
 set ignorecase " Ignore case when searching
 set laststatus=3 " always show statusline
@@ -42,21 +37,32 @@ set nowrap "noWrap lines
 set nowritebackup
 set number " show line numbers
 set path+=** "make the find to search through dirs and subdirs
-set regexpengine=0 "performance on windows"
 set relativenumber " show relativeline numbers
-set scrolloff=7
 set shiftwidth=4
-set shortmess+=I  "disables the start page
-set signcolumn=number "use numberline
+set signcolumn=yes "use numberline
 set smartcase " When searching try to be smart about cases
 set smartindent
 set softtabstop-=1 "inherit from shiftwidth
 set tabstop=4
-set timeoutlen=500
 set title
 set whichwrap+=<,>,h,l "makes cursor move from one to another at ends
 set wildmenu " Turn on the Wild menu
 set winborder=rounded
+
+" ->KEYMAPS
+"--------------------------------------------------------------
+
+nnoremap <Esc><Esc> <Cmd>nohlsearch<CR>
+
+nnoremap <leader>w <Cmd>update<CR>
+nnoremap <leader>bs <Cmd>ls<CR>:b<Space>
+nnoremap <leader>bd <Cmd>bd<CR>
+nnoremap <leader>te :tabe<Space>
+
+nnoremap <leader>y :%y+<CR> | "system clipboard
+xnoremap <leader>y "+y  | "system clipboard  all visual modes
+
+tnoremap>   | "terminal mode >cuz yazi uses term
 
 "-- plgn-spe-conf
 "--------------------------------------------------------------
@@ -64,27 +70,18 @@ set winborder=rounded
 let g:no_filepicker_maps = 1 "unmap the default
 nnoremap <silent> <leader>e <Plug>(FilePicker)
 
-" ->KEYMAPS
+if exists("g:neovide")
+let g:neovide_cursor_animation_length = 0
+let g:neovide_padding_bottom = 3
+let g:neovide_padding_left = 3
+let g:neovide_padding_right = 3
+let g:neovide_padding_top = 3
+let g:neovide_text_contrast = 0.1 "alacritty
+let g:neovide_text_gamma = 0.8
+set linespace=0
+endif
+
 "--------------------------------------------------------------
-
-" different keymaps for easy peasy coding
-
-nnoremap <Esc><Esc> <Cmd>nohlsearch<CR>| " hlsearch creates an annoyance so instead of noh press ese esc
-"above one has a default plugin
-
-nnoremap <leader>w <Cmd>update<CR>
-nnoremap <leader>bs <Cmd>ls<CR>:b<Space>
-" nnoremap <leader>bd :bd<Return><Esc>  | " much easier
-nnoremap <leader>bd <Cmd>bd<CR>
-
-nnoremap <leader>te :tabe<Space>
-
-nnoremap <leader>y :%y+<CR> | "system clipboard
-xnoremap <leader>y "+y | "system clipboard for all visual modes
-
-nnoremap <leader>f :fin | "easy find
-tnoremap >   | "terminal mode
-
 "LUABLOCK
 "--------------------------------------------------------------
 lua << EOF

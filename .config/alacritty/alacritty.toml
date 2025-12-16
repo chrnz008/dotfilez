@@ -7,7 +7,7 @@ args = []
 
 [general]
 import = [
-	"gnome_terminal.toml"
+	"everforest_dark.toml"
 ]
 
 working_directory = "C:\\Users\\chr_58"
@@ -50,5 +50,7 @@ bindings = [
 ]
 
 [colors]
-cursor = { text = "CellBackground" ,cursor = "#fbf1c7" } #dont change the cursor color
-
+# cursor = { text = "CellBackground" ,cursor = "#cb4b16" } #red
+# cursor = { text = "CellBackground" ,cursor = "#51afef" } #blue
+# cursor = { text = "CellBackground" ,cursor = "#00ff00"} #green
+cursor = { text = "CellBackground" ,cursor = "#d3c6aa" } #everforest

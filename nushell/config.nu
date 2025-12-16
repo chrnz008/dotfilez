@@ -3,6 +3,7 @@ $env.config = {
 edit_mode: vi
 }
 $env.TERM = "xterm-256color"
+$env.EDITOR = "vim"
 $env.config.buffer_editor = "vim"
 $env.config.show_banner = false
 
@@ -16,7 +17,8 @@ $env.config.table.mode = 'default'
 # aliases
 
 alias l = dir
-alias ls = dir
+alias ls = vdir
+alias sl = vdir
 alias nv = nvim
 alias vi = vim
 alias y = yazi
@@ -53,6 +55,16 @@ $env.config = ($env.config | upsert keybindings (
                 send: executehostcommand
                 cmd: "fzf"
             }
+        }
+        {
+          name: "open vim"
+          modifier: "control"
+          keycode: "char_o"
+          mode: ["emacs", "vi_insert", "vi_normal"]
+          event: {
+              send: executehostcommand
+              cmd: "vim"
+          }
         }
     ]
 ))
