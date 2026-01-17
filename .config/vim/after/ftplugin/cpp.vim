@@ -1,1 +1,1 @@
-setlocal cindent omnifunc=syntaxcomplete#Complete
+setlocal cindent

@@ -13,8 +13,8 @@ Plug 'Konfekt/filepicker.vim' "use yazi as filemanager
 Plug 'christoomey/vim-tmux-navigator' "somehow making ctrl-w to easy maps
 Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-surround'
-Plug 'NTBBloodbath/doom-one.nvim'
 Plug 'saghen/blink.cmp', { 'tag': 'v1.*' }
+Plug 'vimwiki/vimwiki'
 
 call plug#end()
 
@@ -44,6 +44,7 @@ set smartcase " When searching try to be smart about cases
 set smartindent
 set softtabstop-=1 "inherit from shiftwidth
 set tabstop=4
+set termguicolors
 set title
 set whichwrap+=<,>,h,l "makes cursor move from one to another at ends
 set wildmenu " Turn on the Wild menu
@@ -66,6 +67,8 @@ tnoremap>   | "terminal mode >cuz yazi uses term
 
 "-- plgn-spe-conf
 "--------------------------------------------------------------
+
+let g:vimwiki_list = [{'path': '~/notes', 'syntax': 'markdown','ext': '.md'}]  "vimwiki
 
 let g:no_filepicker_maps = 1 "unmap the default
 nnoremap <silent> <leader>e <Plug>(FilePicker)

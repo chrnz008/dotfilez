@@ -1,0 +1,13 @@
+cursor_animation_length = 0.0
+cursor_short_animation_length = 0.0
+
+[font]
+
+normal.family = "Consolas"
+bold.family = "Consolas"
+italic.family = "Consolas"
+bold_italic.family = "Consolas"
+
+size = 12.0
+
+offset = { x = 0, y = 1 }

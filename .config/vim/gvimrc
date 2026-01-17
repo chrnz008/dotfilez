@@ -1,13 +1,9 @@
 "author:charan
 "gmail:charancuz008@gmail.com
 
-"set guifont and size
-set guicursor=a:block
-set guicursor=a:blinkon0 "disable cursor blinking in gvim
+"set guicursor
+set gcr=a:block-blinkon0 "fat cursor - cursor blink
 set linespace=0
-
-"fat cursor
-set gcr=a:block
 
 " Set extra options when running in GUI mode
 if has("gui_running")

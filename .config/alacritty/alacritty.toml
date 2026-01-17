@@ -1,13 +1,13 @@
 [env]
 TERM= "screen-256color"
 
-[terminal.shell]
-program= "C:\\Program Files\\nu\\bin\\nu.exe"
-args = []
+# [terminal.shell]
+# program= "powershell.exe"
+# args = []
 
 [general]
 import = [
-	"everforest_dark.toml"
+	"xterm.toml"
 ]
 
 working_directory = "C:\\Users\\chr_58"
@@ -27,13 +27,6 @@ decorations ="Full"
 decorations_theme_variant = "Dark"
 
 [font]
-
-normal.family = "Cascadia Mono NF"
-bold.family = "Cascadia Mono NF"
-italic.family = "Cascadia Mono NF"
-bold_italic.family = "Cascadia Mono NF"
-
-size = 12.0
 
 offset = { x = 0, y = 1 }
 

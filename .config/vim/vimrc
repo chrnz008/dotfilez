@@ -10,27 +10,24 @@ let g:loaded_netrwPlugin = 0
 
 "------------------------------------------------------------------------------
 
-filetype plugin indent on " Enable filetype plugins
-syntax on" Enable syntax highlighting
+filetype plugin indent on
+syntax on
 
 let mapleader=' '
 
 "vim plug --ontop
 "------------------------------------------------------------------------------
+
 call plug#begin('~/.vim/plugged')
 
-Plug 'Konfekt/filepicker.vim' "use yazi as filemanager
+Plug 'Konfekt/filepicker.vim' "use yazi as a file manager
 Plug 'NLKNguyen/papercolor-theme'
-Plug 'chriskempson/vim-tomorrow-theme'
+Plug 'archseer/colibri.vim'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'chrnz008/quack.vim'
 Plug 'chrnz008/schizo.vim'
-Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 Plug 'jiangmiao/auto-pairs'
-Plug 'octol/vim-cpp-enhanced-highlight' "hmm
-Plug 'sainnhe/everforest' "cusor s:palette.fg
 Plug 'tpope/vim-surround'
-Plug 'vimwiki/vimwiki'
 
 call plug#end()
 
@@ -39,6 +36,7 @@ packadd nohlsearch "performs noh aut
 
 "------------------------------------------------------------------------------
 
+colo colibri
 set autoindent "Auto indent
 set autoread  " Set to auto read when a file is changed from the outside
 set belloff=all
@@ -49,7 +47,6 @@ set cursorlineopt=number "just hi the number
 set encoding=utf8 "Self explanatory
 set fillchars+=vert:│,fold:·,foldsep:│"make seperator better
 set foldcolumn=1
-set gcr=a:block "fat cursor
 set hid " A buffer becomes hidden when it is abandoned
 set hlsearch " Highlight search results
 set ignorecase " Ignore case when searching
@@ -62,7 +59,6 @@ set noswapfile
 set nowrap "noWrap lines
 set number " show line numbers
 set path+=** "make the find to search through dirs and subdirs
-set regexpengine=0
 set relativenumber " show relativeline numbers
 set shiftwidth=4
 set smartcase
@@ -71,8 +67,9 @@ set smarttab
 set softtabstop-=1"inherit from shiftwidth
 set tabstop=4
 set termguicolors
-set timeoutlen=500
 set title
+set ttimeoutlen=50
+set ttyscroll=3 "for redraw issues in win32
 set whichwrap+=<,>,h,l "makes cursor move from one to another at ends
 
 " OS
@@ -99,19 +96,9 @@ tnoremap >   |"terminal mode
 "-- plgn-spe-conf
 "------------------------------------------------------------------------------
 "
-let g:vimwiki_list = [{'path': '~/notes', 'syntax': 'markdown','ext': '.md'}]  "vimwiki
-
 let g:no_filepicker_maps = 1 "unmap the default
 nnoremap <silent> <leader>e <Plug>(FilePicker)
 
-let g:mkdp_combine_preview = 0
-let g:mkdp_combine_preview_auto_refresh = 1
-
 "------------------------------------------------------------------------------
 "exp
-set tags=./tags;,tags
-
-inoremap <c-g><c-h> <Left>
-inoremap <c-g><c-l> <Right>
-
 "------------------------------------------------------------------------------
