@@ -15,7 +15,21 @@ if has("gui_running")
     "remove scrollbars
 	set guioptions-=rL
 
+	"ui
+	set guioptions+=Cd
+
 endif
 
 set wak=no
 set showtabline=2 "always show tabs
+
+
+command ToggleFullscreen {
+	if &guioptions =~# 's'
+		set guioptions-=s
+	else
+		set guioptions+=s
+	endif
+}
+
+map <expr> <F11> &go =~# 's' ? ":se go-=s<CR>" : ":se go+=s<CR>"

@@ -1,1 +1,0 @@
-require("cman.plugins.blink")

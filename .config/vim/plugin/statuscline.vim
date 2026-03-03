@@ -38,5 +38,8 @@ function! Spinner()
 	return s:pix
 endfunction
 "}
+"{custom highlights
+hi BLUE guifg=LightBlue guibg=NONE
+"}
 
-set statusline=%{Modeconvention()}\ %{Spinner()}\ \ %<%f\ %h%w%m%r%=%-17.(%l,%c%V%)\ %P
+set statusline=%#BLUE#▐%*\ %{Modeconvention()}\ %{Spinner()}\ \ %<%f\ %h%w%m%r%=%-17.(%l,%c%V%)\ %P

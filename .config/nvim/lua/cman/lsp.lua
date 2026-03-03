@@ -2,7 +2,7 @@
 -------------------------------------------------------------
 
 --enable-lsp-server
-vim.lsp.enable({'clangd','rust-analyzer'})
+vim.lsp.enable({'clangd','lua_ls','rust-analyzer'})
 
 vim.keymap.set('n','<leader>lf',vim.lsp.buf.format)
 
@@ -15,8 +15,6 @@ vim.api.nvim_create_autocmd('LspAttach', {
     end
   end,
 })
-
-vim.cmd("se completeopt+=noselect")
 
 -- vim.diagnostic.config({
 --   -- virtual_lines = true

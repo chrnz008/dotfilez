@@ -21,11 +21,8 @@ let mapleader=' '
 call plug#begin('~/.vim/plugged')
 
 Plug 'Konfekt/filepicker.vim' "use yazi as a file manager
-Plug 'NLKNguyen/papercolor-theme'
-Plug 'archseer/colibri.vim'
+Plug 'chrnz008/gruber.vim'
 Plug 'christoomey/vim-tmux-navigator'
-Plug 'chrnz008/quack.vim'
-Plug 'chrnz008/schizo.vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-surround'
 
@@ -36,7 +33,7 @@ packadd nohlsearch "performs noh aut
 
 "------------------------------------------------------------------------------
 
-colo colibri
+colo gruber 
 set autoindent "Auto indent
 set autoread  " Set to auto read when a file is changed from the outside
 set belloff=all
@@ -61,6 +58,7 @@ set number " show line numbers
 set path+=** "make the find to search through dirs and subdirs
 set relativenumber " show relativeline numbers
 set shiftwidth=4
+set signcolumn=no "no
 set smartcase
 set smartindent
 set smarttab
@@ -93,12 +91,20 @@ xnoremap <leader>y "+y  |"system clipboard for all visual modes
 
 tnoremap >   |"terminal mode
 
+"ZED
+function! ToggleLineNumbers()
+	if &number
+		set nonumber
+		set norelativenumber
+	else
+		set number
+		set relativenumber
+	endif
+endfunction
+
+nnoremap <leader>; :call ToggleLineNumbers()<CR>
 "-- plgn-spe-conf
 "------------------------------------------------------------------------------
 "
 let g:no_filepicker_maps = 1 "unmap the default
 nnoremap <silent> <leader>e <Plug>(FilePicker)
-
-"------------------------------------------------------------------------------
-"exp
-"------------------------------------------------------------------------------
