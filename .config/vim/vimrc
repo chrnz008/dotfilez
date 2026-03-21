@@ -21,10 +21,16 @@ let mapleader=' '
 call plug#begin('~/.vim/plugged')
 
 Plug 'Konfekt/filepicker.vim' "use yazi as a file manager
-Plug 'chrnz008/gruber.vim'
 Plug 'christoomey/vim-tmux-navigator'
+Plug 'chrnz008/gruber.vim'
+Plug 'chrnz008/reykjavik'
+Plug 'chrnz008/schizo.vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-surround'
+"experimental
+" Plug 'sheerun/vim-polyglot' "disturbing if_rust
+Plug 'mattn/vim-smear-cursor'
+Plug 'chrisbra/colorizer'
 
 call plug#end()
 
@@ -33,17 +39,16 @@ packadd nohlsearch "performs noh aut
 
 "------------------------------------------------------------------------------
 
-colo gruber 
+colo gruber
 set autoindent "Auto indent
 set autoread  " Set to auto read when a file is changed from the outside
 set belloff=all
 set colorcolumn+=80
-set concealcursor=nc "conceals cursor
 set cursorline
 set cursorlineopt=number "just hi the number
 set encoding=utf8 "Self explanatory
-set fillchars+=vert:│,fold:·,foldsep:│"make seperator better
-set foldcolumn=1
+set fillchars+=vert:│,fold:·,foldsep:│,eob:\  |"make seperator better exp:removing eob cuz of linenr
+set foldcolumn=0 "signcoloumn is better
 set hid " A buffer becomes hidden when it is abandoned
 set hlsearch " Highlight search results
 set ignorecase " Ignore case when searching
@@ -58,7 +63,7 @@ set number " show line numbers
 set path+=** "make the find to search through dirs and subdirs
 set relativenumber " show relativeline numbers
 set shiftwidth=4
-set signcolumn=no "no
+set signcolumn=yes "no
 set smartcase
 set smartindent
 set smarttab
@@ -73,7 +78,9 @@ set whichwrap+=<,>,h,l "makes cursor move from one to another at ends
 " OS
 "------------------------------------------------------------------------------
 if has("win64")
-	set renderoptions=type:directx
+	if has("directx")
+		set renderoptions=type:directx
+	endif
 endif
 
 " ->KEYMAPS
@@ -91,6 +98,13 @@ xnoremap <leader>y "+y  |"system clipboard for all visual modes
 
 tnoremap >   |"terminal mode
 
+"emacs style for :
+cnoremap <C-A>		<Home>
+cnoremap <C-B>		<Left>
+" cnoremap <C-E>		<End> "default
+" cnoremap <C-D>		<Del> "kinda good defautl
+" cnoremap <C-F>		<Right> "cant map bcuz of quickfiz
+
 "ZED
 function! ToggleLineNumbers()
 	if &number
@@ -102,9 +116,21 @@ function! ToggleLineNumbers()
 	endif
 endfunction
 
-nnoremap <leader>; :call ToggleLineNumbers()<CR>
+nnoremap <silent> <leader>; :call ToggleLineNumbers()<CR>
+"------------------------------------------------------------------------------
+"filetype
+
+" markdown
+" let g:filetype_md = 'pandoc' "using pandoc syntax??ftplugin for md
+let g:markdown_fenced_languages = ['cpp']
+
 "-- plgn-spe-conf
 "------------------------------------------------------------------------------
 "
 let g:no_filepicker_maps = 1 "unmap the default
 nnoremap <silent> <leader>e <Plug>(FilePicker)
+
+"------------------------------------------------------------------------------
+" exp
+lua << EOF
+EOF

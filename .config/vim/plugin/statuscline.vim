@@ -38,8 +38,25 @@ function! Spinner()
 	return s:pix
 endfunction
 "}
-"{custom highlights
-hi BLUE guifg=LightBlue guibg=NONE
+
+"{OS
+function! Os()
+	if has("win64")
+		return "dos"
+	elseif has("unix")
+		return "unx"
+	else
+		return "tux"
+	endif
+endfunction
 "}
 
-set statusline=%#BLUE#▐%*\ %{Modeconvention()}\ %{Spinner()}\ \ %<%f\ %h%w%m%r%=%-17.(%l,%c%V%)\ %P
+"{custom highlights
+let s:bg = synIDattr(hlID('Normal'), 'bg#') "the statusline guibg
+let s:sl_bg = synIDattr(hlID('StatusLine'), 'bg#') "the statusline guibg
+let s:sl_fg = synIDattr(hlID('StatusLine'), 'fg#') "the statusline guibg
+execute 'hi BLUE guifg=SlateBlue guibg=' . s:sl_bg
+execute 'hi backg guibg =' . s:bg |"'guifg='. s:sl_fg
+"}
+
+set statusline=%#BLUE#%*\%{Modeconvention()}\ %{Spinner()}\ \ %<%f\ %h%w%m%r%=%-17.(%l,%c%V%)\ %{Os()}\ %P

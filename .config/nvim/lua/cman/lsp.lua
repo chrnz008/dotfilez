@@ -23,3 +23,6 @@ vim.api.nvim_create_autocmd('LspAttach', {
 --    -- current_line = true
 --   },
 -- })
+--
+
+vim.opt.completeopt:append("noinsert")

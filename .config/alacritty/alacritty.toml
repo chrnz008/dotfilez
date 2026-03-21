@@ -1,13 +1,13 @@
 [env]
 TERM= "screen-256color"
 
-# [terminal.shell]
-# program= "powershell.exe"
-# args = []
+[terminal.shell]
+program= "cmd.exe"
+args = []
 
 [general]
 import = [
-	"xterm.toml"
+	"gruber_darker.toml"
 ]
 
 working_directory = "C:\\Users\\chr_58"
@@ -28,6 +28,13 @@ decorations_theme_variant = "Dark"
 
 [font]
 
+# normal.family = "IBM Plex Mono"
+# bold.family = "IBM Plex Mono"
+# italic.family = "IBM Plex Mono"
+# bold_italic.family = "IBM Plex Mono"
+
+# size = 13.0
+
 offset = { x = 0, y = 1 }
 
 [cursor]
@@ -43,6 +50,7 @@ bindings = [
 ]
 
 [colors]
+draw_bold_text_with_bright_colors = true
 # cursor = { text = "CellBackground" ,cursor = "#cb4b16" } #red
 # cursor = { text = "CellBackground" ,cursor = "#51afef" } #blue
 # cursor = { text = "CellBackground" ,cursor = "#00ff00"} #green

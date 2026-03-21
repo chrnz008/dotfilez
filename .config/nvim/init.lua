@@ -1,4 +1,4 @@
-vim.cmd.colorscheme("habamax")
+vim.cmd.colorscheme("default")
 vim.g.mapleader = " "
 vim.opt.colorcolumn = "80"
 vim.opt.cursorline = true
@@ -23,6 +23,8 @@ call plug#begin(stdpath('data').'/plugged')
 
 Plug 'Konfekt/filepicker.vim'
 Plug 'christoomey/vim-tmux-navigator'
+Plug 'chrnz008/gruber.vim'
+Plug 'VioletJewel/vimterm.nvim'  "add termwinkey to nvim
 Plug 'jiangmiao/auto-pairs'
 Plug 'mason-org/mason.nvim'
 Plug 'nvim-treesitter/nvim-treesitter'
@@ -77,13 +79,19 @@ vim.keymap.set('n', '<leader>;', tognum) -- <c-w> neovide only
 
 -------------------------------------------------------------------------------
 --plug spec
-vim.gno_filepicker_maps = 1 -- unmap the default
-vim.keymap.set('n', '<leader>e', '<Plug>(FilePicker)')
 
-require("cman.lsp")
-require("mason").setup()
 require("nvim-treesitter").setup({
 	ensure_installed = { "cpp", "rust" },
 	highlight = { enable = true },
 	indent = { enable = true },
 })
+
+require("cman.lsp")
+
+vim.gno_filepicker_maps = 1 -- unmap the default
+vim.keymap.set('n', '<leader>e', '<Plug>(FilePicker)')
+
+require("mason").setup()
+
+require("vimterm").setup()
+vim.api.nvim_create_user_command('Ter','Sterminal',{})

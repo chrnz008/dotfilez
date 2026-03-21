@@ -24,6 +24,7 @@ set wak=no
 set showtabline=2 "always show tabs
 
 
+" seee :h gui-w32-fullscreen
 command ToggleFullscreen {
 	if &guioptions =~# 's'
 		set guioptions-=s
