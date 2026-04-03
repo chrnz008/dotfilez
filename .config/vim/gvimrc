@@ -1,28 +1,24 @@
 "author:charan
 "gmail:charancuz008@gmail.com
 
-"set guicursor
-set gcr=a:block-blinkon0 "fat cursor - cursor blink
+set guicursor=a:block-blinkon0 "fat cursor - cursor blink
 set linespace=0
 
-" Set extra options when running in GUI mode
 if has("gui_running")
 
-    set guioptions-=m "menu bar
-    set guioptions-=T "tool bar
-    set guioptions+=e "tab line gui or cli
+	set guioptions-=m "menu bar
+	set guioptions-=T "tool bar
+	set guioptions-=e "tab line gui or cli
 
-    "remove scrollbars
+	"remove scrollbars
 	set guioptions-=rL
 
-	"ui
+	"hl-TitleBar
 	set guioptions+=Cd
 
 endif
 
-set wak=no
-set showtabline=2 "always show tabs
-
+set winaltkeys=no
 
 " seee :h gui-w32-fullscreen
 command ToggleFullscreen {

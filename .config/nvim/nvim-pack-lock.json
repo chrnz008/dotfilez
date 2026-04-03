@@ -1,0 +1,44 @@
+{
+  "plugins": {
+    "auto-pairs": {
+      "rev": "39f06b873a8449af8ff6a3eee716d3da14d63a76",
+      "src": "https://github.com/jiangmiao/auto-pairs"
+    },
+    "filepicker.vim": {
+      "rev": "5729c21865dfe63d6a72aa46d6ede3286ab2e822",
+      "src": "https://github.com/Konfekt/filepicker.vim"
+    },
+    "gruber.vim": {
+      "rev": "2d18f9792e24fe9a493096536b6d426e194027a0",
+      "src": "https://github.com/chrnz008/gruber.vim"
+    },
+    "lumon.nvim": {
+      "rev": "f8ce95213e57b379089da23abc36a1fc39936b63",
+      "src": "https://github.com/omacom-io/lumon.nvim"
+    },
+    "mason.nvim": {
+      "rev": "44d1e90e1f66e077268191e3ee9d2ac97cc18e65",
+      "src": "https://github.com/mason-org/mason.nvim"
+    },
+    "nvim-treesitter": {
+      "rev": "7caec274fd19c12b55902a5b795100d21531391f",
+      "src": "https://github.com/nvim-treesitter/nvim-treesitter"
+    },
+    "reykjavik": {
+      "rev": "e289595473ba5b2e9e1273f4b92ac612d1454684",
+      "src": "https://github.com/chrnz008/reykjavik"
+    },
+    "vim-surround": {
+      "rev": "3d188ed2113431cf8dac77be61b842acb64433d9",
+      "src": "https://github.com/tpope/vim-surround"
+    },
+    "vim-tmux-navigator": {
+      "rev": "e41c431a0c7b7388ae7ba341f01a0d217eb3a432",
+      "src": "https://github.com/christoomey/vim-tmux-navigator"
+    },
+    "vimterm.nvim": {
+      "rev": "c77ee220b9c3ab2eb66d5d18f950ae4112178927",
+      "src": "https://github.com/VioletJewel/vimterm.nvim"
+    }
+  }
+}

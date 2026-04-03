@@ -1,4 +1,4 @@
-vim.cmd.colorscheme("default")
+vim.cmd.colorscheme("quiet")
 vim.g.mapleader = " "
 vim.opt.colorcolumn = "80"
 vim.opt.cursorline = true
@@ -17,26 +17,23 @@ vim.opt.tabstop = 4
 vim.opt.title = true
 vim.opt.whichwrap:append("<,>,h,l")
 vim.opt.wrap = false
--------------------------------------------------------------------------------
-vim.cmd([[
-call plug#begin(stdpath('data').'/plugged')
 
-Plug 'Konfekt/filepicker.vim'
-Plug 'christoomey/vim-tmux-navigator'
-Plug 'chrnz008/gruber.vim'
-Plug 'VioletJewel/vimterm.nvim'  "add termwinkey to nvim
-Plug 'jiangmiao/auto-pairs'
-Plug 'mason-org/mason.nvim'
-Plug 'nvim-treesitter/nvim-treesitter'
-Plug 'tpope/vim-surround'
+vim.pack.add({
 
-call plug#end()
-]])
+	'https://github.com/Konfekt/filepicker.vim',
+	'https://github.com/VioletJewel/vimterm.nvim', --add termwinkey to nvim
+	'https://github.com/chrnz008/gruber.vim',
+	'https://github.com/chrnz008/reykjavik',
+	'https://github.com/jiangmiao/auto-pairs',
+	'https://github.com/mason-org/mason.nvim',
+	'https://github.com/nvim-treesitter/nvim-treesitter',
+	'https://github.com/tpope/vim-surround',
+
+})
 
 vim.cmd.packadd("nohlsearch")
--------------------------------------------------------------------------------
---neovide
 
+--neovide
 if vim.g.neovide then
 	-- vim.g.neovide_cursor_animation_length = 0.150
 	vim.g.neovide_padding_bottom = 3
@@ -47,8 +44,6 @@ if vim.g.neovide then
 	-- vim.g.neovide_text_gamma = 0.8
 	vim.o.linespace = 0
 end
-------------------------------------------------------------------------------
---keymaps
 
 vim.keymap.set('n', '<Esc><Esc>', vim.cmd.nohlsearch)
 
@@ -63,7 +58,7 @@ vim.keymap.set('x', '<leader>y', '"+y')
 vim.keymap.set('t', '>', '')
 vim.keymap.set('t', '<c-w>', '')
 
---ZED
+--zed
 local tognum = function()
 	if vim.o.number then
 		vim.o.number = false
@@ -77,7 +72,7 @@ end
 vim.keymap.set('n', '<c-;>', tognum)     -- <c-w> neovide only
 vim.keymap.set('n', '<leader>;', tognum) -- <c-w> neovide only
 
--------------------------------------------------------------------------------
+
 --plug spec
 
 require("nvim-treesitter").setup({
@@ -94,4 +89,4 @@ vim.keymap.set('n', '<leader>e', '<Plug>(FilePicker)')
 require("mason").setup()
 
 require("vimterm").setup()
-vim.api.nvim_create_user_command('Ter','Sterminal',{})
+vim.api.nvim_create_user_command('Ter', 'Sterminal', {})

@@ -2,54 +2,48 @@ iab mee charan
 iab mal charancuz008gmail.com
 set nocp "i strongly discourage it
 
-"------------------------------------------------------------------------------
-"gvim
 set guioptions+=M
 let g:did_install_default_menus = 1
-let g:loaded_netrwPlugin = 0
-
-"------------------------------------------------------------------------------
+let g:loaded_netrw       = 1
+let g:loaded_netrwPlugin = 1
+let g:loaded_vimball      = 1
+let g:loaded_vimballPlugin= 1
 
 filetype plugin indent on
 syntax on
 
 let mapleader=' '
 
-"vim plug --ontop
-"------------------------------------------------------------------------------
-
 call plug#begin('~/.vim/plugged')
 
 Plug 'Konfekt/filepicker.vim' "use yazi as a file manager
-Plug 'christoomey/vim-tmux-navigator'
 Plug 'chrnz008/gruber.vim'
+Plug 'chrnz008/quack.vim'
 Plug 'chrnz008/reykjavik'
 Plug 'chrnz008/schizo.vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-surround'
 "experimental
-" Plug 'sheerun/vim-polyglot' "disturbing if_rust
+Plug 'chrisbra/colorizer' "chekout habamax inline_colors
 Plug 'mattn/vim-smear-cursor'
-Plug 'chrisbra/colorizer'
+Plug 'yegappan/lsp'
 
 call plug#end()
 
 packadd comment "vims default
 packadd nohlsearch "performs noh aut
 
-"------------------------------------------------------------------------------
-
-colo gruber
-set autoindent "Auto indent
-set autoread  " Set to auto read when a file is changed from the outside
+colo quiet
+set autoindent
+set autoread
 set belloff=all
 set colorcolumn+=80
 set cursorline
 set cursorlineopt=number "just hi the number
-set encoding=utf8 "Self explanatory
+set encoding=utf-8 "Self explanatory
 set fillchars+=vert:│,fold:·,foldsep:│,eob:\  |"make seperator better exp:removing eob cuz of linenr
 set foldcolumn=0 "signcoloumn is better
-set hid " A buffer becomes hidden when it is abandoned
+set hidden " A buffer becomes hidden when it is abandoned
 set hlsearch " Highlight search results
 set ignorecase " Ignore case when searching
 set incsearch " Makes search act like search in modern browsers
@@ -72,19 +66,13 @@ set tabstop=4
 set termguicolors
 set title
 set ttimeoutlen=50
-set ttyscroll=3 "for redraw issues in win32
 set whichwrap+=<,>,h,l "makes cursor move from one to another at ends
 
-" OS
-"------------------------------------------------------------------------------
 if has("win64")
 	if has("directx")
 		set renderoptions=type:directx
 	endif
 endif
-
-" ->KEYMAPS
-"------------------------------------------------------------------------------
 
 nnoremap <Esc><Esc> <Cmd>nohlsearch<CR>
 
@@ -102,35 +90,28 @@ tnoremap >   |"terminal mode
 cnoremap <C-A>		<Home>
 cnoremap <C-B>		<Left>
 " cnoremap <C-E>		<End> "default
-" cnoremap <C-D>		<Del> "kinda good defautl
+cnoremap <C-D>		<Del> "kinda good defautl
 " cnoremap <C-F>		<Right> "cant map bcuz of quickfiz
 
-"ZED
+"zed
 function! ToggleLineNumbers()
 	if &number
-		set nonumber
-		set norelativenumber
+		set nonumber norelativenumber
 	else
-		set number
-		set relativenumber
+		set number relativenumber
 	endif
 endfunction
 
 nnoremap <silent> <leader>; :call ToggleLineNumbers()<CR>
-"------------------------------------------------------------------------------
-"filetype
 
 " markdown
-" let g:filetype_md = 'pandoc' "using pandoc syntax??ftplugin for md
 let g:markdown_fenced_languages = ['cpp']
 
+
 "-- plgn-spe-conf
-"------------------------------------------------------------------------------
-"
 let g:no_filepicker_maps = 1 "unmap the default
 nnoremap <silent> <leader>e <Plug>(FilePicker)
 
-"------------------------------------------------------------------------------
 " exp
 lua << EOF
 EOF

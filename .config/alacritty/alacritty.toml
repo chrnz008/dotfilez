@@ -33,7 +33,7 @@ decorations_theme_variant = "Dark"
 # italic.family = "IBM Plex Mono"
 # bold_italic.family = "IBM Plex Mono"
 
-# size = 13.0
+size = 12.1
 
 offset = { x = 0, y = 1 }
 
@@ -51,7 +51,7 @@ bindings = [
 
 [colors]
 draw_bold_text_with_bright_colors = true
-# cursor = { text = "CellBackground" ,cursor = "#cb4b16" } #red
+cursor = { text = "CellBackground" ,cursor = "#cb4b16" } #red
 # cursor = { text = "CellBackground" ,cursor = "#51afef" } #blue
 # cursor = { text = "CellBackground" ,cursor = "#00ff00"} #green
-cursor = { text = "CellBackground" ,cursor = "#d3c6aa" } #everforest
+# cursor = { text = "CellBackground" ,cursor = "#d3c6aa" } #everforest

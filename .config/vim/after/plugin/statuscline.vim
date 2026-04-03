@@ -51,12 +51,18 @@ function! Os()
 endfunction
 "}
 
-"{custom highlights
-let s:bg = synIDattr(hlID('Normal'), 'bg#') "the statusline guibg
+"{get highlights
+let s:bg = synIDattr(hlID('Normal'), 'bg#') "the Normal guibg
 let s:sl_bg = synIDattr(hlID('StatusLine'), 'bg#') "the statusline guibg
-let s:sl_fg = synIDattr(hlID('StatusLine'), 'fg#') "the statusline guibg
-execute 'hi BLUE guifg=SlateBlue guibg=' . s:sl_bg
-execute 'hi backg guibg =' . s:bg |"'guifg='. s:sl_fg
+let s:sl_fg = synIDattr(hlID('StatusLine'), 'fg#') "the statusline guifg
 "}
 
-set statusline=%#BLUE#%*\%{Modeconvention()}\ %{Spinner()}\ \ %<%f\ %h%w%m%r%=%-17.(%l,%c%V%)\ %{Os()}\ %P
+"{modfication status
+execute 'hi nomod guifg=LightBlue guibg=' . s:sl_bg . ' gui=NONE'
+execute 'hi mod guifg=Green guibg=' . s:sl_bg . ' gui=NONE'
+function! Wstat()
+	return (&modified ? '%#mod#' : '%#nomod#') . '●%*'
+endfunction
+"}
+"
+set statusline=%{Modeconvention()}\ %{%Wstat()%}\ %<%f\ %h%w%m%r%=%-17.(%l,%c%V%)\ %{Os()}\ %P
