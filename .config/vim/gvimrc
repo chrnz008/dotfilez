@@ -2,9 +2,11 @@
 "gmail:charancuz008@gmail.com
 
 set guicursor=a:block-blinkon0 "fat cursor - cursor blink
-set linespace=0
+set winaltkeys=no
 
 if has("gui_running")
+
+	set linespace=0
 
 	set guioptions-=m "menu bar
 	set guioptions-=T "tool bar
@@ -18,15 +20,5 @@ if has("gui_running")
 
 endif
 
-set winaltkeys=no
-
 " seee :h gui-w32-fullscreen
-command ToggleFullscreen {
-	if &guioptions =~# 's'
-		set guioptions-=s
-	else
-		set guioptions+=s
-	endif
-}
-
 map <expr> <F11> &go =~# 's' ? ":se go-=s<CR>" : ":se go+=s<CR>"

@@ -14,22 +14,6 @@ syntax on
 
 let mapleader=' '
 
-call plug#begin('~/.vim/plugged')
-
-Plug 'Konfekt/filepicker.vim' "use yazi as a file manager
-Plug 'chrnz008/gruber.vim'
-Plug 'chrnz008/quack.vim'
-Plug 'chrnz008/reykjavik'
-Plug 'chrnz008/schizo.vim'
-Plug 'jiangmiao/auto-pairs'
-Plug 'tpope/vim-surround'
-"experimental
-Plug 'chrisbra/colorizer' "chekout habamax inline_colors
-Plug 'mattn/vim-smear-cursor'
-Plug 'yegappan/lsp'
-
-call plug#end()
-
 packadd comment "vims default
 packadd nohlsearch "performs noh aut
 
@@ -89,7 +73,6 @@ tnoremap >   |"terminal mode
 "emacs style for :
 cnoremap <C-A>		<Home>
 cnoremap <C-B>		<Left>
-" cnoremap <C-E>		<End> "default
 cnoremap <C-D>		<Del> "kinda good defautl
 " cnoremap <C-F>		<Right> "cant map bcuz of quickfiz
 
@@ -107,11 +90,8 @@ nnoremap <silent> <leader>; :call ToggleLineNumbers()<CR>
 " markdown
 let g:markdown_fenced_languages = ['cpp']
 
-
-"-- plgn-spe-conf
-let g:no_filepicker_maps = 1 "unmap the default
-nnoremap <silent> <leader>e <Plug>(FilePicker)
-
 " exp
 lua << EOF
 EOF
+
+source <sfile>:h/plugit.vim
