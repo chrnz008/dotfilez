@@ -1,5 +1,5 @@
 "not gonna carry plug with me vro
-let data_dir = has('win64') ? '~/vimfiles' : '~/.vim'
+let data_dir = has('win64') ? '~/vimfiles' : '~/.config/vim'
 if empty(glob(data_dir . '/autoload/plug.vim'))
 	silent execute '!curl -fLo '.fnamemodify(data_dir.'/autoload/plug.vim', ':p:S').' --create-dirs  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 	autocmd VimEnter * PlugInstall
