@@ -52,12 +52,6 @@ set title
 set ttimeoutlen=50
 set whichwrap+=<,>,h,l "makes cursor move from one to another at ends
 
-if has("win64")
-	if has("directx")
-		set renderoptions=type:directx
-	endif
-endif
-
 nnoremap <Esc><Esc> <Cmd>nohlsearch<CR>
 
 nnoremap <leader>w <Cmd>update<CR>
@@ -89,9 +83,5 @@ nnoremap <silent> <leader>; :call ToggleLineNumbers()<CR>
 
 " markdown
 let g:markdown_fenced_languages = ['cpp']
-
-" exp
-lua << EOF
-EOF
 
 source <sfile>:h/plugit.vim

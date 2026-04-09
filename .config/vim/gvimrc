@@ -4,9 +4,14 @@
 set guicursor=a:block-blinkon0 "fat cursor - cursor blink
 set winaltkeys=no
 
-if has("gui_running")
-
+if has("win32")
+	if has("directx")
+		set renderoptions=type:directx
+	endif
 	set linespace=0
+endif
+
+if has("gui_running")
 
 	set guioptions-=m "menu bar
 	set guioptions-=T "tool bar

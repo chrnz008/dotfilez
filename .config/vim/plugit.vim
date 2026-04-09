@@ -17,11 +17,10 @@ Plug 'tpope/vim-surround'
 "experimental
 Plug 'chrisbra/colorizer' "chekout habamax inline_colors
 Plug 'mattn/vim-smear-cursor'
-Plug 'yegappan/lsp'
+" Plug 'yegappan/lsp'
 
 call plug#end()
 
 "-- plgn-spe-conf
 let g:no_filepicker_maps = 1 "unmap the default
 nnoremap <silent> <leader>e <Plug>(FilePicker)
-
