@@ -1,0 +1,3 @@
+[terminal.shell]
+program= "cmd.exe"
+# args = ["cd %userprofile%"]

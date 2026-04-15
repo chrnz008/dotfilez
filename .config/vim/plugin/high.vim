@@ -4,12 +4,13 @@ autocmd ColorScheme * source <sfile> "source this whenever colo changed
 
 if g:colors_name ==# 'wildcharm' || g:colors_name ==# 'slate' || g:colors_name ==# 'habamax'
 	hi VertSplit guibg=NONE
-elseif g:colors_name ==# 'quack'
-	hi! link StatusLine CursorLine
+endif
+if g:colors_name ==# 'habamax'
+	hi StatusLine guifg=#9e9e9e guibg=#303030 gui=bold
 endif
 
 if g:colors_name ==# 'quiet'
-	"this are stripped see https://github.com/neutaaaaan/iosvkem
+	"this are stripped see https://github.com/neutaaaaan/monosvkem
 	"opend a issue for cursors
 	"monosvkem
 	hi Added ctermfg=10 guifg=LimeGreen
@@ -27,5 +28,6 @@ if g:colors_name ==# 'quiet'
 		hi CursorLineNr guifg=#080808 guibg=#d7d7d7 gui=bold cterm=NONE
 		hi Special guifg=#aa053b guibg=NONE gui=NONE cterm=NONE
 		hi String guifg=#0056b7 guibg=#d7d7d7 gui=NONE cterm=NONE
+		hi StatusLine guibg=#626262
 	endif
 endif

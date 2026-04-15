@@ -1,8 +1,12 @@
 ; i3-style navigation
+; window snaps
 !h::Send "#{Left}"
 !j::Send "#{Down}"
 !k::Send "#{Up}"
 !l::Send "#{Right}"
+;desktop management
+#^h::Send "#^{Left}"
+#^l::Send "#^{Right}" ;not working
 
 ; Quit window
 !q::WinClose("A")
@@ -21,10 +25,10 @@
 }
 
 ; Open Alacritty
-!t::Run("C:\Program Files\Alacritty\alacritty.exe")
+!t::Send("#3")
 
 ; Open Firefox
-!b::Run("C:\Program Files\Mozilla Firefox\firefox.exe")
+!b::Send("#1")
 
 ;Open gvim
 ; !e::Run("gvim",EnvGet("USERPROFILE"))
