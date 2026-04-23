@@ -8,13 +8,13 @@
       "rev": "5729c21865dfe63d6a72aa46d6ede3286ab2e822",
       "src": "https://github.com/Konfekt/filepicker.vim"
     },
+    "gitsigns.nvim": {
+      "rev": "8d82c240f190fc33723d48c308ccc1ed8baad69d",
+      "src": "https://github.com/lewis6991/gitsigns.nvim"
+    },
     "gruber.vim": {
       "rev": "2d18f9792e24fe9a493096536b6d426e194027a0",
       "src": "https://github.com/chrnz008/gruber.vim"
-    },
-    "lumon.nvim": {
-      "rev": "f8ce95213e57b379089da23abc36a1fc39936b63",
-      "src": "https://github.com/omacom-io/lumon.nvim"
     },
     "mason.nvim": {
       "rev": "44d1e90e1f66e077268191e3ee9d2ac97cc18e65",
@@ -31,10 +31,6 @@
     "vim-surround": {
       "rev": "3d188ed2113431cf8dac77be61b842acb64433d9",
       "src": "https://github.com/tpope/vim-surround"
-    },
-    "vim-tmux-navigator": {
-      "rev": "e41c431a0c7b7388ae7ba341f01a0d217eb3a432",
-      "src": "https://github.com/christoomey/vim-tmux-navigator"
     },
     "vimterm.nvim": {
       "rev": "c77ee220b9c3ab2eb66d5d18f950ae4112178927",

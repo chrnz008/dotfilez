@@ -4,7 +4,7 @@
 --enable-lsp-server
 vim.lsp.enable({'clangd','lua_ls','rust-analyzer'})
 
-vim.keymap.set('n','<leader>lf',vim.lsp.buf.format)
+vim.keymap.set('n','<leader>lf',vim.lsp.buf.format) --or use gq
 
 -- autocompletion
 vim.api.nvim_create_autocmd('LspAttach', {

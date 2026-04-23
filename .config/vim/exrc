@@ -1,0 +1,33 @@
+vim9script
+filetype plugin indent on
+syntax on
+
+packadd comment
+
+if has("win32")
+    set guicursor=a:block-blinkon0
+endif
+
+set belloff=all
+set fillchars=vert:│
+set hlsearch ignorecase incsearch smartcase
+set noswapfile
+set nowrap
+set shiftwidth=4 tabstop=4 #ucan set sw=0 to inherit from ts
+
+#mattn
+#set timeout
+#set ttimeoutlen=100
+
+g:mapleader = " "
+nnoremap <leader>w <Cmd>update<CR>
+nnoremap <leader>te :tabe<space>
+nnoremap <leader>bd :bdelete<CR>
+nnoremap <leader>y :%y+<CR>
+xnoremap <leader>y "+y
+nnoremap <Esc><Esc> <Cmd>nohlsearch<CR>
+
+set termguicolors
+colorscheme quiet
+hi Normal guibg=#181818 #gruber
+hi VertSplit guibg=#181818

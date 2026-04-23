@@ -1,5 +1,15 @@
 --halfbaked
 
+-- inherit from terminal
+function inherit()
+	for _, group in ipairs({
+		"Normal",
+		"NormalFloat",
+	}) do
+		vim.api.nvim_set_hl(0, group, { bg = "none" })
+	end
+end
+
 local function apply_highlights()
 	local coloname = vim.g.colors_name
 

@@ -39,8 +39,9 @@ bindings = [
 
 [colors]
 draw_bold_text_with_bright_colors = true
-cursor = { text = "CellBackground" ,cursor = "#cb4b16" } #red
+# cursor = { text = "CellBackground" ,cursor = "#cb4b16" } #red
 # cursor = { text = "CellBackground" ,cursor = "#51afef" } #blue
 # cursor = { text = "CellBackground" ,cursor = "#00ff00"} #green
 # cursor = { text = "CellBackground" ,cursor = "#d3c6aa" } #everforest
+cursor = { text = "CellBackground" ,cursor = "#f4f4ff" } #wez
 vi_mode_cursor = { text = "CellBackground" ,cursor = "#51afef" } #blue in vi

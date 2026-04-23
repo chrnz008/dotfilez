@@ -1,4 +1,4 @@
-vim.cmd.colorscheme("quiet")
+vim.cmd.colorscheme("default")
 vim.g.mapleader = " "
 vim.opt.colorcolumn = "80"
 vim.opt.cursorline = true
@@ -28,6 +28,7 @@ vim.pack.add({
 	'https://github.com/mason-org/mason.nvim',
 	'https://github.com/nvim-treesitter/nvim-treesitter',
 	'https://github.com/tpope/vim-surround',
+	'https://github.com/lewis6991/gitsigns.nvim'
 
 })
 
@@ -72,6 +73,7 @@ end
 vim.keymap.set('n', '<c-;>', tognum)     -- <c-w> neovide only
 vim.keymap.set('n', '<leader>;', tognum) -- <c-w> neovide only
 
+require('vim._core.ui2').enable()
 
 --plug spec
 
