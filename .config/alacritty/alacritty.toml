@@ -34,7 +34,7 @@ unfocused_hollow = true
 bindings = [
 { key="F11", action="ToggleFullscreen" },
 { key = "N", mods = "Control|Shift", action = "CreateNewWindow" },
-{ key = "Space", mods="Control",action = "ToggleViMode" }, #vim abbreviation trigger :?
+{ key = "Space", mods="Control",action = "ToggleViMode" }, #vim abbreviation trigger :? cmd.exe uses <C-M>
 ]
 
 [colors]
