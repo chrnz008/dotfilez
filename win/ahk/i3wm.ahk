@@ -15,7 +15,7 @@
 !m::WinMinimize("A")
 
 ; Toggle fullscreen
-!f::
+#f::
 {
     state := WinGetMinMax("A")
     if (state = 1)
@@ -25,10 +25,10 @@
 }
 
 ; Open Alacritty
-!t::Send("#3")
+^!t::Send("#3")
 
 ; Open Firefox
-!b::Send("#1")
+^!b::Send("#1")
 
 ;Open gvim
 ; !e::Run("gvim",EnvGet("USERPROFILE"))
