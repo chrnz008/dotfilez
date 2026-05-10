@@ -32,4 +32,4 @@
 
 ;Open gvim
 ; !e::Run("gvim",EnvGet("USERPROFILE"))
-!e::Send("#4") ;task bar win num emulation much better
+^!e::Send("#4") ;task bar win num emulation much better
