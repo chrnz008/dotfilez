@@ -22,7 +22,8 @@ set smarttab shiftwidth=4 tabstop=4 #ucan set sw=0 to inherit from ts
 g:mapleader = " "
 nnoremap <leader>w <Cmd>update<CR>
 nnoremap <leader>te :tabe<space>
-nnoremap <leader>bd :bdelete<CR>
+nnoremap <leader>bd <Cmd>bdelete<CR>
+nnoremap <leader>bs <Cmd>ls<CR>:b<space>
 nnoremap <leader>y :%y+<CR>
 xnoremap <leader>y "+y
 nnoremap <Esc><Esc> <Cmd>nohlsearch<CR>
