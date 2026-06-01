@@ -16,4 +16,10 @@ CapsLock::Ctrl
 ; Map Right Alt (AltGr) to behave as Left Alt
 RAlt::Alt
 
+;hhkb like
+; !;::Send "{Left}"
+; !/::Send "{Down}"
+; ![::Send "{Up}"
+; !'::Send "{Right}"
+
 return
