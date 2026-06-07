@@ -28,7 +28,8 @@ vim.pack.add({
 	'https://github.com/mason-org/mason.nvim',
 	'https://github.com/nvim-treesitter/nvim-treesitter',
 	'https://github.com/tpope/vim-surround',
-	'https://github.com/lewis6991/gitsigns.nvim'
+	'https://github.com/lewis6991/gitsigns.nvim',
+	'https://github.com/omacom-io/lumon.nvim',
 
 })
 

@@ -16,6 +16,10 @@
       "rev": "2d18f9792e24fe9a493096536b6d426e194027a0",
       "src": "https://github.com/chrnz008/gruber.vim"
     },
+    "lumon.nvim": {
+      "rev": "f8ce95213e57b379089da23abc36a1fc39936b63",
+      "src": "https://github.com/omacom-io/lumon.nvim"
+    },
     "mason.nvim": {
       "rev": "44d1e90e1f66e077268191e3ee9d2ac97cc18e65",
       "src": "https://github.com/mason-org/mason.nvim"
