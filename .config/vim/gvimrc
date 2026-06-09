@@ -19,6 +19,7 @@ if has("gui_running")
 
 	"remove scrollbars
 	set guioptions-=rL
+	"you can simply set go="" for removing everything
 
 	"hl-TitleBar
 	set guioptions+=Cd
