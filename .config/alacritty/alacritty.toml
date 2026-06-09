@@ -35,8 +35,8 @@ bindings = [
 { key="F11", action="ToggleFullscreen" },
 { key = "N", mods = "Control|Shift", action = "CreateNewWindow" },
 { key = "Space", mods="Control",action = "ToggleViMode" }, #vim abbreviation trigger :? cmd.exe uses <C-M>
-{ key = "[", mods="Control",mode="Vi|~Search",action = "ClearSelection" },
-{ key = "[", mods="Control",mode="Search",action = "SearchCancel" },
+{ key = "[", mods="Control",mode="Vi|~Search",action = "ClearSelection" }, #<C-c>
+{ key = "[", mods="Control",mode="Search",action = "SearchCancel" }, #<C-c>
 ]
 
 [colors]
@@ -47,3 +47,5 @@ draw_bold_text_with_bright_colors = true
 # cursor = { text = "CellBackground" ,cursor = "#d3c6aa" } #everforest
 cursor = { text = "CellBackground" ,cursor = "#f4f4ff" } #wez
 vi_mode_cursor = { text = "CellBackground" ,cursor = "#51afef" } #blue in vi
+
+# https://alacritty.org/config-alacritty-bindings.html
