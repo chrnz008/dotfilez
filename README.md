@@ -1,15 +1,9 @@
 # dotfilez
 -----
 
->software i cant live without
-
-- crossplatform
-
-1. vim/gvim
-2. gnucoreutils
-3. yazi
-
 # windows
+using win32\caps.reg instead of win32\ahk\hhkb.ahk it is slightly modifed from script mentioned in https://www.microsoft.com/en-us/research/wp-content/uploads/2016/08/Win-32-Cheat-Sheet.pdf
+- `wget `
 - changing the power plan to perfromace in powerplan in windows improves cursor
 scrolling performance in vim
 
@@ -26,5 +20,5 @@ scrolling performance in vim
 - Why does vim-plug work in Linux even if it is set to .vim(which is rtp in
   linux)i am assuming even tho it is .vim there is no `vimrc` so vim again looks
   in XDG_CONFIG so it works(for windows it is meh cuz vimfiles is rtp)
-- ***installing wezterm on windows somehow solves the cursor flicker in alacritty***
+- ***installing wezterm on windows somehow solves the cursor flicker in alacritty in vim***
 - nnoremap <Esc><Esc> <Cmd>nohlsearch<CR> ( or remap <C-l> to both redrew and noh)
