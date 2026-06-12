@@ -27,3 +27,4 @@ scrolling performance in vim
   linux)i am assuming even tho it is .vim there is no `vimrc` so vim again looks
   in XDG_CONFIG so it works(for windows it is meh cuz vimfiles is rtp)
 - ***installing wezterm on windows somehow solves the cursor flicker in alacritty***
+- nnoremap <Esc><Esc> <Cmd>nohlsearch<CR> ( or remap <C-l> to both redrew and noh)
