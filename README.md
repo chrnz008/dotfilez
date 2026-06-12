@@ -3,7 +3,7 @@
 
 # windows
 using win32\caps.reg instead of win32\ahk\hhkb.ahk it is slightly modifed from script mentioned in https://www.microsoft.com/en-us/research/wp-content/uploads/2016/08/Win-32-Cheat-Sheet.pdf
-- `wget `
+- `wget https://raw.githubusercontent.com/chrnz008/dotfilez/refs/heads/main/win32/caps.reg`
 - changing the power plan to perfromace in powerplan in windows improves cursor
 scrolling performance in vim
 
