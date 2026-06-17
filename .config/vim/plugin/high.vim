@@ -16,18 +16,17 @@ if g:colors_name ==# 'quiet'
 	hi Added ctermfg=10 guifg=LimeGreen
 	hi Changed ctermfg=9 guifg=DodgerBlue
 	hi Removed ctermfg=12 guifg=Red
+	hi Cursor guifg=fg
 	if &background ==# 'dark'
-		hi Cursor guifg=#dadada guibg=#000000
-		hi CursorLineNr guifg=#20bbfc guibg=#000000 gui=NONE cterm=NONE
+		hi CursorLineNr guifg=#20bbfc guibg=bg gui=NONE cterm=NONE
 		hi Special guifg=#d02b61 guibg=NONE gui=NONE cterm=NONE
-		hi String guifg=#5688af guibg=#000000 gui=NONE cterm=NONE
+		hi String guifg=#5688af guibg=bg gui=NONE cterm=NONE
 		hi TitleBar guibg=#303030
 		hi StatusLine guifg=#a8a8a8 guibg=#1c1c1c
 	else
-		hi Cursor guifg=#000000 guibg=#d7d7d7
-		hi CursorLineNr guifg=#080808 guibg=#d7d7d7 gui=bold cterm=NONE
+		hi CursorLineNr guifg=#080808 guibg=bg gui=bold cterm=NONE
 		hi Special guifg=#aa053b guibg=NONE gui=NONE cterm=NONE
-		hi String guifg=#0056b7 guibg=#d7d7d7 gui=NONE cterm=NONE
+		hi String guifg=#0056b7 guibg=bg gui=NONE cterm=NONE
 		hi StatusLine guibg=#626262
 	endif
 endif

@@ -11,13 +11,10 @@ endif
 set belloff=all
 set fillchars=vert:│
 set hlsearch ignorecase incsearch smartcase
+set laststatus=0
 set noswapfile
 set nowrap
 set smarttab shiftwidth=4 tabstop=4 #ucan set sw=0 to inherit from ts
-
-#mattn
-#set timeout
-#set ttimeoutlen=100
 
 g:mapleader = " "
 nnoremap <leader>w <Cmd>update<CR>

@@ -16,12 +16,12 @@ decorations_theme_variant = "Dark"
 
 [font]
 
-# normal.family = "IBM Plex Mono"
+normal.family = "Courier New"
 # bold.family = "IBM Plex Mono"
 # italic.family = "IBM Plex Mono"
 # bold_italic.family = "IBM Plex Mono"
 
-# size = 12.1
+size = 13
 
 # offset = { x = 0, y = 0 }
 
