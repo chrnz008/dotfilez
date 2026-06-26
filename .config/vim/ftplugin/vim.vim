@@ -1,1 +1,3 @@
-setlocal fileformat=unix "force LF(unix)
+vim9script
+
+setlocal fileformat=unix # force LF(unix)

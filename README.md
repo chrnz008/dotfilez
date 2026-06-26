@@ -14,7 +14,7 @@ scrolling performance in vim
 - [X] fileformat issue (solved by forcing ff=unix for .vim ft)
     - for latest exrc the above problem can be resolved by 
         ```vimscript
-        set modeline nomodelinestrict #see :h modeline
+        set nomodelinestrict #see :h modeline
         # vim: fileformat=unix
         ```
 - Why does vim-plug work in Linux even if it is set to .vim(which is rtp in
@@ -22,3 +22,6 @@ scrolling performance in vim
   in XDG_CONFIG so it works(for windows it is meh cuz vimfiles is rtp)
 - ***installing wezterm on windows somehow solves the cursor flicker in alacritty in vim***
 - nnoremap <Esc><Esc> <Cmd>nohlsearch<CR> ( or remap <C-l> to both redrew and noh)
+
+## todo
+- [ ] update .vim dir 

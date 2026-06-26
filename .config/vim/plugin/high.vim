@@ -1,6 +1,8 @@
-" halfbaked
+vim9script
 
-autocmd ColorScheme * source <sfile> "source this whenever colo changed
+# halfbaked
+
+autocmd ColorScheme * source <sfile> # source this whenever colo changed
 
 if g:colors_name ==# 'wildcharm' || g:colors_name ==# 'slate' || g:colors_name ==# 'habamax'
 	hi VertSplit guibg=NONE
@@ -10,9 +12,9 @@ if g:colors_name ==# 'habamax'
 endif
 
 if g:colors_name ==# 'quiet'
-	"this are stripped see https://github.com/neutaaaaan/monosvkem
-	"opend a issue for cursors
-	"monosvkem
+	# this are stripped see https://github.com/neutaaaaan/monosvkem
+	# opend a issue for cursors
+	# monosvkem
 	hi Added ctermfg=10 guifg=LimeGreen
 	hi Changed ctermfg=9 guifg=DodgerBlue
 	hi Removed ctermfg=12 guifg=Red

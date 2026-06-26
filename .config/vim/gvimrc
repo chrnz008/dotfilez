@@ -1,30 +1,18 @@
-"author:charan
-"gmail:charancuz008@gmail.com
+vim9script
 
-set guicursor=a:block-blinkon0 "fat cursor - cursor blink
-set winaltkeys=no
+# fat cursor - cursor blink win32console and gui only
+# set guicursor=a:block-blinkon0
+
+#hl-TitleBar
+set guioptions=C
 
 if has("win32")
 	if has("directx")
-		set renderoptions=type:directx
+		# set renderoptions=type:directx
+		# some colors doesnt look good with this
 	endif
 	set linespace=0
 endif
 
-if has("gui_running")
-
-	set guioptions-=m "menu bar
-	set guioptions-=T "tool bar
-	set guioptions-=e "tab line gui or cli
-
-	"remove scrollbars
-	set guioptions-=rL
-	"you can simply set go="" for removing everything
-
-	"hl-TitleBar
-	set guioptions+=Cd
-
-endif
-
-" seee :h gui-w32-fullscreen
+# seee :h gui-w32-fullscreen
 map <expr> <F11> &go =~# 's' ? ":se go-=s<CR>" : ":se go+=s<CR>"
