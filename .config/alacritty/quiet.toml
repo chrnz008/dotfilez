@@ -1,0 +1,24 @@
+# author: charan
+# from: https://github.com/vim/colorschemes/blob/master/colortemplate/quiet.colortemplate
+
+[colors.primary]
+background = "#181818"
+foreground = "#dadada"
+
+[colors]
+cursor = { text = "CellBackground" ,cursor = "#f4f4ff" } #wez
+vi_mode_cursor = { text = "CellBackground" ,cursor = "#51afef" } #blue in vi TODO
+# line_indicator = { foreground = "None", background = "#ffaf00" } 
+footer_bar = { foreground = "#181818", background = "#dadada" } 
+selection = { text = "CellBackground", background = "#ffaf00" }
+draw_bold_text_with_bright_colors = true
+
+[colors.search]
+matches = { foreground = "#181818", background = "#00afff" }
+focused_match = { foreground = "#181818", background = "#ff5fff" } 
+
+# TODO alacritty defaults are great
+# cursor = { text = "CellBackground" ,cursor = "#cb4b16" } #red
+# cursor = { text = "CellBackground" ,cursor = "#51afef" } #blue
+# cursor = { text = "CellBackground" ,cursor = "#00ff00"} #green
+# cursor = { text = "CellBackground" ,cursor = "#d3c6aa" } #everforest
