@@ -27,6 +27,9 @@ size = 13
 style = {shape="Block",blinking="Never"}
 unfocused_hollow = true
 
+[mouse]
+hide_when_typing = true
+
 [keyboard]
 bindings = [
 { key="F11", action="ToggleFullscreen" },
