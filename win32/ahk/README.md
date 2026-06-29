@@ -3,7 +3,7 @@
 - Alt-hjkl for window snapping
 - win-hl for desktop switching (l not working)
 - Alt-q for closing
-- Alt-f for fullscreen
+- win-f for fullscreen
 - Alt-m for minimizing 
 - Ctrl+Alt-T for alacritty 
 - Ctrl+Alt-b for firefox

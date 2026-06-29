@@ -6,7 +6,7 @@ syntax on
 packadd comment
 
 if has("win32")
-    set guicursor=a:block-blinkon0
+	set guicursor=a:block-blinkon0
 endif
 
 set belloff=all
@@ -15,11 +15,12 @@ set hlsearch
 set ignorecase
 set incsearch
 set laststatus=0
+set listchars=tab:›\ ,trail:-
 set noswapfile
 set nowrap
-set shiftwidth=4 
+set shiftwidth=4
 set smartcase
-set smarttab 
+set smarttab
 set tabstop=4 #ucan set sw=0 to inherit from ts
 
 g:mapleader = " "
@@ -37,6 +38,7 @@ hi Normal guibg=#181818 #gruber
 hi VertSplit guibg=bg
 hi Special guifg=#d02b61
 hi String guifg=#5688af
+# TODO :h hl-SpecialKey looks same as comment
 
 #cavemens
 #autopairs
