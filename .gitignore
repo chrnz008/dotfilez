@@ -1,3 +1,6 @@
+.config/vim/pack
+.config/vim/plugit.bat
+
 .config/yazi/flavors
 .config/yazi/package.toml
-.config/vim/autoload
+

@@ -24,4 +24,5 @@ scrolling performance in vim
 - nnoremap <Esc><Esc> <Cmd>nohlsearch<CR> ( or remap <C-l> to both redrew and noh)
 
 ## todo
-- [ ] update .vim dir 
+- [x] update .vim dir 
+- [ ] alacritty vi mode cursor and search

@@ -39,6 +39,7 @@ hi VertSplit guibg=bg
 hi Special guifg=#d02b61
 hi String guifg=#5688af
 # TODO :h hl-SpecialKey looks same as comment
+hi SpecialKey guifg=#4f5258 #novum
 
 #cavemens
 #autopairs

@@ -1,65 +1,23 @@
 vim9script
 
-# iab mee charan
-# iab mal charancuz008gmail.com
-
-# # set guioptions+=M # testing
-# let g:did_install_default_menus = 1
-# let g:loaded_netrw       = 1
-# let g:loaded_netrwPlugin = 1
-# let g:loaded_vimball      = 1
-# let g:loaded_vimballPlugin= 1
+set guioptions+=M # :h go-M
 
 filetype plugin indent on
 syntax on
 
-g:mapleader = ' '
-
-packadd comment
-packadd nohlsearch
-
-colo quiet
+colorscheme quiet
 set belloff=all
 set cursorline
-set cursorlineopt=number #just hi the number
+set cursorlineopt=number
 set fillchars+=vert:│
-set hlsearch # Highlight search results
-set ignorecase # Ignore case when searching
-set incsearch # Makes search act like search in modern browsers
-set laststatus=0 # people change
+set hlsearch
+set ignorecase
+set incsearch
+set laststatus=0
 set noswapfile
-set nowrap #noWrap lines
+set nowrap
 set shiftwidth=4
 set smartcase
 set smarttab
 set tabstop=4
 set termguicolors
-
-nnoremap <Esc><Esc> <Cmd>nohlsearch<CR>
-
-nnoremap <leader>w <Cmd>update<CR>
-nnoremap <leader>bs <Cmd>ls<CR>:b<Space>
-nnoremap <leader>bd <Cmd>bd<CR>
-nnoremap <leader>te :tabe<Space>
-
-nnoremap <leader>y :%y+<CR> | # system clipboard
-xnoremap <leader>y #+y  | # system clipboard for all visual modes
-
-# emacs style for :
-cnoremap <C-A>		<Home>
-cnoremap <C-B>		<Left>
-cnoremap <C-D>		<Del> | # kinda good defautl
-# cnoremap <C-F>		<Right> #cant map bcuz of quickfiz
-
-#zed
-def ToggleLineNumbers()
-	if &number
-		set nonumber norelativenumber
-	else
-		set number relativenumber
-	endif
-enddef
-
-nnoremap <silent> <leader>; :call ToggleLineNumbers()<CR>
-
-source <sfile>:h/plugit.vim
