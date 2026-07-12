@@ -1,21 +1,17 @@
 vim.cmd.colorscheme("default")
 vim.g.mapleader = " "
-vim.opt.colorcolumn = "80"
 vim.opt.cursorline = true
 vim.opt.cursorlineopt = "number"
 vim.opt.guicursor = ""
 vim.opt.ignorecase = true
-vim.opt.laststatus = 3
-vim.opt.number = true
-vim.opt.relativenumber = true
+vim.opt.laststatus = 0
+vim.opt.listchars:append("tab:› ")
 vim.opt.shiftwidth = 4
-vim.opt.signcolumn = "yes"
 vim.opt.smartcase = true
 vim.opt.smartindent = true
 vim.opt.swapfile = false
 vim.opt.tabstop = 4
 vim.opt.title = true
-vim.opt.whichwrap:append("<,>,h,l")
 vim.opt.wrap = false
 
 vim.pack.add({
@@ -47,7 +43,7 @@ if vim.g.neovide then
 	vim.o.linespace = 0
 end
 
-vim.keymap.set('n', '<Esc><Esc>', vim.cmd.nohlsearch)
+-- vim.keymap.set('n', '<Esc><Esc>', vim.cmd.nohlsearch) --use CTRL-L instead
 
 vim.keymap.set('n', '<leader>w', vim.cmd.update)
 vim.keymap.set('n', '<leader>bs', '<Cmd>ls<CR>:b<Space>')
