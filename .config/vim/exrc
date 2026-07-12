@@ -32,6 +32,9 @@ nnoremap <leader>y :%y+<CR>
 xnoremap <leader>y "+y
 nnoremap <Esc><Esc> <Cmd>nohlsearch<CR>
 
+cnoremap <expr> <C-P> wildmenumode() ? '<C-P>' : '<Up>'
+cnoremap <expr> <C-N> wildmenumode() ? '<C-N>' : '<Down>'
+
 set termguicolors
 colorscheme quiet
 hi Normal guibg=#181818 #gruber
