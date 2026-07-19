@@ -2,7 +2,7 @@
 -------------------------------------------------------------
 
 --enable-lsp-server
-vim.lsp.enable({'clangd','lua_ls','rust-analyzer'})
+vim.lsp.enable({'clangd','lua_ls','rust_analyzer'})
 
 vim.keymap.set('n','<leader>lf',vim.lsp.buf.format) --or use gq
 

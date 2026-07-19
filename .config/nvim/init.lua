@@ -16,6 +16,7 @@ vim.opt.wrap = false
 
 vim.pack.add({
 
+	'https://github.com/neovim/nvim-lspconfig',
 	'https://github.com/Konfekt/filepicker.vim',
 	'https://github.com/VioletJewel/vimterm.nvim', --add termwinkey to nvim
 	'https://github.com/chrnz008/gruber.vim',
