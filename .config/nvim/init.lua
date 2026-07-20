@@ -35,7 +35,7 @@ vim.cmd.packadd("nohlsearch")
 --neovide
 if vim.g.neovide then
 	-- vim.g.neovide_cursor_animation_length = 0.150
-	vim.g.neovide_padding_bottom = 3
+	-- vim.g.neovide_padding_bottom = 3
 	vim.g.neovide_padding_left = 3
 	vim.g.neovide_padding_right = 3
 	vim.g.neovide_padding_top = 3
