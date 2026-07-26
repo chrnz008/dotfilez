@@ -15,7 +15,7 @@ local function apply_highlights()
 
 	local hl = vim.api.nvim_set_hl
 
-	if coloname == "wildcharm" or coloname == "slate" or coloname == "habamax" then
+	if coloname=="quiet" or coloname == "wildcharm" or coloname == "slate" or coloname == "habamax" then
 		hl(0, "VertSplit", { bg = "NONE" })
 	end
 
