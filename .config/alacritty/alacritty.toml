@@ -1,5 +1,5 @@
 [env]
-TERM= "screen-256color"
+TERM = "screen-256color"
 
 [general]
 import = [
@@ -52,6 +52,7 @@ bindings = [
 { key = "Space", mods="Control",action = "ToggleViMode" }, #vim abbreviation trigger :? cmd.exe uses <C-M>
 { key = "[", mods="Control",mode="Vi|~Search",action = "ClearSelection" }, #<C-c>
 { key = "[", mods="Control",mode="Search",action = "SearchCancel" }, #<C-c>
+# TODO readline motions for footer_bar
 ]
 
 # https://alacritty.org/config-alacritty-bindings.html

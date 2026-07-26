@@ -20,6 +20,10 @@
       "rev": "f8ce95213e57b379089da23abc36a1fc39936b63",
       "src": "https://github.com/omacom-io/lumon.nvim"
     },
+    "mason-lspconfig.nvim": {
+      "rev": "7adc933dabcc7c86ae6b07aff7ee68eac398491f",
+      "src": "https://github.com/mason-org/mason-lspconfig.nvim"
+    },
     "mason.nvim": {
       "rev": "44d1e90e1f66e077268191e3ee9d2ac97cc18e65",
       "src": "https://github.com/mason-org/mason.nvim"

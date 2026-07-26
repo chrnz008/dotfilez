@@ -23,6 +23,7 @@ vim.pack.add({
 	'https://github.com/chrnz008/reykjavik',
 	'https://github.com/jiangmiao/auto-pairs',
 	'https://github.com/mason-org/mason.nvim',
+	'https://github.com/mason-org/mason-lspconfig.nvim',
 	'https://github.com/nvim-treesitter/nvim-treesitter',
 	'https://github.com/tpope/vim-surround',
 	'https://github.com/lewis6991/gitsigns.nvim',
@@ -87,6 +88,7 @@ vim.gno_filepicker_maps = 1 -- unmap the default
 vim.keymap.set('n', '<leader>e', '<Plug>(FilePicker)')
 
 require("mason").setup()
+require("mason-lspconfig").setup()
 
 require("vimterm").setup()
 vim.api.nvim_create_user_command('Ter', 'Sterminal', {})
