@@ -33,6 +33,10 @@ vim.pack.add({
 
 vim.cmd.packadd("nohlsearch")
 
+if vim.fn.has("win32") == 1 then
+	vim.opt.guifont = "consolas:h12"
+end
+
 --neovide
 if vim.g.neovide then
 	-- vim.g.neovide_cursor_animation_length = 0.150
