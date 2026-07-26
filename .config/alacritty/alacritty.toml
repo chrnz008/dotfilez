@@ -7,7 +7,7 @@ import = [
 ]
 
 [window]
-padding.y = 1
+padding = { x = 3, y = 3 }
 dynamic_padding = true
 title="~"
 decorations_theme_variant = "Dark"
@@ -15,7 +15,6 @@ decorations_theme_variant = "Dark"
 [font]
 normal.family = "Courier New"
 size = 12
-
 # offset = { x = 0, y = 0 }
 
 # from: https://github.com/vim/colorschemes/blob/master/colortemplate/quiet.colortemplate
@@ -28,7 +27,7 @@ search = {
 	focused_match = { foreground = "#181818", background = "#ff5fff" }
 }
 # line_indicator = { foreground = "None", background = "#ffaf00" }
-footer_bar = { foreground = "#181818", background = "#dadada" }
+footer_bar = { foreground = "#a8a8a8", background = "#2c2c2c" }
 selection = { text = "CellBackground", background = "#ffaf00" }
 # draw_bold_text_with_bright_colors = true #bright foreground??
 
@@ -41,6 +40,7 @@ selection = { text = "CellBackground", background = "#ffaf00" }
 [cursor]
 style = {shape="Block",blinking="Never"}
 unfocused_hollow = true
+thickness = 0.3 #for search
 
 [mouse]
 hide_when_typing = true
