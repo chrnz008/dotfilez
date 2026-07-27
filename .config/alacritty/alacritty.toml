@@ -13,9 +13,9 @@ title="~"
 decorations_theme_variant = "Dark"
 
 [font]
-normal.family = "Courier New"
-size = 12
-# offset = { x = 0, y = 0 }
+# normal.family = "Courier New"
+# size = 12
+offset = { x = 1, y = 1 }
 
 # from: https://github.com/vim/colorschemes/blob/master/colortemplate/quiet.colortemplate
 [colors]

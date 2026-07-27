@@ -25,7 +25,7 @@ scrolling performance in vim~~
 # alacritty
 - [ ] alacritty vi mode cursor and search colors collide
 - [ ] get rid of win32.toml alacritty
-- [ ] font and opacity in alacritty??
+- (font to use consolas looks good with offset={x=1,y=1} like gvim)
 
 ## todo
 - [ ] what about [dotfolders](https://github.com/chrnz008/dotfolders)
