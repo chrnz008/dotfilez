@@ -1,6 +1,6 @@
 vim9script
 
-set guioptions+=M # :h go-M
+set guioptions=M # :h go-M
 
 filetype plugin indent on
 syntax on

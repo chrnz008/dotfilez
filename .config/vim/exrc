@@ -1,5 +1,7 @@
 vim9script
 
+set guioptions=M # :h go-M
+
 filetype plugin indent on
 syntax on
 
@@ -46,12 +48,14 @@ cnoremap <C-X><C-F> <C-F>
 
 set termguicolors
 colorscheme quiet
-hi Normal guibg=#181818 #gruber
+hi Cursor guifg=fg #gui
 hi VertSplit guibg=bg
-hi Special guifg=#d02b61
-hi String guifg=#5688af
-# TODO :h hl-SpecialKey looks same as comment
+hi Normal guibg=#181818 #gruber
 hi SpecialKey guifg=#4f5258 #novum
+hi StatusLine guifg=#a8a8a8 guibg=#2c2c2c
+hi WildMenu guibg=bg
+hi String guifg=#5688af
+hi Special guifg=#d02b61
 
 #cavemens
 #autopairs

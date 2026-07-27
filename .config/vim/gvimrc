@@ -4,7 +4,8 @@ vim9script
 # set guicursor=a:block-blinkon0
 
 #hl-TitleBar
-set guioptions=C
+# set guioptions+=C
+set guioptions+=d #win32 titlebar is better?
 
 if has("win32")
 	if has("directx")
