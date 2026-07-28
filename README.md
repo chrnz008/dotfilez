@@ -6,7 +6,7 @@ using win32\caps.reg instead of win32\ahk\hhkb.ahk it is slightly modifed from s
 - `wget https://raw.githubusercontent.com/chrnz008/dotfilez/refs/heads/main/win32/caps.reg`
 - ~~changing the power plan to perfromace in powerplan in windows improves cursor
 scrolling performance in vim~~
-
+- [wtabs](https://github.com/leafOfTree/WindowTabs)
 # vim
 - `wget https://raw.githubusercontent.com/chrnz008/dotfilez/refs/heads/main/.config/vim/exrc`
 <!-- use wget -O filename url (to modify ther filename accordingly)-->
@@ -28,7 +28,7 @@ scrolling performance in vim~~
 - (font to use consolas looks good with offset={x=1,y=1} like gvim)
 
 ## todo
-- [ ] what about [dotfolders](https://github.com/chrnz008/dotfolders)
+- [X] what about [dotfolders](https://github.com/chrnz008/dotfolders)
 - [ ] start using a script to autoinstall (or complete [hedwig](https://github.com/chrnz008/hedwig))
 - [ ] exrc ffs problem on unix (also 'bg')
 - [ ] get rid of ahk
