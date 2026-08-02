@@ -64,13 +64,8 @@ vim.keymap.set('t', '<c-w>', '')
 
 --zed
 local tognum = function()
-	if vim.o.number then
-		vim.o.number = false
-		vim.o.relativenumber = false
-	else
-		vim.o.number = true
-		vim.o.relativenumber = true
-	end
+	vim.o.number = not vim.o.number
+	vim.o.relativenumber = not vim.o.relativenumber
 end
 
 vim.keymap.set('n', '<c-;>', tognum)     -- <c-w> neovide only

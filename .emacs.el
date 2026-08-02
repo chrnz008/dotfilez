@@ -19,3 +19,9 @@
 (setq-default tab-width 4)
 (setq auto-save-default nil)
 (setq make-backup-files nil)
+
+(when (eq system-type 'windows-nt)
+  ;; disable gpg in win32
+  (setq package-check-signature nil)
+  (set-face-attribute 'default nil :family "Consolas" :height 110)
+  )

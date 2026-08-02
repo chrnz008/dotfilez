@@ -19,12 +19,4 @@ cnoremap <C-D>		<Del> | # kinda good defautl
 # cnoremap <C-F>		<Right> #cant map bcuz of quickfiz
 
 #zed
-def ToggleLineNumbers()
-	if &number
-		set nonumber norelativenumber
-	else
-		set number relativenumber
-	endif
-enddef
-
-nnoremap <silent> <leader>; :call ToggleLineNumbers()<CR>
+nnoremap  <leader>; <Cmd>set number! relativenumber!<CR>
