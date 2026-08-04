@@ -6,7 +6,8 @@ using win32\caps.reg instead of win32\ahk\hhkb.ahk it is slightly modifed from s
 - `wget https://raw.githubusercontent.com/chrnz008/dotfilez/refs/heads/main/win32/caps.reg`
 - ~~changing the power plan to perfromace in powerplan in windows improves cursor
 scrolling performance in vim~~
-- [wtabs](https://github.com/leafOfTree/WindowTabs)
+- [wtabs](https://github.com/leafOfTree/WindowTabs) for [alacritty](#alacritty)
+- can add a shortcut for an application by in properties :)
 # vim
 - `wget https://raw.githubusercontent.com/chrnz008/dotfilez/refs/heads/main/.config/vim/exrc`
 <!-- use wget -O filename url (to modify ther filename accordingly)-->

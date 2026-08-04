@@ -25,7 +25,7 @@
 }
 
 ; Open Alacritty
-^!t::Send("#3")
+; ^!t::Send("#3")
 
 ; Open Firefox
 ^!b::Send("#1")

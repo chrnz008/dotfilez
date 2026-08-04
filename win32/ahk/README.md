@@ -5,7 +5,7 @@
 - Alt-q for closing
 - win-f for fullscreen
 - Alt-m for minimizing 
-- Ctrl+Alt-T for alacritty 
+- Ctrl+Alt-T for alacritty  (switched to native binding in props)
 - Ctrl+Alt-b for firefox
 - Ctrl+Alt-b for gvim
 
