@@ -35,4 +35,5 @@ scrolling performance in vim~~
 - [ ] get rid of ahk
 - [ ] sway,i3,gnome unused for a long time(start from scratch???)
 - [ ] remove .emacs.el ??
-- [ ] yazi (remove icons showing up when g<space>)
+- [X] yazi (remove icons showing up when g<space>)
+- [X] add yazi/package.toml for reproducibility

@@ -2,5 +2,4 @@
 .config/vim/plugit.bat
 
 .config/yazi/flavors
-.config/yazi/package.toml
-
+# .config/yazi/package.toml

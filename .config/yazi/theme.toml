@@ -12,6 +12,11 @@ sep_outer = { open = "", close = "" }
 sep_left = { open = "", close = "" }
 sep_right = { open = "", close = "" }
 
+[cmp]
+icon_file = ""
+icon_folder = ""
+# or use unicode icon_file = "📄"
+
 [icon]
 globs = []
 dirs  = []
