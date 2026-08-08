@@ -9,6 +9,7 @@ import = [
 [window]
 padding = { x = 3, y = 3 }
 dynamic_padding = true
+# opacity = 0.925
 title="~"
 decorations_theme_variant = "Dark"
 
