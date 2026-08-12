@@ -56,6 +56,7 @@ hi VertSplit guibg=bg
 hi Normal guibg=#181818 #gruber
 hi SpecialKey guifg=#4f5258 #novum
 hi StatusLine guifg=#a8a8a8 guibg=#2c2c2c
+hi StatusLineNC guifg=#222222 guibg=#636363
 hi WildMenu guibg=bg
 hi String guifg=#5688af
 hi Special guifg=#d02b61
