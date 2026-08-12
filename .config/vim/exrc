@@ -33,6 +33,9 @@ nnoremap <leader>bs <Cmd>ls<CR>:b<space>
 nnoremap <leader>y :%y+<CR>
 xnoremap <leader>y "+y
 nnoremap <Esc><Esc> <Cmd>nohlsearch<CR>
+# https://github.com/vim/vim/discussions/20999
+nnoremap <C-W>H <C-W>H<Cmd>set laststatus=0<CR>
+nnoremap <C-W>L <C-W>L<Cmd>set laststatus=0<CR>
 
 # cmdline
 cnoremap <expr> <C-P> wildmenumode() ? '<C-P>' : '<Up>'
