@@ -67,3 +67,12 @@ hi Type guifg=#8b7355 #burlywood4
 inoremap (<CR> (<CR>)<Esc>O
 inoremap [<CR> [<CR>]<Esc>O
 inoremap {<CR> {<CR>}<Esc>O
+
+g:loaded_getscript = 1
+g:loaded_getscriptPlugin = 1
+g:loaded_vimball = 1
+g:loaded_vimballPlugin = 1
+if executable("yazi") == 1
+	g:loaded_netrw = 1
+	g:loaded_netrwPlugin = 1
+endif
