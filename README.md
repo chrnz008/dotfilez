@@ -23,6 +23,7 @@ scrolling performance in vim~~
 - ***installing wezterm on windows somehow solves the cursor flicker in alacritty in vim***
 - nnoremap <Esc><Esc> <Cmd>nohlsearch<CR> ( or remap <C-l> to both redrew and noh)
 - to make github recognize exrc as a vim file u can use [.gitattributes](https://git-scm.com/docs/gitattributes) or [modeline](https://github.com/github-linguist/linguist/blob/main/docs/overrides.md?utm_source=chatgpt.com#using-emacs-or-vim-modelines) in vim
+- may need to define t_SR for linux console and need (t_SI and t_EI) for t_SR to work
 
 # alacritty
 - [ ] alacritty vi mode cursor and search colors collide
