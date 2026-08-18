@@ -49,6 +49,8 @@ cnoremap <C-X><C-D> <C-D>
 cnoremap <C-F> <Right>
 cnoremap <C-X><C-F> <C-F>
 # cnoremap <C-K> <C-E><C-U> #try <C-E><C-U>ing
+cnoremap <A-b> <C-Left>
+cnoremap <A-f> <C-Right>
 
 set termguicolors
 colorscheme quiet
@@ -76,4 +78,9 @@ g:loaded_vimballPlugin = 1
 if executable("yazi") == 1
 	g:loaded_netrw = 1
 	g:loaded_netrwPlugin = 1
+endif
+
+if $ALACRITTY_LOG != ''
+	cnoremap b<A-b> <C-Left>
+	cnoremap f<A-f> <C-Right>
 endif

@@ -50,6 +50,7 @@ hide_when_typing = true
 bindings = [
 { key="F11", action="ToggleFullscreen" },
 { key = "N", mods = "Control|Shift", action = "CreateNewWindow" },
+{ key = "K", mods = "Control|Shift", action = "ClearHistory" },
 { key = "Space", mods="Control",action = "ToggleViMode" }, #vim abbreviation trigger :? cmd.exe uses <C-M>
 { key = "[", mods="Control",mode="Vi|~Search",action = "ClearSelection" }, #<C-c>
 { key = "[", mods="Control",mode="Search",action = "SearchCancel" }, #<C-c>
