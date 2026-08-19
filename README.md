@@ -31,7 +31,9 @@ scrolling performance in vim~~
 - ***installing wezterm on windows somehow solves the cursor flicker in alacritty*** (because it ships conpty,OpenConsole and adds to path)
 - the cursor flicker can be resolved by placing conpty.dll and OpenConsole.exe (alacritty doesnt ship them and uses native api if not found in path)
 
-```curl.exe -LO https://raw.githubusercontent.com/wezterm/wezterm/main/assets/windows/conhost/conpty.dll && curl.exe -LO https://raw.githubusercontent.com/wezterm/wezterm/main/assets/windows/conhost/OpenConsole.exe```
+```
+curl.exe -LO https://raw.githubusercontent.com/wezterm/wezterm/main/assets/windows/conhost/conpty.dll && curl.exe -LO https://raw.githubusercontent.com/wezterm/wezterm/main/assets/windows/conhost/OpenConsole.exe
+```
 
 *if facing an issue with above try copying after installing wezterm)*
 - adding a two conpty.dll in alacritty path is bringinb back the flicker??
