@@ -9,7 +9,7 @@ scrolling performance in vim~~
 - [wtabs](https://github.com/leafOfTree/WindowTabs) for [alacritty](#alacritty)
 - can add a shortcut for an application by in properties :)
 # vim
-- `wget https://raw.githubusercontent.com/chrnz008/dotfilez/refs/heads/main/.config/vim/exrc`
+```wget https://raw.githubusercontent.com/chrnz008/dotfilez/refs/heads/main/.config/vim/exrc```
 <!-- use wget -O filename url (to modify ther filename accordingly)-->
 - [X] fileformat issue (solved by forcing ff=unix for .vim ft)
     - for latest exrc the above problem can be resolved by 
@@ -20,7 +20,6 @@ scrolling performance in vim~~
 - Why does vim-plug work in Linux even if it is set to .vim(which is rtp in
   linux)i am assuming even tho it is .vim there is no `vimrc` so vim again looks
   in XDG_CONFIG so it works(for windows it is meh cuz vimfiles is rtp)
-- ***installing wezterm on windows somehow solves the cursor flicker in alacritty in vim***
 - nnoremap <Esc><Esc> <Cmd>nohlsearch<CR> ( or remap <C-l> to both redrew and noh)
 - to make github recognize exrc as a vim file u can use [.gitattributes](https://git-scm.com/docs/gitattributes) or [modeline](https://github.com/github-linguist/linguist/blob/main/docs/overrides.md?utm_source=chatgpt.com#using-emacs-or-vim-modelines) in vim
 - may need to define t_SR for linux console and need (t_SI and t_EI) for t_SR to work
@@ -29,6 +28,13 @@ scrolling performance in vim~~
 - [ ] alacritty vi mode cursor and search colors collide
 - [ ] get rid of win32.toml alacritty
 - (font to use consolas looks good with offset={x=1,y=1} like gvim)
+- ***installing wezterm on windows somehow solves the cursor flicker in alacritty*** (because it ships conpty,OpenConsole and adds to path)
+- the cursor flicker can be resolved by placing conpty.dll and OpenConsole.exe (alacritty doesnt ship them and uses native api if not found in path)
+
+```curl.exe -LO https://raw.githubusercontent.com/wezterm/wezterm/main/assets/windows/conhost/conpty.dll && curl.exe -LO https://raw.githubusercontent.com/wezterm/wezterm/main/assets/windows/conhost/OpenConsole.exe```
+
+*if facing an issue with above try copying after installing wezterm)*
+- adding a two conpty.dll in alacritty path is bringinb back the flicker??
 
 ## todo
 - [X] what about [dotfolders](https://github.com/chrnz008/dotfolders)
