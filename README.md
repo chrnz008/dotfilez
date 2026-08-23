@@ -25,7 +25,7 @@ scrolling performance in vim~~
 - may need to define t_SR for linux console and need (t_SI and t_EI) for t_SR to work
 
 # alacritty
-- [ ] alacritty vi mode cursor and search colors collide
+- [X] alacritty vi mode cursor and search colors collide
 - [ ] get rid of win32.toml alacritty
 - (font to use consolas looks good with offset={x=1,y=1} like gvim)
 - ***installing wezterm on windows somehow solves the cursor flicker in alacritty*** (because it ships conpty,OpenConsole and adds to path)
@@ -39,11 +39,8 @@ curl.exe -LO https://raw.githubusercontent.com/wezterm/wezterm/main/assets/windo
 - adding a two conpty.dll in alacritty path is bringinb back the flicker??
 
 ## todo
-- [X] what about [dotfolders](https://github.com/chrnz008/dotfolders)
 - [ ] start using a script to autoinstall (or complete [hedwig](https://github.com/chrnz008/hedwig))
 - [ ] exrc ffs problem on unix (also 'bg')
 - [ ] get rid of ahk
 - [ ] sway,i3,gnome unused for a long time(start from scratch???)
 - [ ] remove .emacs.el ??
-- [X] yazi (remove icons showing up when g<space>)
-- [X] add yazi/package.toml for reproducibility

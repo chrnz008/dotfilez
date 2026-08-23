@@ -22,7 +22,7 @@ offset = { x = 1, y = 1 }
 [colors]
 primary = {foreground = "#dadada",background = "#181818"}
 cursor = { text = "CellBackground" ,cursor = "#f4f4ff" } #wez
-vi_mode_cursor = { text = "CellBackground" ,cursor = "#51afef" } #(diff from matches and vim search)
+vi_mode_cursor = { text = "CellBackground" ,cursor = "#cb4b16" } #(diff from matches and vim search)
 search = {
 	matches = { foreground = "#181818", background = "#00afff" },
 	focused_match = { foreground = "#181818", background = "#ff5fff" }
@@ -33,8 +33,9 @@ selection = { text = "CellBackground", background = "#ffaf00" }
 # draw_bold_text_with_bright_colors = true #bright foreground??
 
 # TODO alacritty defaults are great
-# cursor = { text = "CellBackground" ,cursor = "#cb4b16" } #red
-# cursor = { text = "CellBackground" ,cursor = "#51afef" } #blue
+# cursor = { text = "CellBackground" ,cursor = "#cb4b16" } #solarized
+# cursor = { text = "CellBackground" ,cursor = "#268bd2" } #soladark
+# cursor = { text = "CellBackground" ,cursor = "#51afef" } #doom
 # cursor = { text = "CellBackground" ,cursor = "#00ff00"} #green
 # cursor = { text = "CellBackground" ,cursor = "#d3c6aa" } #everforest
 

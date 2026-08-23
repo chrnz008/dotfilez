@@ -53,17 +53,24 @@ cnoremap <A-b> <C-Left>
 cnoremap <A-f> <C-Right>
 
 set termguicolors
+def ApplyHl(): void
+	hi Cursor guifg=fg #gui
+	hi VertSplit guibg=bg
+	hi Normal guibg=#181818 #gruber
+	hi SpecialKey guifg=#4f5258 #novum
+	hi StatusLine guifg=#a8a8a8 guibg=#2c2c2c
+	hi StatusLineNC guifg=#222222 guibg=#636363
+	hi WildMenu guibg=bg
+	hi String guifg=#5688af
+	hi Special guifg=#d02b61
+	hi Type guifg=#8b7355 #burlywood4
+enddef
+autocmd ColorScheme * {
+	if g:colors_name == 'quiet'
+		ApplyHl()
+	endif
+}
 colorscheme quiet
-hi Cursor guifg=fg #gui
-hi VertSplit guibg=bg
-hi Normal guibg=#181818 #gruber
-hi SpecialKey guifg=#4f5258 #novum
-hi StatusLine guifg=#a8a8a8 guibg=#2c2c2c
-hi StatusLineNC guifg=#222222 guibg=#636363
-hi WildMenu guibg=bg
-hi String guifg=#5688af
-hi Special guifg=#d02b61
-hi Type guifg=#8b7355 #burlywood4
 
 #cavemens
 #autopairs
@@ -75,7 +82,7 @@ g:loaded_getscript = 1
 g:loaded_getscriptPlugin = 1
 g:loaded_vimball = 1
 g:loaded_vimballPlugin = 1
-if executable("yazi") == 1
+if executable("yazi")
 	g:loaded_netrw = 1
 	g:loaded_netrwPlugin = 1
 endif
