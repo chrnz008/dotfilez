@@ -9,8 +9,12 @@ https://github.com/chrnz008/gruber.vim
 https://github.com/tpope/vim-surround
 
 ; opt
-; url followed by any string are considered opt plugins
+; url followed by opt string are considered opt plugins
 https://github.com/chrnz008/schizo.vim         opt
 https://github.com/yegappan/lsp                opt
+
+; curl
+; url followed by any string are curled to pack/foobar/start/curled/plugin/
+https://github.com/habamax/.vim/raw/refs/heads/master/plugin/inline_colors.vim  url
 
 ; vim: cms=;%s:et
