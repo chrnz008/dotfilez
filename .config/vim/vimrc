@@ -5,19 +5,99 @@ set guioptions=M # :h go-M
 filetype plugin indent on
 syntax on
 
-colorscheme quiet
+packadd comment
+
+if has("win32")
+	set guicursor=a:block-blinkon0,r-cr:hor20
+endif
+
 set belloff=all
-set cursorline
-set cursorlineopt=number
-set fillchars+=vert:│
+set fillchars=vert:│
 set hlsearch
 set ignorecase
 set incsearch
 set laststatus=0
+set listchars=tab:›\ ,trail:-
 set noswapfile
 set nowrap
 set shiftwidth=4
 set smartcase
 set smarttab
-set tabstop=4
+set tabstop=4 #ucan set sw=0 to inherit from ts
+
+g:mapleader = " "
+nnoremap <leader>w <Cmd>update<CR>
+nnoremap <leader>te :tabe<space>
+nnoremap <leader>bd <Cmd>bdelete<CR>
+nnoremap <leader>bs <Cmd>ls<CR>:b<space>
+nnoremap <leader>y :%y+<CR>
+xnoremap <leader>y "+y
+nnoremap <Esc><Esc> <Cmd>nohlsearch<CR>
+# https://github.com/vim/vim/discussions/20999
+nnoremap <C-W>H <C-W>H<Cmd>set laststatus=0<CR>
+nnoremap <C-W>L <C-W>L<Cmd>set laststatus=0<CR>
+
+# cmdline
+cnoremap <expr> <C-P> wildmenumode() ? '<C-P>' : '<Up>'
+cnoremap <expr> <C-N> wildmenumode() ? '<C-N>' : '<Down>'
+
+cnoremap <C-A> <Home>
+cnoremap <C-X><C-A> <C-A>
+cnoremap <C-B> <Left>
+cnoremap <C-D> <Del>
+cnoremap <C-X><C-D> <C-D>
+cnoremap <C-F> <Right>
+cnoremap <C-X><C-F> <C-F>
+# cnoremap <C-K> <C-E><C-U> #try <C-E><C-U>ing
+cnoremap <A-b> <C-Left>
+cnoremap <A-f> <C-Right>
+
 set termguicolors
+def ApplyHl(): void
+	hi Cursor guifg=fg #gui
+	hi VertSplit guibg=bg
+	hi Normal guibg=#181818 #gruber
+	hi SpecialKey guifg=#4f5258 #novum
+	hi StatusLine guifg=#a8a8a8 guibg=#2c2c2c
+	hi StatusLineNC guifg=#222222 guibg=#636363
+	hi WildMenu guibg=bg
+	hi String guifg=#5688af
+	hi Special guifg=#d02b61
+	hi Type guifg=#8b7355 #burlywood4
+enddef
+autocmd ColorScheme * {
+	if g:colors_name == 'quiet'
+		ApplyHl()
+	endif
+}
+colorscheme quiet
+
+#cavemens
+#autopairs
+inoremap (<CR> (<CR>)<Esc>O
+inoremap [<CR> [<CR>]<Esc>O
+inoremap {<CR> {<CR>}<Esc>O
+
+g:loaded_getscript = 1
+g:loaded_getscriptPlugin = 1
+g:loaded_vimball = 1
+g:loaded_vimballPlugin = 1
+if executable("yazi")
+	g:loaded_netrw = 1
+	g:loaded_netrwPlugin = 1
+endif
+
+if $ALACRITTY_LOG != ''
+	cnoremap b<A-b> <C-Left>
+	cnoremap f<A-f> <C-Right>
+endif
+
+# plugit
+var plugit_dir = has('win32') ? '~/vimfiles' : '~/.config/vim'
+var plugit_path = plugit_dir .. '/plugit' .. (has('win32') ? '.bat' : '.sh')
+#hardcode path stead of $MYVIMDIR for exrc
+if !filereadable(expand(plugit_path))
+	# TODO plugit.sh
+	var plugurl = 'https://github.com/chrnz008/plugit/raw/refs/heads/main/plugit.bat'
+	silent execute '!curl -fLo ' .. fnamemodify(plugit_path, ':p:S') .. ' ' plugurl
+endif
