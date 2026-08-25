@@ -87,7 +87,7 @@ if executable("yazi")
 	g:loaded_netrwPlugin = 1
 endif
 
-if $ALACRITTY_LOG != ''
+if exists('$ALACRITTY_LOG') && has('win32')
 	cnoremap b<A-b> <C-Left>
 	cnoremap f<A-f> <C-Right>
 endif
