@@ -62,13 +62,14 @@ local function apply_highlights()
 			"NormalFloat",
 		}) do
 			vim.api.nvim_set_hl(0, group, { bg = "none" })
+			-- :h looks wierd
 		end
 	end
 
 	local coloname = vim.g.colors_name
 	local hl = vim.api.nvim_set_hl
 	if not vim.g.neovide then
-		inherit()
+		-- inherit()
 	end
 	if coloname == "quiet" or coloname == "wildcharm" or coloname == "slate" or coloname == "habamax" then
 		hl(0, "VertSplit", { bg = "NONE" })
@@ -97,6 +98,8 @@ local function apply_highlights()
 			hl(0, "String", { fg = "#0056b7", bg = "#d7d7d7", cterm = {} })
 			hl(0, "StatusLine", { bold = true, fg = "#eeeeee", bg = "#626262", cterm = {} })
 		end
+	elseif coloname == 'default' then
+		hl(0, "Normal", { bg = "#181818" })
 	end
 end
 --apply whenever theme changed
@@ -107,7 +110,7 @@ vim.api.nvim_create_autocmd("ColorScheme", {
 vim.cmd.colorscheme("default")
 
 --cavemens
---autopairs 
+--autopairs
 -- vim.keymap.set(0, 'i','(<CR>', '(<CR>)<Esc>O')
 -- vim.keymap.set(0, 'i','[<CR>', '[<CR>]<Esc>O')
 -- vim.keymap.set(0, 'i','{<CR>', '{<CR>}<Esc>O')
@@ -170,7 +173,7 @@ require("nvim-treesitter").setup({
 --enable-lsp-server
 vim.lsp.enable({ 'clangd', 'lua_ls', 'rust_analyzer' }) --mason-lspconfig
 
-vim.keymap.set('n', '<leader>lf', vim.lsp.buf.format)   --or use gq
+vim.keymap.set('n', '<leader>lf', vim.lsp.buf.format) --or use gq
 vim.lsp.config("lua_ls", {
 	settings = {
 		Lua = {

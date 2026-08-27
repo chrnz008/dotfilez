@@ -8,20 +8,12 @@ using win32\caps.reg instead of win32\ahk\hhkb.ahk it is slightly modifed from s
 scrolling performance in vim~~
 - [wtabs](https://github.com/leafOfTree/WindowTabs) for [alacritty](#alacritty)
 - can add a shortcut for an application by in properties :)
+
 # vim
-```wget https://raw.githubusercontent.com/chrnz008/dotfilez/refs/heads/main/.config/vim/exrc```
+```wget https://github.com/chrnz008/dotfilez/raw/refs/heads/main/.config/vim/vimrc```
 <!-- use wget -O filename url (to modify ther filename accordingly)-->
 - [X] fileformat issue (solved by forcing ff=unix for .vim ft)
-    - for latest exrc the above problem can be resolved by 
-        ```vimscript
-        set nomodelinestrict #see :h modeline
-        # vim: fileformat=unix
-        ```
-- Why does vim-plug work in Linux even if it is set to .vim(which is rtp in
-  linux)i am assuming even tho it is .vim there is no `vimrc` so vim again looks
-  in XDG_CONFIG so it works(for windows it is meh cuz vimfiles is rtp)
 - nnoremap <Esc><Esc> <Cmd>nohlsearch<CR> ( or remap <C-l> to both redrew and noh)
-- to make github recognize exrc as a vim file u can use [.gitattributes](https://git-scm.com/docs/gitattributes) or [modeline](https://github.com/github-linguist/linguist/blob/main/docs/overrides.md?utm_source=chatgpt.com#using-emacs-or-vim-modelines) in vim
 - may need to define t_SR for linux console and need (t_SI and t_EI) for t_SR to work
 
 # alacritty
@@ -40,7 +32,7 @@ curl.exe -LO https://raw.githubusercontent.com/wezterm/wezterm/main/assets/windo
 
 ## todo
 - [ ] start using a script to autoinstall (or complete [hedwig](https://github.com/chrnz008/hedwig))
-- [ ] exrc ffs problem on unix (also 'bg')
+- [ ] vim ffs problem on unix (also 'bg')
 - [ ] get rid of ahk
 - [ ] sway,i3,gnome unused for a long time(start from scratch???)
 - [ ] remove .emacs.el ??

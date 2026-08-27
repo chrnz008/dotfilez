@@ -101,5 +101,6 @@ var plugit_path = plugit_dir .. '/plugit' .. (has('win32') ? '.bat' : '.sh')
 if !filereadable(expand(plugit_path))
 	# TODO plugit.sh
 	var plugurl = 'https://github.com/chrnz008/plugit/raw/refs/heads/main/plugit.bat'
-	silent execute '!curl -fLo ' .. fnamemodify(plugit_path, ':p:S') .. ' ' plugurl
+	silent execute '!curl -fLo ' .. fnamemodify(plugit_path, ':p:S') plugurl
 endif
+command -nargs=* Plug execute '!' expand(plugit_path) <q-args>
