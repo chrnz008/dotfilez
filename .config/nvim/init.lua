@@ -55,24 +55,10 @@ require('vim._core.ui2').enable()
 
 --halfbaked
 local function apply_highlights()
-	-- inherit from terminal
-	function inherit()
-		for _, group in ipairs({
-			"Normal",
-			"NormalFloat",
-		}) do
-			vim.api.nvim_set_hl(0, group, { bg = "none" })
-			-- :h looks wierd
-		end
-	end
-
 	local coloname = vim.g.colors_name
-	local hl = vim.api.nvim_set_hl
-	if not vim.g.neovide then
-		-- inherit()
-	end
+	local hi = vim.api.nvim_set_hl
 	if coloname == "quiet" or coloname == "wildcharm" or coloname == "slate" or coloname == "habamax" then
-		hl(0, "VertSplit", { bg = "NONE" })
+		hi(0, "VertSplit", { bg = "NONE" })
 	end
 	if coloname == 'quiet' then
 		--this are stripped see https://github.com/neutaaaaan/monosvkem
@@ -80,26 +66,26 @@ local function apply_highlights()
 		--monosvkem
 		local normal = { bg = "#181818", fg = "#dadada" }
 		if vim.o.background == "dark" then
-			hl(0, "Cursor", { fg = normal.fg, bg = normal.bg })
-			hl(0, "CursorLineNr", { fg = "#20bbfc", bg = normal.bg, cterm = {} })
-			hl(0, "Normal", { bg = normal.bg, cterm = {} })
-			hl(0, "StatusLine", { fg = "#a8a8a8", bg = "#2c2c2c", bold = true })
-			hl(0, "StatusLineNC", { fg = "#636363", bg = "#222222" })
-			hl(0, "WildMenu", { fg = "#00afff", bg = normal.bg })
-			hl(0, "String", { fg = "#5688af", bg = normal.bg, cterm = {} })
-			hl(0, "Type", { fg = "#8b7355" })
-			hl(0, "Special", { fg = "#d02b61", bg = "NONE", cterm = {} })
-			hl(0, "TitleBar", { bg = "#303030" }) --neovide?? TODO
+			hi(0, "Cursor", { fg = normal.fg, bg = normal.bg })
+			hi(0, "CursorLineNr", { fg = "#20bbfc", bg = normal.bg, cterm = {} })
+			hi(0, "Normal", { bg = normal.bg, cterm = {} })
+			hi(0, "StatusLine", { fg = "#a8a8a8", bg = "#2c2c2c", bold = true })
+			hi(0, "StatusLineNC", { fg = "#636363", bg = "#222222" })
+			hi(0, "WildMenu", { fg = "#00afff", bg = normal.bg })
+			hi(0, "String", { fg = "#5688af", bg = normal.bg, cterm = {} })
+			hi(0, "Type", { fg = "#8b7355" })
+			hi(0, "Special", { fg = "#d02b61", bg = "NONE", cterm = {} })
+			hi(0, "TitleBar", { bg = "#303030" }) --neovide?? TODO
 		else
 			-- TODO
-			hl(0, "Cursor", { fg = normal.bg, bg = "#d7d7d7" })
-			hl(0, "CursorLineNr", { fg = "#080808", bg = "#d7d7d7", cterm = {} })
-			hl(0, "Special", { fg = "#aa053b", bg = "NONE", cterm = {} })
-			hl(0, "String", { fg = "#0056b7", bg = "#d7d7d7", cterm = {} })
-			hl(0, "StatusLine", { bold = true, fg = "#eeeeee", bg = "#626262", cterm = {} })
+			hi(0, "Cursor", { fg = normal.bg, bg = "#d7d7d7" })
+			hi(0, "CursorLineNr", { fg = "#080808", bg = "#d7d7d7", cterm = {} })
+			hi(0, "Special", { fg = "#aa053b", bg = "NONE", cterm = {} })
+			hi(0, "String", { fg = "#0056b7", bg = "#d7d7d7", cterm = {} })
+			hi(0, "StatusLine", { bold = true, fg = "#eeeeee", bg = "#626262", cterm = {} })
 		end
 	elseif coloname == 'default' then
-		hl(0, "Normal", { bg = "#181818" })
+		hi(0, "Normal", { bg = "#181818" })
 	end
 end
 --apply whenever theme changed
@@ -130,9 +116,7 @@ vim.pack.add({
 
 	'https://github.com/neovim/nvim-lspconfig',
 	'https://github.com/Konfekt/filepicker.vim',
-	'https://github.com/VioletJewel/vimterm.nvim', --add termwinkey to nvim
 	'https://github.com/chrnz008/gruber.vim',
-	'https://github.com/chrnz008/reykjavik',
 	'https://github.com/jiangmiao/auto-pairs', --test
 	'https://github.com/mason-org/mason.nvim',
 	'https://github.com/mason-org/mason-lspconfig.nvim',
@@ -169,11 +153,10 @@ require("nvim-treesitter").setup({
 })
 
 -- LSP
-
 --enable-lsp-server
 vim.lsp.enable({ 'clangd', 'lua_ls', 'rust_analyzer' }) --mason-lspconfig
 
-vim.keymap.set('n', '<leader>lf', vim.lsp.buf.format) --or use gq
+vim.keymap.set('n', '<leader>lf', vim.lsp.buf.format)   --or use gq
 vim.lsp.config("lua_ls", {
 	settings = {
 		Lua = {
@@ -192,13 +175,16 @@ vim.api.nvim_create_autocmd('LspAttach', {
 	end,
 })
 
-vim.diagnostic.config({
+vim.lsp.document_color.enable(true, nil, { style = '●' })
+-- vim.lsp.inlay_hint.enable(true)
+
+-- vim.diagnostic.config({
 	-- virtual_lines = true
 	-- virtual_lines = {
 	-- Only show virtual line diagnostics for the current cursor line
 	-- current_line = true
 	-- }
-})
+-- })
 
 vim.opt.completeopt:append("noinsert")
 
@@ -207,6 +193,3 @@ vim.keymap.set('n', '<leader>e', '<Plug>(FilePicker)')
 
 require("mason").setup()
 require("mason-lspconfig").setup()
-
-require("vimterm").setup()
-vim.api.nvim_create_user_command('Ter', 'Sterminal', {})
