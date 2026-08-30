@@ -53,6 +53,7 @@ cnoremap <C-X><C-F> <C-F>
 # cnoremap <C-K> <C-E><C-U> #try <C-E><C-U>ing
 cnoremap <A-b> <C-Left>
 cnoremap <A-f> <C-Right>
+cnoremap <A-d> <C-Right><C-W>
 
 set termguicolors
 def ApplyHl(): void
@@ -90,8 +91,10 @@ if executable("yazi")
 endif
 
 if exists('$ALACRITTY_LOG') && has('win32')
-	cnoremap b<A-b> <C-Left>
-	cnoremap f<A-f> <C-Right>
+	#alacritty inserting <char>+<Alt-char>
+	cnoremap <A-b> <BS><C-Left>
+	cnoremap <A-f> <BS><C-Right>
+	cnoremap <A-d> <BS><C-Right><C-W>
 endif
 
 # plugit
