@@ -68,11 +68,14 @@ def ApplyHl(): void
 	hi Special guifg=#d02b61
 	hi Type guifg=#8b7355 #burlywood4
 enddef
+
+augroup applyHighlights
 autocmd ColorScheme * {
 	if g:colors_name == 'quiet'
 		ApplyHl()
 	endif
 }
+augroup END
 colorscheme quiet
 
 #cavemens
@@ -95,6 +98,33 @@ if exists('$ALACRITTY_LOG') && has('win32')
 	cnoremap <A-b> <BS><C-Left>
 	cnoremap <A-f> <BS><C-Right>
 	cnoremap <A-d> <BS><C-Right><C-W>
+
+	# COMBAK cursor fg issues
+	def UpdateBgCsr(): void
+		var bg = synIDattr(synIDtrans(hlID('Normal')), 'bg#')
+		if bg != ''
+			echoraw($"\x1b]11;{bg}\x1b\\")
+		endif
+		# echoraw("\x1b]12;#000000\x1b\\") #csr
+	enddef
+	def ClearBgCsr(): void
+		echoraw("\x1b]111;\x1b\\") #bg
+		# echoraw("\x1b]112;\x1b\\") #csr
+	enddef
+	g:bgchan = false
+	augroup termBgSync
+		autocmd  ColorScheme * {
+			if &bg == 'dark' && g:bgchan
+				ClearBgCsr()
+				g:bgchan = false
+			elseif &bg == 'light'
+				UpdateBgCsr()
+				g:bgchan = true
+			endif
+			autocmd! VimLeavePre * call ClearBgCsr()
+		}
+	augroup END
+	# &t_RB = "\e]11;?\e\\"
 endif
 
 # plugit
