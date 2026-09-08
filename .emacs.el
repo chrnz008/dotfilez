@@ -1,6 +1,8 @@
+;; -*- lexical-binding: t; -*-
 ;; vim is bettern
 
 (tool-bar-mode 0)
+(setq ring-bell-function 'ignore)
 (load-theme 'deeper-blue t)
 
 ;; faces

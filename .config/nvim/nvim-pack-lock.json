@@ -32,17 +32,9 @@
       "rev": "7caec274fd19c12b55902a5b795100d21531391f",
       "src": "https://github.com/nvim-treesitter/nvim-treesitter"
     },
-    "reykjavik": {
-      "rev": "e289595473ba5b2e9e1273f4b92ac612d1454684",
-      "src": "https://github.com/chrnz008/reykjavik"
-    },
     "vim-surround": {
       "rev": "3d188ed2113431cf8dac77be61b842acb64433d9",
       "src": "https://github.com/tpope/vim-surround"
-    },
-    "vimterm.nvim": {
-      "rev": "c77ee220b9c3ab2eb66d5d18f950ae4112178927",
-      "src": "https://github.com/VioletJewel/vimterm.nvim"
     }
   }
 }
