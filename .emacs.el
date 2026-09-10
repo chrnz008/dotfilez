@@ -27,3 +27,5 @@
   (setq package-check-signature nil)
   (set-face-attribute 'default nil :family "Consolas" :height 110)
   )
+(setq fancy-splash-image
+	  (expand-file-name "images/icons/hicolor/128x128/apps/emacs.png" data-directory))
