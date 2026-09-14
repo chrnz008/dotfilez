@@ -16,9 +16,9 @@ vim.opt.wrap = false
 --key-mapping
 -- vim.keymap.set('n', '<Esc><Esc>', vim.cmd.nohlsearch) --use CTRL-L instead
 vim.keymap.set('n', '<leader>w', vim.cmd.update)
+vim.keymap.set('n', '<leader>te', ':tabe<Space>')
 vim.keymap.set('n', '<leader>bs', '<Cmd>ls<CR>:b<Space>')
 vim.keymap.set('n', '<leader>bd', vim.cmd.bdelete)
-vim.keymap.set('n', '<leader>te', ':tabe<Space>')
 vim.keymap.set('n', '<leader>y', '<Cmd>%y+<CR>')
 vim.keymap.set('x', '<leader>y', '"+y')
 
@@ -37,10 +37,10 @@ vim.keymap.set('c', '<C-X><C-F>', '<C-F>')
 -- vim.keymap.set('c', '<C-K>', '<C-E><C-U>') --try <C-E><C-U>ing
 vim.keymap.set('c', '<A-b>', '<C-Left>')
 vim.keymap.set('c', '<A-f>', '<C-Right>')
+vim.keymap.set('c', '<A-d>', '<C-Right><C-w>')
 
 vim.keymap.set('t', '>', '')
 vim.keymap.set('t', '<c-w>', '')
-
 
 --zed
 local tognum = function()
@@ -85,8 +85,13 @@ local function apply_highlights()
 			hi(0, "StatusLine", { bold = true, fg = "#eeeeee", bg = "#626262", cterm = {} })
 		end
 	elseif coloname == 'default' then
-		hi(0, "Normal", { bg = "#181818" })
+		if vim.o.bg == 'dark' then
+			hi(0, "Normal", { bg = "#181818" })
+		end
 	end
+	hi(0, "Added", { fg = "LimeGreen" })
+	hi(0, "Changed", { fg = "DodgerBlue" })
+	hi(0, "Removed", { fg = "Red" })
 end
 --apply whenever theme changed
 vim.api.nvim_create_autocmd("ColorScheme", {
@@ -134,7 +139,9 @@ end
 
 --neovide
 if vim.g.neovide then
-	-- vim.g.neovide_cursor_animation_length = 0.150
+	-- vim.g.neovide_cursor_animation_length = 0.15
+	vim.g.neovide_floating_corner_radius = 0.2
+	vim.g.neovide_hide_mouse_when_typing = true
 	-- vim.g.neovide_padding_bottom = 3
 	vim.g.neovide_padding_left = 3
 	vim.g.neovide_padding_right = 3
@@ -142,6 +149,19 @@ if vim.g.neovide then
 	-- vim.g.neovide_text_contrast = 0.1 --alacritty
 	-- vim.g.neovide_text_gamma = 0.8
 	vim.o.linespace = 0
+	vim.keymap.set('n', '<F11>', function()
+		vim.g.neovide_fullscreen = not vim.g.neovide_fullscreen
+	end)
+	local change_scale_factor = function(delta)
+		return function()
+			vim.g.neovide_scale_factor = vim.g.neovide_scale_factor * delta
+		end
+	end
+	vim.keymap.set("n", "<C-0>", function()
+		vim.g.neovide_scale_factor = 1
+	end)
+	vim.keymap.set("n", "<C-->", change_scale_factor(1 / 1.25))
+	vim.keymap.set("n", "<C-=>", change_scale_factor(1.25))
 end
 
 --plug spec
@@ -174,6 +194,7 @@ vim.api.nvim_create_autocmd('LspAttach', {
 		end
 	end,
 })
+vim.opt.completeopt:append("noinsert") --required for above block
 
 vim.lsp.document_color.enable(true, nil, { style = '●' })
 -- vim.lsp.inlay_hint.enable(true)
@@ -186,9 +207,8 @@ vim.lsp.document_color.enable(true, nil, { style = '●' })
 	-- }
 -- })
 
-vim.opt.completeopt:append("noinsert")
 
-vim.gno_filepicker_maps = 1 -- unmap the default
+vim.g.no_filepicker_maps = 1 -- unmap the default
 vim.keymap.set('n', '<leader>e', '<Plug>(FilePicker)')
 
 require("mason").setup()

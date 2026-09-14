@@ -9,7 +9,8 @@ set guioptions+=d #win32 titlebar is better?
 
 if has("win32")
 	if has("directx")
-		# set renderoptions=type:directx
+		# https://neovide.dev/configuration.html
+		# set renderoptions=type:directx,gamma:2.2,contrast:0.5
 		# some colors doesnt look good with this
 	endif
 	set linespace=0

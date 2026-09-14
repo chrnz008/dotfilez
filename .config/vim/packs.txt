@@ -11,7 +11,8 @@ https://github.com/tpope/vim-surround
 ; opt
 ; url followed by opt string are considered opt plugins
 https://github.com/chrnz008/schizo.vim         opt
-https://github.com/yegappan/lsp                opt
+; https://github.com/yegappan/lsp                opt
+https://github.com/h-east/lsp.vim              opt
 
 ; curl
 ; url followed by any string are curled to pack/foobar/start/curled/plugin/

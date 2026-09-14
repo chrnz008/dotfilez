@@ -6,12 +6,15 @@ filetype plugin indent on
 syntax on
 
 packadd comment
+packadd nohlsearch
 
 if has("win32")
 	set guicursor=a:block-blinkon0,r-cr:hor20
 endif
 
 set belloff=all
+set completeopt+=popup #override preview
+set completepopup=align:menu,border:off #,highlight:Folded
 set fillchars=vert:│
 set hlsearch
 set ignorecase
