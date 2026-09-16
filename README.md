@@ -22,7 +22,8 @@ scrolling performance in vim~~
 - (font to use consolas looks good with offset={x=1,y=1} like gvim)
 - ***installing wezterm on windows somehow solves the cursor flicker in alacritty*** (because it ships conpty,OpenConsole and adds to path)
 - the cursor flicker can be resolved by placing conpty.dll and OpenConsole.exe (alacritty doesnt ship them and uses native api if not found in path)
-- the cursor flicker is not happening in powershell??
+> [!NOTE]  
+> the cursor flicker is not happening in powershell??
 
 ```
 curl.exe -LO https://raw.githubusercontent.com/wezterm/wezterm/main/assets/windows/conhost/conpty.dll && curl.exe -LO https://raw.githubusercontent.com/wezterm/wezterm/main/assets/windows/conhost/OpenConsole.exe
