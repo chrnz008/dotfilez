@@ -1,7 +1,7 @@
 vim.g.mapleader = " "
 vim.opt.cursorline = true
 vim.opt.cursorlineopt = "number"
-vim.opt.guicursor = "r-cr:hor20"
+vim.o.guicursor = "r-cr:hor20" --using opt messing append?
 vim.opt.ignorecase = true
 vim.opt.laststatus = 0
 vim.opt.listchars:append("tab:› ")
@@ -66,6 +66,7 @@ local function apply_highlights()
 		--monosvkem
 		local normal = { bg = "#181818", fg = "#dadada" }
 		if vim.o.background == "dark" then
+			hi(0, "ColorColumn", { bg = "#55392C" })
 			hi(0, "Cursor", { fg = normal.fg, bg = normal.bg })
 			hi(0, "CursorLineNr", { fg = "#20bbfc", bg = normal.bg, cterm = {} })
 			hi(0, "Normal", { bg = normal.bg, cterm = {} })
@@ -162,6 +163,7 @@ if vim.g.neovide then
 	end)
 	vim.keymap.set("n", "<C-->", change_scale_factor(1 / 1.25))
 	vim.keymap.set("n", "<C-=>", change_scale_factor(1.25))
+	vim.opt.guicursor:append("o:hor50")
 end
 
 --plug spec
@@ -190,11 +192,10 @@ vim.api.nvim_create_autocmd('LspAttach', {
 	callback = function(ev)
 		local client = vim.lsp.get_client_by_id(ev.data.client_id)
 		if client:supports_method('textDocument/completion') then
-			vim.lsp.completion.enable(true, client.id, ev.buf, { autotrigger = true })
+			vim.lsp.completion.enable(true, client.id, ev.buf, { autotrigger = false })
 		end
 	end,
 })
-vim.opt.completeopt:append("noinsert") --required for above block
 
 vim.lsp.document_color.enable(true, nil, { style = '●' })
 -- vim.lsp.inlay_hint.enable(true)

@@ -60,6 +60,7 @@ cnoremap <A-d> <C-Right><C-W>
 
 set termguicolors
 def ApplyHl(): void
+	hi ColorColumn guibg=#55392C
 	hi Cursor guifg=fg #gui
 	hi VertSplit guibg=bg
 	hi Normal guibg=#181818 #gruber
