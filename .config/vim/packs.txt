@@ -4,7 +4,7 @@
 ; for eg: https://github.com/mattn/vim-supertabpanel.git (issue while updating)
 ; instead use browser url
 
-https://github.com/Konfekt/filepicker.vim
+; https://github.com/Konfekt/filepicker.vim
 https://github.com/chrnz008/gruber.vim
 https://github.com/tpope/vim-surround
 

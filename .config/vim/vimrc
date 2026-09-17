@@ -12,6 +12,7 @@ if has("win32")
 	set guicursor=a:block-blinkon0,r-cr:hor20
 endif
 
+set background=dark #for ix boxes
 set belloff=all
 set completeopt+=popup #override preview
 set completepopup=align:menu,border:off #,highlight:Folded
@@ -72,7 +73,6 @@ def ApplyHl(): void
 	hi Special guifg=#d02b61
 	hi Type guifg=#8b7355 #burlywood4
 enddef
-
 augroup applyHighlights
 autocmd ColorScheme * {
 	if g:colors_name == 'quiet'
@@ -95,6 +95,42 @@ g:loaded_vimballPlugin = 1
 if executable("yazi")
 	g:loaded_netrw = 1
 	g:loaded_netrwPlugin = 1
+
+	def Yazi_pick()
+		var [chooser_file, cwd_file] = [tempname(), tempname()]
+		var oldbuf: number = bufnr()
+		setlocal bufhidden=hide
+		var yazi_cmd = $"yazi --chooser-file {chooser_file} --cwd-file {cwd_file}"
+		term_start(yazi_cmd, {exit_cb: (job: job, status: number) => {
+			setlocal bufhidden=delete
+			#dont fire BufEnter
+			noautocmd execute 'buffer' oldbuf
+			#open selections
+			#yazi quits(stopping term_start) and uses the opener
+			if filereadable(chooser_file)
+				for selfile in readfile(chooser_file)
+					execute "drop " .. fnameescape(selfile)
+				endfor
+				delete(chooser_file)
+			endif
+			#change to cwd
+			if filereadable(cwd_file) #yazi doesnt create cwd for Q
+				var curwd: string = (readfile(cwd_file))[0]
+				delete(cwd_file)
+				chdir(curwd, "global")
+			endif
+		#:TODO mass rename
+		},
+		curwin: true
+		})
+	enddef
+	autocmd BufEnter * {
+		if isdirectory(bufname("%"))
+			chdir(bufname("%"))
+			Yazi_pick()
+		endif
+	}
+	nnoremap <leader>e <ScriptCmd>Yazi_pick()<CR>
 endif
 
 if exists('$ALACRITTY_LOG') && has('win32')
