@@ -121,6 +121,7 @@ if executable("yazi")
 			endif
 		#:TODO mass rename
 		},
+		term_name: "picker",
 		curwin: true
 		})
 	enddef
