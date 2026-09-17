@@ -99,12 +99,16 @@ if executable("yazi")
 	def Yazi_pick()
 		var [chooser_file, cwd_file] = [tempname(), tempname()]
 		var oldbuf: number = bufnr()
-		setlocal bufhidden=hide
+		var oldbufstat: string = getbufvar(oldbuf, '&bufhidden')
+		setbufvar(oldbuf, '&bufhidden', 'hide')
+		var oldmodstatus: bool = &modified
+		set modified #fake modification for [NO Name] buffers
 		var yazi_cmd = $"yazi --chooser-file {chooser_file} --cwd-file {cwd_file}"
 		term_start(yazi_cmd, {exit_cb: (job: job, status: number) => {
-			setlocal bufhidden=delete
+			var termbuf = bufnr()
+			setbufvar(termbuf, '&bufhidden', 'delete')
 			#dont fire BufEnter
-			noautocmd execute 'buffer' oldbuf
+			noautocmd execute "buffer" oldbuf
 			#open selections
 			#yazi quits(stopping term_start) and uses the opener
 			if filereadable(chooser_file)
@@ -119,7 +123,11 @@ if executable("yazi")
 				delete(cwd_file)
 				chdir(curwd, "global")
 			endif
-		#:TODO mass rename
+			#:TODO mass rename
+			setbufvar(oldbuf, '&bufhidden', oldbufstat) #reset state
+			if !oldmodstatus #reset modification
+				set nomodified
+			endif
 		},
 		term_name: "picker",
 		curwin: true
@@ -128,6 +136,7 @@ if executable("yazi")
 	autocmd BufEnter * {
 		if isdirectory(bufname("%"))
 			chdir(bufname("%"))
+			bdelete
 			Yazi_pick()
 		endif
 	}
