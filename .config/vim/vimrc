@@ -97,13 +97,14 @@ if executable("yazi")
 	g:loaded_netrwPlugin = 1
 
 	def Yazi_pick()
+		var file_dir: string = expand("%:p:h") #for [ENTRIES]
 		var [chooser_file, cwd_file] = [tempname(), tempname()]
 		var oldbuf: number = bufnr()
 		var oldbufstat: string = getbufvar(oldbuf, '&bufhidden')
 		setbufvar(oldbuf, '&bufhidden', 'hide')
 		var oldmodstatus: bool = &modified
 		set modified #fake modification for [NO Name] buffers
-		var yazi_cmd = $"yazi --chooser-file {chooser_file} --cwd-file {cwd_file}"
+		var yazi_cmd = $"yazi --chooser-file {chooser_file} --cwd-file {cwd_file} {file_dir}"
 		term_start(yazi_cmd, {exit_cb: (job: job, status: number) => {
 			var termbuf = bufnr()
 			setbufvar(termbuf, '&bufhidden', 'delete')
