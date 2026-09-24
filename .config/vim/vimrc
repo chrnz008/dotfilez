@@ -96,8 +96,11 @@ if executable("yazi")
 	g:loaded_netrw = 1
 	g:loaded_netrwPlugin = 1
 
-	def Yazi_pick()
-		var file_dir: string = expand("%:p:h") #for [ENTRIES]
+	def Yazi_pick(from_cmd: bool = false)
+		var file_dir: string
+		if !from_cmd
+			file_dir = expand("%:p:h") #for [ENTRIES]
+		endif
 		var [chooser_file, cwd_file] = [tempname(), tempname()]
 		var oldbuf: number = bufnr()
 		var oldbufstat: string = getbufvar(oldbuf, '&bufhidden')
@@ -138,7 +141,7 @@ if executable("yazi")
 		if isdirectory(bufname("%"))
 			chdir(bufname("%"))
 			bdelete
-			Yazi_pick()
+			Yazi_pick(true)
 		endif
 	}
 	nnoremap <leader>e <ScriptCmd>Yazi_pick()<CR>
