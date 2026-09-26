@@ -5,8 +5,8 @@ set guioptions=M # :h go-M
 filetype plugin indent on
 syntax on
 
-packadd comment
-packadd nohlsearch
+packadd! comment
+packadd! nohlsearch
 
 if has("win32")
 	set guicursor=a:block-blinkon0,r-cr:hor20
