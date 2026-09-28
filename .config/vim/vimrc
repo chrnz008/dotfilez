@@ -142,6 +142,7 @@ if executable("yazi")
 			chdir(bufname("%"))
 			bdelete
 			Yazi_pick(true)
+			# TODO not working when vim started from yazi
 		endif
 	}
 	nnoremap <leader>e <ScriptCmd>Yazi_pick()<CR>
