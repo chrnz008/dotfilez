@@ -15,7 +15,7 @@ decorations_theme_variant = "Dark"
 
 [font]
 # normal.family = "Courier New"
-# size = 12
+# size = 11.25 # (default)
 offset = { x = 1, y = 1 }
 
 # from: https://github.com/vim/colorschemes/blob/master/colortemplate/quiet.colortemplate
@@ -57,6 +57,8 @@ bindings = [
 { key = "[", mods="Control",mode="Vi|~Search",action = "ClearSelection" }, #<C-c>
 { key = "[", mods="Control",mode="Search",action = "SearchCancel" }, #<C-c>
 # TODO readline motions for footer_bar
+# { key = "Backspace", mods="Control", chars="\u0017" }, #<C-W> for <C-BS>
+# { key = "Backspace", mods="Alt", chars="\u0015" }, #<C-U> for <C-BS>
 ]
 
 # https://alacritty.org/config-alacritty-bindings.html
