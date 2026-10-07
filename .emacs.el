@@ -5,6 +5,27 @@
 (setq ring-bell-function 'ignore)
 ;; (load-theme 'deeper-blue t)
 
+;; key bindings
+;; (keymap-global-set "C-=" 'text-scale-increase) ;; C-x c-= does the samee
+
+;; notes
+;; use c-x c-m-{0,+,=,-} for global text scale
+;; take a look at icomplete-mode
+
+;; Display/Text Display
+(setq-default tab-width 4)
+(setq auto-save-default nil)
+(setq make-backup-files nil)
+
+;; experimental
+(global-completion-preview-mode t)
+
+(when (eq system-type 'windows-nt)
+  ;; disable gpg in win32
+  (setq package-check-signature nil)
+  (set-face-attribute 'default nil :family "Consolas" :height 110)
+  )
+
 ;; quiet https://github.com/vim/colorschemes/blob/master/colortemplate/quiet.colortemplate
 (deftheme quiet)
 (let ((fg "#dadada")
@@ -43,25 +64,5 @@
 ;; global overrides
 (set-face-background 'fringe (face-background 'default nil t))
 
-;; key bindings
-;; (keymap-global-set "C-=" 'text-scale-increase) ;; C-x c-= does the samee
-
-;; notes
-;; use c-x c-m-{0,+,=,-} for global text scale
-;; take a look at icomplete-mode
-
-;; Display/Text Display
-(setq-default tab-width 4)
-(setq auto-save-default nil)
-(setq make-backup-files nil)
-
-;; experimental
-(global-completion-preview-mode t)
-
-(when (eq system-type 'windows-nt)
-  ;; disable gpg in win32
-  (setq package-check-signature nil)
-  (set-face-attribute 'default nil :family "Consolas" :height 110)
-  )
 (setq fancy-splash-image
       (expand-file-name "images/icons/hicolor/128x128/apps/emacs.png" data-directory))

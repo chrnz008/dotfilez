@@ -64,7 +64,7 @@ def ApplyHl(): void
 	hi ColorColumn guibg=#55392C
 	hi Cursor guifg=fg #gui
 	hi VertSplit guibg=bg
-	hi Normal guibg=#181818 #gruber
+	hi Normal guibg=#181818
 	hi SpecialKey guifg=#4f5258 #novum
 	hi StatusLine guifg=#a8a8a8 guibg=#2c2c2c
 	hi StatusLineNC guifg=#222222 guibg=#636363
