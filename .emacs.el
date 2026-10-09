@@ -19,13 +19,19 @@
 
 ;; experimental
 (global-completion-preview-mode t)
+(add-hook 'completion-preview-mode-hook
+ 		  (lambda ()
+ 			(keymap-set completion-preview-active-mode-map "M-n" 'completion-preview-next-candidate)
+ 			(keymap-set completion-preview-active-mode-map "M-p" 'completion-preview-prev-candidate)))
 
 (when (eq system-type 'windows-nt)
   ;; disable gpg in win32
   (setq package-check-signature nil)
   (set-face-attribute 'default nil :family "Consolas" :height 110)
+  ;; (set-face-attribute 'variable-pitch nil :family "Segoe UI")
   )
 
+(setq speedbar-prefer-window t)
 ;; quiet https://github.com/vim/colorschemes/blob/master/colortemplate/quiet.colortemplate
 (deftheme quiet)
 (let ((fg "#dadada")

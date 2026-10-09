@@ -23,7 +23,7 @@ using win32\caps.reg instead of win32\ahk\hhkb.ahk it is slightly modifed from s
 ## todo
 - [.] start using a script to autoinstall (or complete [hedwig](https://github.com/chrnz008/hedwig))
 - [ ] vim ffs problem on unix
-- [ ] get rid of ahk
+- [.] get rid of ahk
 - [ ] sway,i3,gnome unused for a long time(start from scratch???)
 - [ ] remove .emacs.el ??
 - [ ] switch to powershell or internalize clink
