@@ -58,6 +58,8 @@ cnoremap <C-X><C-F> <C-F>
 cnoremap <A-b> <C-Left>
 cnoremap <A-f> <C-Right>
 cnoremap <A-d> <C-Right><C-W>
+# <A-d> may not work as expected because <C-Right> doesnt care about
+# iskeywoard
 
 set termguicolors
 def ApplyHl(): void

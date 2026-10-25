@@ -2,10 +2,12 @@
 ;; vim is bettern
 
 (tool-bar-mode 0)
+(setq inhibit-startup-screen t)
 (setq ring-bell-function 'ignore)
 ;; (load-theme 'deeper-blue t)
 
 ;; key bindings
+;; TODO C-S-d to move text down
 ;; (keymap-global-set "C-=" 'text-scale-increase) ;; C-x c-= does the samee
 
 ;; notes
@@ -41,11 +43,13 @@
 	  (dark8 "#707070")
 	  (moblu "#5688af")
 	  (burl4 "#8b7355")
+	  (uiblu "#00afff")
 	  )
 (custom-theme-set-faces
  'quiet
  `(default ((t (:foreground ,fg :background ,bg))))
  `(isearch ((t (:foreground ,bg :background ,amber))))
+ `(lazy-highlight ((t (:foreground ,bg :background ,uiblu))))
  `(region ((t (:foreground ,bg :background ,amber))))
  `(mode-line-active ((t (:foreground ,invis :background "#2c2c2c" :weight bold)))) ;; TODO
  `(mode-line-inactive ((t (:foreground "#636363" :background "#222222" :weight normal))))
@@ -70,5 +74,5 @@
 ;; global overrides
 (set-face-background 'fringe (face-background 'default nil t))
 
-(setq fancy-splash-image
-      (expand-file-name "images/icons/hicolor/128x128/apps/emacs.png" data-directory))
+;; (setq fancy-splash-image
+;;       (expand-file-name "images/icons/hicolor/128x128/apps/emacs.png" data-directory))
