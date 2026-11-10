@@ -21,6 +21,7 @@ offset = { x = 1, y = 1 }
 # from: https://github.com/vim/colorschemes/blob/master/colortemplate/quiet.colortemplate
 [colors]
 primary = {foreground = "#dadada",background = "#181818"}
+# primary = {foreground = "#dadada",background = "#0e1513"}
 cursor = { text = "CellBackground" ,cursor = "#f4f4ff" } #wez
 vi_mode_cursor = { text = "CellBackground" ,cursor = "#cb4b16" } #(diff from matches and vim search)
 search = {
@@ -59,6 +60,7 @@ bindings = [
 # TODO readline motions for footer_bar
 # { key = "Backspace", mods="Control", chars="\u0017" }, #<C-W> for <C-BS>
 # { key = "Backspace", mods="Alt", chars="\u0015" }, #<C-U> for <C-BS>
+# TODO add more onekey motions like +,-
 ]
 
 # https://alacritty.org/config-alacritty-bindings.html
